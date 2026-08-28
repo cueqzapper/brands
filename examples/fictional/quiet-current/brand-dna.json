@@ -1,9 +1,9 @@
 {
   "$schema": "https://cueqzapper.github.io/brands/schema.json",
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "meta": {
     "id": "quiet-current",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "status": "draft",
     "createdAt": "2026-08-28T12:00:00+02:00",
     "updatedAt": "2026-08-28T12:00:00+02:00",
@@ -599,15 +599,15 @@
       "variants": [
         {
           "id": "primary",
-          "asset": "logos/quiet-current-primary.svg",
+          "asset": "assets/logos/primary.svg",
           "foreground": "#171329",
           "background": "light"
         },
         {
-          "id": "reverse",
-          "asset": "logos/quiet-current-reverse.svg",
-          "foreground": "#F2F1ED",
-          "background": "dark or photographic"
+          "id": "mark",
+          "asset": "assets/logos/mark.svg",
+          "foreground": "#171329",
+          "background": "light or dark according to the approved master"
         }
       ],
       "clearspace": "At least the cap height of the first letter on every side.",
@@ -803,6 +803,165 @@
         "never use colour as the only distinction"
       ]
     }
+  },
+  "assets": {
+    "basePath": "./assets/",
+    "logos": [
+      {
+        "id": "primary-logo",
+        "kind": "logo",
+        "path": "logos/primary.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Primary horizontal signature",
+        "alt": "Quiet Current",
+        "description": "Quiet Current primary wordmark and signet.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "logo",
+          "fictional-demo"
+        ],
+        "variants": []
+      },
+      {
+        "id": "brand-mark",
+        "kind": "logo",
+        "path": "logos/mark.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Compact signet",
+        "alt": "Quiet Current signet",
+        "description": "Compact Quiet Current mark for square and small applications.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "logo",
+          "fictional-demo"
+        ],
+        "variants": []
+      }
+    ],
+    "icons": [
+      {
+        "id": "listen",
+        "kind": "icon",
+        "path": "icons/listen.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Listen",
+        "alt": "Quiet Current: Listen",
+        "description": "One member of the approved Quiet Current icon family.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "icon",
+          "fictional-demo"
+        ],
+        "variants": []
+      },
+      {
+        "id": "edit",
+        "kind": "icon",
+        "path": "icons/edit.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Editorial change",
+        "alt": "Quiet Current: Editorial change",
+        "description": "One member of the approved Quiet Current icon family.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "icon",
+          "fictional-demo"
+        ],
+        "variants": []
+      },
+      {
+        "id": "comment",
+        "kind": "icon",
+        "path": "icons/comment.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Review comment",
+        "alt": "Quiet Current: Review comment",
+        "description": "One member of the approved Quiet Current icon family.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "icon",
+          "fictional-demo"
+        ],
+        "variants": []
+      },
+      {
+        "id": "deliver",
+        "kind": "icon",
+        "path": "icons/deliver.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Delivery version",
+        "alt": "Quiet Current: Delivery version",
+        "description": "One member of the approved Quiet Current icon family.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "icon",
+          "fictional-demo"
+        ],
+        "variants": []
+      }
+    ],
+    "photography": [
+      {
+        "id": "hero-documentary",
+        "kind": "photograph",
+        "path": "photography/listening-edit.webp",
+        "mediaType": "image/webp",
+        "role": "Primary documentary image",
+        "alt": "A sound editor listens back and marks a decision at a quiet edit desk.",
+        "description": "The pause before a decision: listening back, marking a time, or asking to hear it once more. Built-in image generation was art-directed from the Brand DNA on 2026-08-28.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": "https://openai.com/",
+        "status": "approved",
+        "tags": [
+          "photograph",
+          "fictional-demo"
+        ],
+        "variants": []
+      }
+    ],
+    "illustrations": [
+      {
+        "id": "system-pattern",
+        "kind": "illustration",
+        "path": "illustrations/pattern.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Supporting brand pattern",
+        "alt": "",
+        "description": "A repeatable Quiet Current pattern derived from the approved shape grammar.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "illustration",
+          "fictional-demo"
+        ],
+        "variants": []
+      }
+    ],
+    "textures": [],
+    "motion": [],
+    "audio": [],
+    "templates": []
   },
   "representation": {
     "principle": "Show contributors, editors and producers as people with editorial agency; listening is an action, not passive ambience.",

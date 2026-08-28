@@ -3,7 +3,7 @@
     "id": "icon",
     "label": "Icon system asset",
     "description": "A single icon or a coherent icon family member.",
-    "selectors": ["/meta/status", "/meta/defaultLocale", "/brand/identity", "/brand/essence", "/visual/concept", "/visual/colors", "/visual/logo", "/visual/shapes", "/visual/iconography", "/rules/universal", "/rules/accessibility", "/rules/legal/assets", "/rules/quality", "/provenance/openQuestions"],
+    "selectors": ["/meta/status", "/meta/defaultLocale", "/brand/identity", "/brand/essence", "/visual/concept", "/visual/colors", "/visual/logo", "/visual/shapes", "/visual/iconography", "/assets/basePath", "/assets/icons", "/assets/logos", "/rules/universal", "/rules/accessibility", "/rules/legal/assets", "/rules/quality", "/provenance/openQuestions"],
     "instructions": ["Begin with the semantic job and choose one instantly readable metaphor.", "Use the specified grid, stroke, corner and optical correction rules; do not imitate the logo literally unless requested.", "Describe vector construction, bounding box, padding, alignment, colour states, small-size behaviour and accessibility.", "If an image engine is used, request a clean isolated symbol with no mockup, words, letters, watermark or background scene."],
     "productionChecklist": ["Meaning is understandable without a label", "Silhouette remains clear at the minimum target size", "Stroke weights and corner treatment match the family", "Filled, outline, active and disabled states use approved colours", "No accidental logo, letter or culturally ambiguous symbol", "SVG geometry can be reconstructed from the result"],
     "outputContract": ["One-line semantic intent", "Exhaustive image/vector generation prompt", "Negative prompt", "Construction specification with grid, stroke, padding and colours", "Small-size and accessibility checks"]
@@ -12,7 +12,7 @@
     "id": "logo",
     "label": "Logo or brand signature",
     "description": "A logo refinement, lockup or approved variant.",
-    "selectors": ["/meta/status", "/brand", "/strategy/purpose", "/strategy/positioning", "/strategy/values", "/visual/concept", "/visual/colors", "/visual/typography", "/visual/logo", "/visual/shapes", "/rules/universal", "/rules/accessibility", "/rules/legal", "/rules/quality", "/provenance/openQuestions"],
+    "selectors": ["/meta/status", "/brand", "/strategy/purpose", "/strategy/positioning", "/strategy/values", "/visual/concept", "/visual/colors", "/visual/typography", "/visual/logo", "/visual/shapes", "/assets/basePath", "/assets/logos", "/rules/universal", "/rules/accessibility", "/rules/legal", "/rules/quality", "/provenance/openQuestions"],
     "instructions": ["Express a durable brand idea, not a current campaign slogan.", "Specify symbol, wordmark, lockup geometry, clearspace, scale limits, monochrome behaviour and background variants.", "Reject generic AI-logo tropes, gradients without semantic purpose and effects that fail in one colour."],
     "productionChecklist": ["Recognisable in monochrome", "Legible at minimum size", "Distinct from common category marks", "Clearspace and lockups documented", "Asset and trademark questions resolved", "Vector master required"],
     "outputContract": ["Concept rationale", "Exhaustive generation or construction prompt", "Variant matrix", "Clearspace and minimum-size specification", "Misuse list and legal review notes"]
@@ -21,7 +21,7 @@
     "id": "linkedin",
     "label": "LinkedIn post",
     "description": "A brand-correct organic LinkedIn post and optional visual direction.",
-    "selectors": ["/meta/defaultLocale", "/brand/identity", "/brand/essence", "/brand/worldview", "/strategy/positioning", "/strategy/audiences", "/strategy/values", "/strategy/messaging", "/verbal", "/visual/concept", "/visual/colors", "/visual/typography", "/channels/linkedin", "/rules/universal", "/rules/accessibility/text", "/rules/legal/claims", "/rules/quality", "/provenance/openQuestions"],
+    "selectors": ["/meta/defaultLocale", "/brand/identity", "/brand/essence", "/brand/worldview", "/strategy/positioning", "/strategy/audiences", "/strategy/values", "/strategy/messaging", "/verbal", "/visual/concept", "/visual/colors", "/visual/typography", "/assets/basePath", "/assets/logos", "/assets/photography", "/assets/illustrations", "/assets/templates", "/channels/linkedin", "/rules/universal", "/rules/accessibility/text", "/rules/legal/claims", "/rules/quality", "/provenance/openQuestions"],
     "instructions": ["Choose one concrete tension, observation or piece of proof and build the post around it.", "Write for the named audience and the channel's reading rhythm; do not convert the post into a brochure.", "Use a specific opening, short paragraphs, one coherent argument and the approved CTA hierarchy.", "If a visual accompanies the post, give a separate art-direction brief without placing paragraphs of text inside the image."],
     "productionChecklist": ["Opening earns attention without ragebait unless the brand allows it", "One claim per paragraph", "Every factual claim is evidenced", "Voice matches locale and register", "No generic LinkedIn cadence or inflated conclusion", "CTA is proportionate to the post"],
     "outputContract": ["Ready-to-publish post", "Optional visual brief", "Claim/evidence note", "Short compliance note with unresolved facts"]
@@ -30,7 +30,7 @@
     "id": "photography",
     "label": "Brand photograph",
     "description": "A photorealistic brand image or a coherent photographic series.",
-    "selectors": ["/meta/status", "/brand/identity", "/brand/essence", "/brand/worldview", "/strategy/audiences", "/strategy/values", "/visual/concept", "/visual/colors", "/visual/layout", "/visual/shapes", "/visual/photography", "/representation", "/rules/universal", "/rules/accessibility/media", "/rules/legal/assets", "/rules/legal/privacy", "/rules/quality", "/provenance/openQuestions"],
+    "selectors": ["/meta/status", "/brand/identity", "/brand/essence", "/brand/worldview", "/strategy/audiences", "/strategy/values", "/visual/concept", "/visual/colors", "/visual/layout", "/visual/shapes", "/visual/photography", "/assets/basePath", "/assets/photography", "/assets/textures", "/representation", "/rules/universal", "/rules/accessibility/media", "/rules/legal/assets", "/rules/legal/privacy", "/rules/quality", "/provenance/openQuestions"],
     "instructions": ["Define the image's communication job before specifying people, place or camera.", "Describe people only through an explicit representation policy or the task brief; never infer sensitive attributes from names, faces or industry stereotypes.", "Specify subject count, age range, presentation, roles, behaviour, wardrobe, environment, moment, composition, camera height, lens character, depth of field, light direction, colour temperature, palette, surface texture, grade and crop-safe space.", "Demand lived-in physical detail and believable work; reject stock-photo gestures, plastic skin, fake text, fake logos and impossible hands or tools."],
     "productionChecklist": ["People and casting follow explicit policy", "Scene shows a credible moment rather than a pose", "Camera, lens and light produce the intended emotion", "Brand palette appears through environment and grade, not coloured fog", "Crop works at requested aspect ratio", "No text, logo, watermark or invented certification", "Consent and privacy requirements are satisfied"],
     "outputContract": ["Image intent", "Exhaustive positive prompt", "Exhaustive negative prompt", "Casting and representation note", "Camera/light/grade specification", "Crop and acceptance tests"]
@@ -39,7 +39,7 @@
     "id": "photo-graphic",
     "label": "Photo graphic",
     "description": "A photograph combined with graphic composition for social, editorial or campaign use.",
-    "selectors": ["/meta/defaultLocale", "/brand/identity", "/brand/essence", "/strategy/positioning", "/strategy/audiences", "/strategy/messaging", "/verbal/voice", "/verbal/language", "/visual", "/representation", "/channels/advertising", "/channels/linkedin", "/rules", "/provenance/openQuestions"],
+    "selectors": ["/meta/defaultLocale", "/brand/identity", "/brand/essence", "/strategy/positioning", "/strategy/audiences", "/strategy/messaging", "/verbal/voice", "/verbal/language", "/visual", "/assets", "/representation", "/channels/advertising", "/channels/linkedin", "/rules", "/provenance/openQuestions"],
     "instructions": ["Separate raster generation from typography and layout: generate a clean photograph first, then compose real text with the approved type system.", "Reserve explicit negative space for headline and CTA; specify hierarchy, grid, crop variants and safe areas.", "Keep overlays and effects tied to the visual concept rather than decoration."],
     "productionChecklist": ["Photograph works without generated text", "Headline remains live typography", "Grid, type, colour and spacing are brand-correct", "Desktop and mobile crops preserve the subject", "Contrast passes", "Claims and CTA are evidenced"],
     "outputContract": ["Concept and communication job", "Raster-generation prompt and negative prompt", "Layout specification", "Exact copy hierarchy", "Responsive crop matrix", "Compliance checklist"]
@@ -48,7 +48,7 @@
     "id": "video",
     "label": "Brand video",
     "description": "A short film, social video, product film or motion graphic.",
-    "selectors": ["/meta/defaultLocale", "/brand", "/strategy", "/verbal", "/visual/concept", "/visual/colors", "/visual/typography", "/visual/layout", "/visual/photography", "/visual/motion", "/representation", "/sensory", "/channels/video", "/rules", "/provenance/openQuestions"],
+    "selectors": ["/meta/defaultLocale", "/brand", "/strategy", "/verbal", "/visual/concept", "/visual/colors", "/visual/typography", "/visual/layout", "/visual/photography", "/visual/motion", "/assets/basePath", "/assets/logos", "/assets/photography", "/assets/illustrations", "/assets/motion", "/assets/audio", "/representation", "/sensory", "/channels/video", "/rules", "/provenance/openQuestions"],
     "instructions": ["Build a time-based argument with a specific beginning, turn and ending.", "Specify shot intent, action, framing, camera movement, duration, transition logic, sound, music, voiceover and on-screen typography for every beat.", "Keep human performance natural and product behaviour physically plausible.", "Provide captions, audio-description considerations and reduced-motion alternatives."],
     "productionChecklist": ["Every shot advances the message", "Casting follows policy", "Motion grammar is consistent", "Music and sound support rather than mask speech", "Captions and safe-area typography are planned", "No invented product behaviour or claims", "End frame and CTA match the channel"],
     "outputContract": ["Creative premise", "Beat-by-beat treatment", "Shot list with camera and action", "Voiceover/on-screen copy", "Music and sound brief", "Generation prompts per shot", "Accessibility and delivery specs"]
@@ -57,7 +57,7 @@
     "id": "brochure",
     "label": "Brochure or document",
     "description": "A printed or PDF brochure, dossier, report or sales document.",
-    "selectors": ["/meta/defaultLocale", "/brand", "/strategy", "/verbal", "/visual/concept", "/visual/colors", "/visual/typography", "/visual/logo", "/visual/layout", "/visual/shapes", "/visual/iconography", "/visual/photography", "/representation", "/channels/brochure", "/rules", "/provenance/openQuestions"],
+    "selectors": ["/meta/defaultLocale", "/brand", "/strategy", "/verbal", "/visual/concept", "/visual/colors", "/visual/typography", "/visual/logo", "/visual/layout", "/visual/shapes", "/visual/iconography", "/visual/photography", "/assets", "/representation", "/channels/brochure", "/rules", "/provenance/openQuestions"],
     "instructions": ["Define reader, decision and page journey before writing copy.", "Specify cover, navigation, section rhythm, proof placement, callouts, charts, image crops, paper/PDF behaviour, margins, bleed and accessibility.", "Use real typography for all text and keep generated images free of words and logos."],
     "productionChecklist": ["Document has one reader and decision", "Page order supports scanning and deep reading", "Facts and sources are visible", "Type remains legible in print and PDF", "Images are high enough resolution", "Bleed, safe area and export profile are defined", "Tagged-PDF or accessible digital alternative is planned"],
     "outputContract": ["Document architecture", "Page-by-page content outline", "Copy and proof requirements", "Layout and print specification", "Image briefs", "Preflight checklist"]
@@ -66,7 +66,7 @@
     "id": "advertising",
     "label": "Advertisement",
     "description": "A paid static, carousel, display or social advertisement.",
-    "selectors": ["/meta/defaultLocale", "/brand/identity", "/brand/essence", "/brand/worldview", "/strategy/positioning", "/strategy/offers", "/strategy/audiences", "/strategy/messaging", "/verbal", "/visual/concept", "/visual/colors", "/visual/typography", "/visual/logo", "/visual/layout", "/visual/photography", "/representation", "/channels/advertising", "/rules", "/provenance/openQuestions"],
+    "selectors": ["/meta/defaultLocale", "/brand/identity", "/brand/essence", "/brand/worldview", "/strategy/positioning", "/strategy/offers", "/strategy/audiences", "/strategy/messaging", "/verbal", "/visual/concept", "/visual/colors", "/visual/typography", "/visual/logo", "/visual/layout", "/visual/photography", "/assets/basePath", "/assets/logos", "/assets/photography", "/assets/illustrations", "/assets/templates", "/representation", "/channels/advertising", "/rules", "/provenance/openQuestions"],
     "instructions": ["Select one audience, one tension, one offer and one action per concept.", "Distinguish a creative hypothesis from a verified claim and label required substantiation.", "Design the first-frame or static image to communicate before the body copy is read.", "Return production variants without weakening the core brand idea."],
     "productionChecklist": ["One audience and action", "Hook matches landing destination", "Claim is substantiated", "Logo and CTA remain legible at placement size", "Visual is recognisable without clickbait", "Platform text and safe-area limits are met", "Variant differences are testable"],
     "outputContract": ["Creative strategy", "Three testable concepts", "Platform-ready copy variants", "Static/video visual briefs", "Claim substantiation list", "Measurement hypothesis"]
@@ -75,7 +75,7 @@
     "id": "website",
     "label": "Website design and copy",
     "description": "A complete website, landing page or reusable web component.",
-    "selectors": ["/meta", "/brand", "/strategy", "/verbal", "/visual", "/representation", "/channels/website", "/rules", "/provenance"],
+    "selectors": ["/meta", "/brand", "/strategy", "/verbal", "/visual", "/assets", "/representation", "/channels/website", "/rules", "/provenance"],
     "instructions": ["Map visitor intent, information architecture, proof and conversion before styling components.", "Translate brand rules into semantic design tokens, responsive layout, interaction states and reusable components.", "Use verified source content and expose open questions instead of filling gaps with generic copy."],
     "productionChecklist": ["Offer understood in five seconds", "Information hierarchy follows audience questions", "Every component uses shared tokens", "Mobile interaction is equivalent to desktop", "WCAG checks pass", "No horizontal overflow at 390 px", "Performance, SEO and structured data are tested", "Claims and legal content remain exact"],
     "outputContract": ["Page goal and audience", "Information architecture", "Section-by-section copy", "Design-token and component contract", "Responsive interaction states", "Asset prompts", "Technical and accessibility acceptance tests"]
@@ -84,7 +84,7 @@
     "id": "presentation",
     "label": "Presentation",
     "description": "A pitch, keynote, internal deck or client presentation.",
-    "selectors": ["/meta/defaultLocale", "/brand", "/strategy", "/verbal", "/visual/concept", "/visual/colors", "/visual/typography", "/visual/logo", "/visual/layout", "/visual/iconography", "/visual/photography", "/representation", "/channels/presentations", "/rules", "/provenance/openQuestions"],
+    "selectors": ["/meta/defaultLocale", "/brand", "/strategy", "/verbal", "/visual/concept", "/visual/colors", "/visual/typography", "/visual/logo", "/visual/layout", "/visual/iconography", "/visual/photography", "/assets", "/representation", "/channels/presentations", "/rules", "/provenance/openQuestions"],
     "instructions": ["Build the spoken argument first; slides are visual support, not a document pasted onto frames.", "Define opener, tension, proof sequence, turning point and close.", "Specify master layouts, type sizes, chart rules, image crops and speaker-note expectations."],
     "productionChecklist": ["One idea per slide", "Narrative works aloud", "Type is legible from the back of a room", "Proof and sources are visible", "Charts use approved semantic colours", "Images follow casting policy", "Deck has a clear next action"],
     "outputContract": ["Audience and presentation objective", "Narrative arc", "Slide-by-slide outline", "Master-layout specification", "Copy, chart and image directions", "Delivery and accessibility checklist"]

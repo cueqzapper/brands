@@ -1,9 +1,9 @@
 {
   "$schema": "https://cueqzapper.github.io/brands/schema.json",
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "meta": {
     "id": "rook-and-rye",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "status": "draft",
     "createdAt": "2026-08-28T12:00:00+02:00",
     "updatedAt": "2026-08-28T12:00:00+02:00",
@@ -598,15 +598,15 @@
       "variants": [
         {
           "id": "primary",
-          "asset": "logos/rook-and-rye-primary.svg",
+          "asset": "assets/logos/primary.svg",
           "foreground": "#171513",
           "background": "light"
         },
         {
-          "id": "reverse",
-          "asset": "logos/rook-and-rye-reverse.svg",
-          "foreground": "#F1E9D5",
-          "background": "dark or photographic"
+          "id": "mark",
+          "asset": "assets/logos/mark.svg",
+          "foreground": "#171513",
+          "background": "light or dark according to the approved master"
         }
       ],
       "clearspace": "At least the cap height of the first letter on every side.",
@@ -802,6 +802,165 @@
         "never use colour as the only distinction"
       ]
     }
+  },
+  "assets": {
+    "basePath": "./assets/",
+    "logos": [
+      {
+        "id": "primary-logo",
+        "kind": "logo",
+        "path": "logos/primary.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Primary horizontal signature",
+        "alt": "Rook & Rye",
+        "description": "Rook & Rye primary wordmark and signet.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "logo",
+          "fictional-demo"
+        ],
+        "variants": []
+      },
+      {
+        "id": "brand-mark",
+        "kind": "logo",
+        "path": "logos/mark.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Compact signet",
+        "alt": "Rook & Rye signet",
+        "description": "Compact Rook & Rye mark for square and small applications.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "logo",
+          "fictional-demo"
+        ],
+        "variants": []
+      }
+    ],
+    "icons": [
+      {
+        "id": "loaf",
+        "kind": "icon",
+        "path": "icons/loaf.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Loaf and batch",
+        "alt": "Rook & Rye: Loaf and batch",
+        "description": "One member of the approved Rook & Rye icon family.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "icon",
+          "fictional-demo"
+        ],
+        "variants": []
+      },
+      {
+        "id": "grain",
+        "kind": "icon",
+        "path": "icons/grain.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Grain provenance",
+        "alt": "Rook & Rye: Grain provenance",
+        "description": "One member of the approved Rook & Rye icon family.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "icon",
+          "fictional-demo"
+        ],
+        "variants": []
+      },
+      {
+        "id": "collect",
+        "kind": "icon",
+        "path": "icons/collect.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Collection time",
+        "alt": "Rook & Rye: Collection time",
+        "description": "One member of the approved Rook & Rye icon family.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "icon",
+          "fictional-demo"
+        ],
+        "variants": []
+      },
+      {
+        "id": "allergen",
+        "kind": "icon",
+        "path": "icons/allergen.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Allergen information",
+        "alt": "Rook & Rye: Allergen information",
+        "description": "One member of the approved Rook & Rye icon family.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "icon",
+          "fictional-demo"
+        ],
+        "variants": []
+      }
+    ],
+    "photography": [
+      {
+        "id": "hero-documentary",
+        "kind": "photograph",
+        "path": "photography/bread-handoff.webp",
+        "mediaType": "image/webp",
+        "role": "Primary documentary image",
+        "alt": "A baker passes a dark rye loaf across a worn bakery counter.",
+        "description": "The minute bread changes hands: scored, lifted from a rack, torn or wrapped. Built-in image generation was art-directed from the Brand DNA on 2026-08-28.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": "https://openai.com/",
+        "status": "approved",
+        "tags": [
+          "photograph",
+          "fictional-demo"
+        ],
+        "variants": []
+      }
+    ],
+    "illustrations": [
+      {
+        "id": "system-pattern",
+        "kind": "illustration",
+        "path": "illustrations/pattern.svg",
+        "mediaType": "image/svg+xml",
+        "role": "Supporting brand pattern",
+        "alt": "",
+        "description": "A repeatable Rook & Rye pattern derived from the approved shape grammar.",
+        "licence": "CC0-1.0",
+        "rights": "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+        "source": null,
+        "status": "approved",
+        "tags": [
+          "illustration",
+          "fictional-demo"
+        ],
+        "variants": []
+      }
+    ],
+    "textures": [],
+    "motion": [],
+    "audio": [],
+    "templates": []
   },
   "representation": {
     "principle": "Show bakers and customers as ordinary skilled people in a working neighbourhood shop, never as rustic characters.",

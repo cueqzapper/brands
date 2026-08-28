@@ -1,4 +1,4 @@
-import { compileBrandDNA } from "./compiler.js?v=1.0.0";
+import { compileBrandDNA } from "./compiler.js?v=1.1.0";
 
 const [catalog, profiles] = await Promise.all([
   fetch("./data/brand-catalog.json").then(assertJsonResponse),
@@ -125,6 +125,37 @@ function renderSummary() {
   summary.querySelector(".display-type").style.fontFamily = `"${activeBrand.displayFont}", Manrope, sans-serif`;
 }
 
+function resolveAssetUrl(asset) {
+  const dataUrl = new URL(activeBrand.data, window.location.href);
+  return new URL(`${activeBrand.dna.assets?.basePath || "./assets/"}${asset.path}`, dataUrl).href;
+}
+
+function renderAssets() {
+  const assets = activeBrand.dna.assets || {};
+  const groups = [
+    ["logos", "Logo masters"],
+    ["photography", "Photography"],
+    ["icons", "Icon family"],
+    ["illustrations", "Illustrations"],
+    ["textures", "Textures"],
+  ].filter(([key]) => Array.isArray(assets[key]) && assets[key].length);
+  const count = groups.reduce((total, [key]) => total + assets[key].length, 0);
+  document.querySelector("#asset-count").textContent = `${count} downloadable production assets · rights stay explicit in the DNA`;
+  document.querySelector("#asset-gallery").innerHTML = groups.map(([key, label]) => `
+    <section class="asset-group asset-group-${escapeHtml(key)}">
+      <header><span>${escapeHtml(label)}</span><small>${assets[key].length}</small></header>
+      <div class="asset-grid">${assets[key].map((asset) => {
+        const url = resolveAssetUrl(asset);
+        return `<article class="asset-card asset-${escapeHtml(asset.kind)}">
+          <a class="asset-preview" href="${escapeHtml(url)}" download aria-label="Download ${escapeHtml(asset.role)}">
+            <img src="${escapeHtml(url)}" alt="${escapeHtml(asset.alt)}" loading="lazy">
+          </a>
+          <div class="asset-copy"><span>${escapeHtml(asset.kind)}</span><strong>${escapeHtml(asset.role)}</strong><p>${escapeHtml(asset.description)}</p><small>${escapeHtml(asset.mediaType)} · ${escapeHtml(asset.status)}</small><a href="${escapeHtml(url)}" download>Download file ↓</a></div>
+        </article>`;
+      }).join("")}</div>
+    </section>`).join("");
+}
+
 function renderDetails() {
   const dnaDetails = document.querySelector("#dna-details");
   dnaDetails.replaceChildren();
@@ -188,6 +219,7 @@ function activateBrand(id, { resetBrief = true } = {}) {
     profileSelect.value = activeBrand.starterProfile || "photography";
   }
   renderSummary();
+  renderAssets();
   renderDetails();
   compile();
 

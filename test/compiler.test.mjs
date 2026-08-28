@@ -16,7 +16,7 @@ const catalog = JSON.parse(await readFile(new URL("../examples/catalog.json", im
 const profiles = JSON.parse(await readFile(new URL("../profiles/task-profiles.json", import.meta.url)));
 const schema = JSON.parse(await readFile(new URL("../schema/brand-dna.schema.json", import.meta.url)));
 
-test("all examples validate against Brand DNA 1.0", () => {
+test("all examples validate against the current Brand DNA schema", () => {
   const ajv = new Ajv2020({ allErrors: true, strict: true, allowUnionTypes: true });
   addFormats(ajv);
   const validate = ajv.compile(schema);

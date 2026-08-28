@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://cueqzapper.github.io/brands/schema/brand-dna.schema.json",
   "title": "Brand DNA",
-  "description": "A complete, evidence-aware brand contract that can be compiled into task-specific context packets.",
+  "description": "A complete, evidence-aware brand contract with production assets that can be compiled into task-specific context packets.",
   "type": "object",
   "required": [
     "schemaVersion",
@@ -19,12 +19,13 @@
   ],
   "properties": {
     "$schema": { "type": "string", "format": "uri-reference" },
-    "schemaVersion": { "const": "1.0.0" },
+    "schemaVersion": { "enum": ["1.0.0", "1.1.0"] },
     "meta": { "$ref": "#/$defs/meta" },
     "brand": { "$ref": "#/$defs/brand" },
     "strategy": { "$ref": "#/$defs/strategy" },
     "verbal": { "$ref": "#/$defs/verbal" },
     "visual": { "$ref": "#/$defs/visual" },
+    "assets": { "$ref": "#/$defs/assets" },
     "representation": { "$ref": "#/$defs/representation" },
     "sensory": { "$ref": "#/$defs/sensory" },
     "channels": { "$ref": "#/$defs/channels" },
@@ -37,11 +38,62 @@
     }
   },
   "additionalProperties": false,
+  "allOf": [
+    {
+      "if": { "properties": { "schemaVersion": { "const": "1.1.0" } }, "required": ["schemaVersion"] },
+      "then": { "properties": { "assets": { "$ref": "#/$defs/assets" } }, "required": ["assets"] }
+    }
+  ],
   "$defs": {
     "stringList": {
       "type": "array",
       "items": { "type": "string", "minLength": 1 },
       "uniqueItems": true
+    },
+    "asset": {
+      "type": "object",
+      "description": "A production-ready or reference asset with explicit rights and purpose.",
+      "required": ["id", "kind", "path", "mediaType", "role", "alt", "description", "licence", "rights", "status"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$" },
+        "kind": { "enum": ["logo", "icon", "photograph", "illustration", "texture", "motion", "audio", "template"] },
+        "path": { "type": "string", "format": "uri-reference" },
+        "mediaType": { "type": "string", "minLength": 3 },
+        "role": { "type": "string", "minLength": 1 },
+        "alt": { "type": "string" },
+        "description": { "type": "string", "minLength": 1 },
+        "licence": { "type": "string", "minLength": 1 },
+        "rights": { "type": "string", "minLength": 1 },
+        "source": { "type": ["string", "null"], "format": "uri-reference" },
+        "status": { "enum": ["reference", "draft", "approved", "deprecated"] },
+        "width": { "type": ["integer", "null"], "minimum": 1 },
+        "height": { "type": ["integer", "null"], "minimum": 1 },
+        "tags": { "$ref": "#/$defs/stringList" },
+        "variants": { "$ref": "#/$defs/stringList" }
+      },
+      "additionalProperties": false
+    },
+    "assetList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/asset" },
+      "uniqueItems": true
+    },
+    "assets": {
+      "type": "object",
+      "description": "Physical brand assets. Paths are resolved relative to basePath unless absolute.",
+      "required": ["basePath", "logos", "icons", "photography", "illustrations", "textures", "motion", "audio", "templates"],
+      "properties": {
+        "basePath": { "type": "string", "format": "uri-reference" },
+        "logos": { "$ref": "#/$defs/assetList" },
+        "icons": { "$ref": "#/$defs/assetList" },
+        "photography": { "$ref": "#/$defs/assetList" },
+        "illustrations": { "$ref": "#/$defs/assetList" },
+        "textures": { "$ref": "#/$defs/assetList" },
+        "motion": { "$ref": "#/$defs/assetList" },
+        "audio": { "$ref": "#/$defs/assetList" },
+        "templates": { "$ref": "#/$defs/assetList" }
+      },
+      "additionalProperties": false
     },
     "meta": {
       "type": "object",

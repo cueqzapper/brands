@@ -3,6 +3,45 @@ import { mkdir, writeFile } from "node:fs/promises";
 const root = new URL("../", import.meta.url);
 const generatedAt = "2026-08-28T12:00:00+02:00";
 
+const assetSets = {
+  "rook-and-rye": {
+    icons: [["loaf", "Loaf and batch"], ["grain", "Grain provenance"], ["collect", "Collection time"], ["allergen", "Allergen information"]],
+    photo: ["bread-handoff.webp", "A baker passes a dark rye loaf across a worn bakery counter."],
+  },
+  "northline-repair": {
+    icons: [["inspect", "Inspect damage"], ["stitch", "Repair method"], ["seal", "Weather seal"], ["passed", "Named test passed"]],
+    photo: ["repair-inspection.webp", "A repair technician tests the zip of a repaired outdoor jacket at a working bench."],
+  },
+  "quiet-current": {
+    icons: [["listen", "Listen"], ["edit", "Editorial change"], ["comment", "Review comment"], ["deliver", "Delivery version"]],
+    photo: ["listening-edit.webp", "A sound editor listens back and marks a decision at a quiet edit desk."],
+  },
+};
+
+function asset(id, kind, path, role, alt, description, source = null) {
+  return {
+    id, kind, path, mediaType: path.endsWith(".svg") ? "image/svg+xml" : "image/webp",
+    role, alt, description, licence: "CC0-1.0",
+    rights: "Created specifically for this fictional open demonstration dataset; no real organisation or protected mark is represented.",
+    source, status: "approved", tags: [kind, "fictional-demo"], variants: [],
+  };
+}
+
+function buildAssets(config) {
+  const set = assetSets[config.id];
+  return {
+    basePath: "./assets/",
+    logos: [
+      asset("primary-logo", "logo", "logos/primary.svg", "Primary horizontal signature", config.name, `${config.name} primary wordmark and signet.`),
+      asset("brand-mark", "logo", "logos/mark.svg", "Compact signet", `${config.name} signet`, `Compact ${config.name} mark for square and small applications.`),
+    ],
+    icons: set.icons.map(([id, role]) => asset(id, "icon", `icons/${id}.svg`, role, `${config.name}: ${role}`, `One member of the approved ${config.name} icon family.`)),
+    photography: [asset("hero-documentary", "photograph", `photography/${set.photo[0]}`, "Primary documentary image", set.photo[1], `${config.photoMoment} Built-in image generation was art-directed from the Brand DNA on 2026-08-28.`, "https://openai.com/")],
+    illustrations: [asset("system-pattern", "illustration", "illustrations/pattern.svg", "Supporting brand pattern", "", `A repeatable ${config.name} pattern derived from the approved shape grammar.`)],
+    textures: [], motion: [], audio: [], templates: [],
+  };
+}
+
 const commonAccessibility = {
   standard: "WCAG 2.2 AA for digital work; accessible PDF practices for documents.",
   contrast: [
@@ -127,10 +166,10 @@ function buildDNA(config) {
   const sourceId = `source-${config.id}-fictional-brief`;
   return {
     "$schema": "https://cueqzapper.github.io/brands/schema.json",
-    schemaVersion: "1.0.0",
+    schemaVersion: "1.1.0",
     meta: {
       id: config.id,
-      version: "1.0.0",
+      version: "1.1.0",
       status: "draft",
       createdAt: generatedAt,
       updatedAt: generatedAt,
@@ -245,8 +284,8 @@ function buildDNA(config) {
       logo: {
         idea: config.logoIdea,
         variants: [
-          { id: "primary", asset: `logos/${config.id}-primary.svg`, foreground: config.palette[0].hex, background: "light" },
-          { id: "reverse", asset: `logos/${config.id}-reverse.svg`, foreground: config.palette[1].hex, background: "dark or photographic" }
+          { id: "primary", asset: "assets/logos/primary.svg", foreground: config.palette[0].hex, background: "light" },
+          { id: "mark", asset: "assets/logos/mark.svg", foreground: config.palette[0].hex, background: "light or dark according to the approved master" }
         ],
         clearspace: "At least the cap height of the first letter on every side.",
         minimumSize: { digitalWidth: "24 px symbol; 104 px wordmark", printWidth: "8 mm symbol; 28 mm wordmark" },
@@ -317,6 +356,7 @@ function buildDNA(config) {
         rules: ["spell out axes and units", "show source and date", "mark estimates and incomplete series", "never use colour as the only distinction"]
       }
     },
+    assets: buildAssets(config),
     representation: {
       principle: config.representationPrinciple,
       casting: config.casting,
@@ -670,7 +710,7 @@ const catalog = [
     kind: "real-reference",
     badge: "Real reference",
     description: "The current SEEZ company and design system, with unresolved owner decisions kept visible.",
-    data: "./data/brands/seez.json",
+    data: "./data/brands/seez/brand-dna.json",
     downloadName: "seez-brand-dna.json",
     displaySample: "WORK\nIN USE.",
     displayFont: "Six Caps",
@@ -683,7 +723,7 @@ const catalog = [
     kind: "fictional-demo",
     badge: "Fictional demo",
     description: config.descriptor,
-    data: `./data/brands/${config.id}.json`,
+    data: `./data/brands/${config.id}/brand-dna.json`,
     downloadName: `${config.id}-brand-dna.json`,
     displaySample: config.id === "rook-and-rye" ? "TODAY'S\nBATCH." : config.id === "northline-repair" ? "REPAIR.\nRECORD." : "LEAVE\nROOM.",
     displayFont: config.typeFamilies[0].family,

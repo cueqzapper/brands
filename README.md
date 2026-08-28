@@ -6,8 +6,10 @@ humans, design systems and AI agents.
 One `brand-dna.json` can describe the complete brand: strategy, worldview,
 voice, colours, logo, layout, iconography, photography, people, motion, sound,
 channels, legal constraints, quality rules and the evidence behind each
-decision. A task profile then selects only the relevant parts and turns them
-into an exhaustive production brief.
+decision. Since v1.1 the same object also carries a rights-aware inventory of
+the physical logo, icon, image, illustration, texture, motion, audio and
+template files. A task profile then selects only the relevant parts and turns
+them into an exhaustive production brief.
 
 ```text
 brand-dna.json + icon profile       -> detailed icon prompt
@@ -72,7 +74,7 @@ brand-dna export brand-dna.json --format tokens-css
 
 ## Task profiles
 
-The v1 distribution includes `icon`, `logo`, `linkedin`, `photography`,
+The v1.1 distribution includes `icon`, `logo`, `linkedin`, `photography`,
 `photo-graphic`, `video`, `brochure`, `advertising`, `website` and
 `presentation`.
 
@@ -86,6 +88,8 @@ A profile is plain JSON:
     "/visual/colors",
     "/visual/shapes",
     "/visual/iconography",
+    "/assets/basePath",
+    "/assets/icons",
     "/rules/accessibility"
   ],
   "instructions": ["Begin with the semantic job."],
@@ -97,6 +101,40 @@ A profile is plain JSON:
 Selectors are JSON Pointers. Compaction is deterministic and inspectable: a
 photography packet cannot accidentally receive LinkedIn cadence, while an icon
 packet cannot silently inherit camera or casting rules.
+
+## Physical assets
+
+`visual` describes the rules; `assets` points to the files that may actually
+be used. Each file has a role, media type, alternative text, description,
+licence, rights statement and lifecycle status. Relative paths resolve against
+`assets.basePath`.
+
+```json
+{
+  "assets": {
+    "basePath": "./assets/",
+    "logos": [{
+      "id": "primary-logo",
+      "kind": "logo",
+      "path": "logos/primary.svg",
+      "mediaType": "image/svg+xml",
+      "role": "Primary signature",
+      "alt": "Brand name",
+      "description": "Approved horizontal signature.",
+      "licence": "Brand asset licence",
+      "rights": "Use only in approved brand productions.",
+      "status": "approved"
+    }],
+    "icons": [], "photography": [], "illustrations": [], "textures": [],
+    "motion": [], "audio": [], "templates": []
+  }
+}
+```
+
+Profiles select only the relevant collections. An icon prompt receives the
+approved icon masters and logo reference, a photography prompt receives images
+and textures, while a complete website packet can receive the whole manifest.
+The repository examples ship the actual files displayed by GitHub Pages.
 
 ## Evidence states
 
@@ -126,7 +164,7 @@ but it must be a deliberate editorial or owner-approved decision.
 schema/       Brand DNA JSON Schema
 profiles/     context selectors and production contracts
 src/          pure compiler, exports and CLI
-examples/     real reference plus clearly labelled fictional brands
+examples/     real reference plus fictional brands and their physical assets
 docs/         GitHub Pages reference and prompt lab
 test/         validation and context-isolation tests
 ```

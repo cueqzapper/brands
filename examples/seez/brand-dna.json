@@ -1,9 +1,9 @@
 {
   "$schema": "https://cueqzapper.github.io/brands/schema/brand-dna.schema.json",
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "meta": {
     "id": "seez",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "status": "draft",
     "createdAt": "2026-08-28T08:00:00+02:00",
     "updatedAt": "2026-08-28T08:00:00+02:00",
@@ -283,6 +283,34 @@
       "colors": "Graphit/Paper als Basis, Mint für aktive oder bestätigte Werte, Amber für offen, Rot nur für kritisch.",
       "rules": ["Achsen und Einheiten ausschreiben", "Quellen und Stand nennen", "nicht bei null abgeschnittene Achsen markieren", "Farbe nie als einziges Unterscheidungsmerkmal"]
     }
+  },
+  "assets": {
+    "basePath": "./assets/",
+    "logos": [
+      {"id":"logo-ink","kind":"logo","path":"logos/seez-logo-ink.webp","mediaType":"image/webp","role":"Primäre Wortmarke auf hellen Flächen","alt":"SEEZ Wortmarke in dunkler Schrift","description":"Freigegebene SEEZ-Wortmarke für helle Hintergründe.","licence":"SEEZ brand asset licence","rights":"Markenrechte bleiben bei SEEZ; für freigegebene SEEZ-Produktionen verwendbar.","source":"https://seez.ch/","status":"approved","width":1670,"height":350,"tags":["logo","wordmark","ink"],"variants":["light-background"]},
+      {"id":"logo-white","kind":"logo","path":"logos/seez-logo-white.webp","mediaType":"image/webp","role":"Revers-Wortmarke auf dunklen Flächen oder ruhigen Fotos","alt":"SEEZ Wortmarke in Weiss","description":"Freigegebene SEEZ-Wortmarke für dunkle Hintergründe.","licence":"SEEZ brand asset licence","rights":"Markenrechte bleiben bei SEEZ; für freigegebene SEEZ-Produktionen verwendbar.","source":"https://seez.ch/","status":"approved","width":1670,"height":350,"tags":["logo","wordmark","reverse"],"variants":["dark-background","photography"]}
+    ],
+    "icons": [
+      {"id":"strategie","kind":"icon","path":"icons/strategy.svg","mediaType":"image/svg+xml","role":"Strategie und Richtung","alt":"SEEZ Icon für Strategie","description":"Freigegebenes SEEZ-HUD-Icon aus dem offiziellen Sprite.","licence":"SEEZ brand asset licence","rights":"Markenrechte bleiben bei SEEZ; für freigegebene SEEZ-Produktionen verwendbar.","source":"https://seez.ch/","status":"approved","tags":["icon","strategy"],"variants":["currentColor"]},
+      {"id":"automation","kind":"icon","path":"icons/automation.svg","mediaType":"image/svg+xml","role":"Automatisierter Ablauf","alt":"SEEZ Icon für Automation","description":"Freigegebenes SEEZ-HUD-Icon aus dem offiziellen Sprite.","licence":"SEEZ brand asset licence","rights":"Markenrechte bleiben bei SEEZ; für freigegebene SEEZ-Produktionen verwendbar.","source":"https://seez.ch/","status":"approved","tags":["icon","automation"],"variants":["currentColor"]},
+      {"id":"datenraum","kind":"icon","path":"icons/data.svg","mediaType":"image/svg+xml","role":"Datenraum und Datenstruktur","alt":"SEEZ Icon für Daten","description":"Freigegebenes SEEZ-HUD-Icon aus dem offiziellen Sprite.","licence":"SEEZ brand asset licence","rights":"Markenrechte bleiben bei SEEZ; für freigegebene SEEZ-Produktionen verwendbar.","source":"https://seez.ch/","status":"approved","tags":["icon","data"],"variants":["currentColor"]},
+      {"id":"prototyp","kind":"icon","path":"icons/prototype.svg","mediaType":"image/svg+xml","role":"Prototyp und Test","alt":"SEEZ Icon für Prototyp","description":"Freigegebenes SEEZ-HUD-Icon aus dem offiziellen Sprite.","licence":"SEEZ brand asset licence","rights":"Markenrechte bleiben bei SEEZ; für freigegebene SEEZ-Produktionen verwendbar.","source":"https://seez.ch/","status":"approved","tags":["icon","prototype"],"variants":["currentColor"]},
+      {"id":"interface","kind":"icon","path":"icons/interface.svg","mediaType":"image/svg+xml","role":"Interface und Bedienung","alt":"SEEZ Icon für Interface","description":"Freigegebenes SEEZ-HUD-Icon aus dem offiziellen Sprite.","licence":"SEEZ brand asset licence","rights":"Markenrechte bleiben bei SEEZ; für freigegebene SEEZ-Produktionen verwendbar.","source":"https://seez.ch/","status":"approved","tags":["icon","interface"],"variants":["currentColor"]},
+      {"id":"kontakt","kind":"icon","path":"icons/contact.svg","mediaType":"image/svg+xml","role":"Kontakt und Austausch","alt":"SEEZ Icon für Kontakt","description":"Freigegebenes SEEZ-HUD-Icon aus dem offiziellen Sprite.","licence":"SEEZ brand asset licence","rights":"Markenrechte bleiben bei SEEZ; für freigegebene SEEZ-Produktionen verwendbar.","source":"https://seez.ch/","status":"approved","tags":["icon","contact"],"variants":["currentColor"]}
+    ],
+    "photography": [
+      {"id":"worktable","kind":"photograph","path":"photography/worktable.webp","mediaType":"image/webp","role":"Hero und Prozessbild","alt":"Hände ordnen Mint- und Metallteile auf einer dunklen Gneis-Arbeitsfläche","description":"Dokumentarischer SEEZ-Arbeitsmoment mit Material, Händen und Systemdenken.","licence":"SEEZ brand asset licence","rights":"Bildrechte SEEZ; nur in freigegebenen SEEZ-Kontexten verwenden.","source":"https://seez.ch/","status":"approved","width":2688,"height":1512,"tags":["photo","process","hands"],"variants":["landscape"]},
+      {"id":"simon-portrait","kind":"photograph","path":"photography/portrait-simon.webp","mediaType":"image/webp","role":"Gründerporträt","alt":"Simon vor einer dunklen Gneisfläche mit zurückhaltendem Mint-Licht","description":"Offizielles SEEZ-Porträt; erkennbare reale Person, deshalb nur im dokumentierten SEEZ-Kontext verwenden.","licence":"SEEZ brand asset licence","rights":"Bild- und Persönlichkeitsrechte SEEZ/abgebildete Person; keine Umdeutung in andere Kontexte.","source":"https://seez.ch/","status":"approved","width":1024,"height":1536,"tags":["photo","portrait","real-person"],"variants":["portrait"]}
+    ],
+    "illustrations": [
+      {"id":"switzerland-network","kind":"illustration","path":"illustrations/switzerland-network.webp","mediaType":"image/webp","role":"Schweizer System- und Netzwerkdarstellung","alt":"Abstrakte Schweiz-Karte aus dunklem Stein, Metall und Mint-Lichtlinien","description":"SEEZ-Illustration für schweizweite digitale Systeme und Verbindungen.","licence":"SEEZ brand asset licence","rights":"Bildrechte SEEZ; nur in freigegebenen SEEZ-Kontexten verwenden.","source":"https://seez.ch/","status":"approved","width":1672,"height":941,"tags":["illustration","switzerland","network"],"variants":["landscape"]}
+    ],
+    "textures": [
+      {"id":"gneiss-macro","kind":"texture","path":"textures/gneiss-macro.webp","mediaType":"image/webp","role":"Materialfläche und ruhiger Bildhintergrund","alt":"Makroaufnahme von dunklem Gneis mit feiner Mint-Ader","description":"Die physische SEEZ-Materialwelt als hochauflösende Textur.","licence":"SEEZ brand asset licence","rights":"Bildrechte SEEZ; nur in freigegebenen SEEZ-Kontexten verwenden.","source":"https://seez.ch/","status":"approved","width":2688,"height":1512,"tags":["texture","gneiss","mint"],"variants":["landscape","crop-safe"]}
+    ],
+    "motion": [],
+    "audio": [],
+    "templates": []
   },
   "representation": {
     "principle": "Menschen erscheinen als kompetente, handelnde Personen in glaubwürdigen Schweizer Arbeitskontexten. Vielfalt ist normal und nicht als Kampagnenbehauptung inszeniert.",
