@@ -1,0 +1,41 @@
+{
+  "name": "@cueqzapper/brands",
+  "version": "1.0.0",
+  "description": "An open, evidence-aware Brand DNA format and task-context compiler for humans, tools and AI agents.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cueqzapper/brands.git"
+  },
+  "homepage": "https://cueqzapper.github.io/brands/",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./schema": "./schema/brand-dna.schema.json",
+    "./profiles": "./profiles/task-profiles.json"
+  },
+  "bin": {
+    "brand-dna": "./src/cli.mjs"
+  },
+  "files": [
+    "src",
+    "schema",
+    "profiles",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build:docs": "node scripts/build-docs.mjs",
+    "check": "node src/cli.mjs validate examples/seez/brand-dna.json",
+    "test": "node --test",
+    "prepublishOnly": "npm test && npm run check"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

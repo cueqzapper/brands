@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Brand DNA: an open, evidence-aware brand format and task-context compiler for humans, tools and AI agents.">
+    <meta name="theme-color" content="#13201c">
+    <title>Brand DNA · Open brand context for every agent</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2313201c'/%3E%3Cpath d='M18 14h18c10 0 16 5 16 13 0 5-3 9-8 11 6 2 9 6 9 12 0 9-7 14-18 14H18V14Zm13 10v10h5c4 0 6-2 6-5s-2-5-6-5h-5Zm0 19v11h6c4 0 7-2 7-6 0-3-3-5-7-5h-6Z' fill='%23c8ff49'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-head">
+      <a class="mark" href="#top" aria-label="Brand DNA home"><span aria-hidden="true">B</span><b>Brand DNA</b></a>
+      <nav aria-label="Primary">
+        <a href="#contract">Contract</a>
+        <a href="#example">SEEZ example</a>
+        <a href="#compiler">Prompt compiler</a>
+      </nav>
+      <a class="github" href="https://github.com/cueqzapper/brands">GitHub ↗</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Open specification · v1.0</p>
+          <h1>One brand.<br><em>Exact context</em><br>for every agent.</h1>
+          <p class="hero-intro">Keep the complete worldview, voice, visual system, people policy, evidence and rules in one file. Compile only what an icon, post, photograph, video or brochure actually needs.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#compiler">Compile a prompt</a>
+            <a class="button secondary" href="./schema.json">Open JSON Schema</a>
+          </div>
+        </div>
+        <div class="context-demo" aria-label="Context compilation diagram">
+          <div class="source-node"><span>Complete source</span><strong>brand-dna.json</strong><small>Strategy · voice · visual · evidence · rules</small></div>
+          <div class="beam" aria-hidden="true"></div>
+          <div class="profile-nodes">
+            <article><span>01</span><div><strong>Icon</strong><small>shape · grid · colour · optics</small></div></article>
+            <article><span>02</span><div><strong>LinkedIn</strong><small>audience · voice · proof · channel</small></div></article>
+            <article><span>03</span><div><strong>Photo</strong><small>people · camera · light · grade</small></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="principles" aria-label="Core principles">
+        <article><span>01</span><h2>Complete at rest</h2><p>Strategy, ideology, language, design, motion, sound, legal rules and unresolved decisions live together.</p></article>
+        <article><span>02</span><h2>Small in motion</h2><p>JSON Pointer profiles select exact sections. Irrelevant context never leaks into the production prompt.</p></article>
+        <article><span>03</span><h2>Honest by design</h2><p>Declared, observed, inferred and owner-approved decisions remain visibly different.</p></article>
+      </section>
+
+      <section id="contract" class="section contract">
+        <header class="section-head">
+          <p class="eyebrow">The contract</p>
+          <h2>Everything that makes the brand behave like itself.</h2>
+          <p>Brand DNA is broader than a token file and more operational than a PDF guideline. The schema keeps human meaning and production constraints side by side.</p>
+        </header>
+        <div class="contract-grid" id="contract-grid"></div>
+        <div class="standards">
+          <div><span>Schema</span><strong>JSON Schema 2020-12</strong></div>
+          <div><span>Visual values</span><strong>DTCG-compatible colour tokens</strong></div>
+          <div><span>Accessibility</span><strong>WCAG 2.2 baseline</strong></div>
+          <div><span>Exports</span><strong>brand.yml · CSS · JSON</strong></div>
+        </div>
+      </section>
+
+      <section id="example" class="section example">
+        <header class="section-head split">
+          <div><p class="eyebrow">Reference DNA</p><h2>SEEZ, without the vague bits.</h2></div>
+          <p>The example is built from the current public company and corporate-design surfaces. Inferences stay marked as inferences; the company formation remains an open blocking decision.</p>
+        </header>
+        <div id="brand-summary" class="brand-summary" aria-live="polite"></div>
+        <div class="complete-dna">
+          <div><p class="eyebrow">Complete object</p><h3>Inspect every section</h3><p>The full example remains readable JSON. Open one section at a time or download the source file.</p></div>
+          <div id="dna-details" class="dna-details"></div>
+          <a class="button secondary dark" href="./data/seez-brand-dna.json" download>Download SEEZ Brand DNA</a>
+        </div>
+      </section>
+
+      <section id="compiler" class="section compiler">
+        <header class="section-head split">
+          <div><p class="eyebrow">Prompt compiler</p><h2>Ask for one thing. Get exactly its brand context.</h2></div>
+          <p>The prompt is exhaustive inside the chosen scope. Try the same brief as an icon, LinkedIn post or photograph and inspect which DNA paths were selected.</p>
+        </header>
+        <div class="compiler-grid">
+          <form id="compiler-form" class="compiler-controls">
+            <label for="profile">Production target</label>
+            <select id="profile" name="profile"></select>
+            <p id="profile-description" class="field-note"></p>
+            <label for="brief">What should be made?</label>
+            <textarea id="brief" name="brief" rows="7">Create an image that shows how a real work process becomes a testable software core.</textarea>
+            <div class="control-row">
+              <div><label for="locale">Language</label><select id="locale"><option value="de-CH">Deutsch (CH)</option><option value="en">English</option><option value="fr-CH">Français (CH)</option><option value="it-CH">Italiano (CH)</option></select></div>
+              <button class="button primary" type="submit">Compile context</button>
+            </div>
+            <div id="selected-paths" class="selected-paths"></div>
+          </form>
+          <div class="prompt-output">
+            <header><div><span>Compiled prompt</span><strong id="prompt-meta">Waiting for profile</strong></div><div><button id="copy-prompt" type="button">Copy</button><button id="download-prompt" type="button">Download</button></div></header>
+            <pre id="prompt"><code></code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section evidence">
+        <header class="section-head"><p class="eyebrow">Evidence states</p><h2>A polished guess is still a guess.</h2></header>
+        <div class="evidence-grid">
+          <article><span class="state declared">Declared</span><p>An official source says it.</p></article>
+          <article><span class="state observed">Observed</span><p>An implemented asset or behaviour shows it.</p></article>
+          <article><span class="state inferred">Inferred</span><p>A conservative creative interpretation still needs review.</p></article>
+          <article><span class="state approved">Owner-approved</span><p>The brand owner accepted it as binding.</p></article>
+        </div>
+        <aside><strong>Hard boundary</strong><p>Never infer ethnicity, religion, health, sexual orientation, gender identity or similar sensitive attributes from public names, faces, places or industries. Representation must be an explicit editorial or owner-approved decision.</p></aside>
+      </section>
+    </main>
+
+    <footer><div><strong>Brand DNA</strong><span>MIT-licensed schema and compiler by SEEZ.</span></div><div><a href="https://github.com/cueqzapper/brands">Source</a><a href="./schema.json">Schema</a><a href="./data/task-profiles.json">Profiles</a></div></footer>
+    <script type="module" src="./app.js?v=1.0.1"></script>
+  </body>
+</html>

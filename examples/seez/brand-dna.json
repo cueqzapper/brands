@@ -1,0 +1,424 @@
+{
+  "$schema": "https://cueqzapper.github.io/brands/schema/brand-dna.schema.json",
+  "schemaVersion": "1.0.0",
+  "meta": {
+    "id": "seez",
+    "version": "1.0.0",
+    "status": "draft",
+    "createdAt": "2026-08-28T08:00:00+02:00",
+    "updatedAt": "2026-08-28T08:00:00+02:00",
+    "defaultLocale": "de-CH",
+    "locales": ["de-CH", "fr-CH", "it-CH", "en"],
+    "owner": "SEEZ",
+    "reviewers": ["Simon Siegenthaler"],
+    "reviewCycle": "Review after company formation and every material offer or identity change.",
+    "licence": "Brand data CC BY 4.0; software and schema MIT; referenced brand assets retain their stated rights."
+  },
+  "brand": {
+    "identity": {
+      "name": "SEEZ",
+      "legalName": "SEEZ Systems GmbH (provisional until formation is complete)",
+      "pronunciation": "English: sees",
+      "tagline": "Software built around the work people do.",
+      "descriptor": "Individuelle Webapplikationen für Schweizer Unternehmen",
+      "website": "https://seez.ch/",
+      "origin": "Reinach, Schweiz",
+      "nameMeaning": "A short, direct name built around seeing the real work before building technology."
+    },
+    "essence": {
+      "oneLine": "SEEZ schaut zuerst auf die echte Arbeit und baut erst dann die passende Software.",
+      "promise": "Ein echter Fall wird in wenigen Tagen zu einem testbaren Kern; weiter kommt nur, was im Alltag hilft.",
+      "personality": ["präzise", "direkt", "ruhig", "neugierig", "handwerklich", "eigenständig"],
+      "tension": "Monumentale, fast filmische Gestaltung trifft auf sehr konkrete Sprache und überprüfbare Arbeit.",
+      "archetypes": ["Beobachter", "Erbauer", "Übersetzer zwischen Arbeit und System"]
+    },
+    "worldview": {
+      "belief": "Gute Software beginnt nicht beim Feature, sondern beim tatsächlichen Ablauf mit Rollen, Daten, Regeln und Ausnahmen.",
+      "opposes": ["Technik als Selbstzweck", "lange Pflichtenhefte ohne funktionierenden Kern", "Standardsoftware, die Menschen zu Umwegen zwingt", "unbelegte KI-Versprechen", "glatte Beratersprache"],
+      "future": "Kleine Schweizer Teams arbeiten mit Software, die ihre eigenen Abläufe abbildet, statt täglich um starre Systeme herumzuarbeiten.",
+      "humanRole": "Menschen zeigen den echten Fall, prüfen den Kern mit realen Daten und entscheiden, was bleibt.",
+      "technologyRole": "Technik übernimmt wiederkehrende Arbeit, macht Regeln sichtbar und lässt Entscheidungen beim Menschen.",
+      "politicalOrSocialBoundaries": ["Keine parteipolitische Position als Markenhaltung ableiten", "Keine Angst vor Arbeitsplatzverlust als Verkaufsdruck einsetzen", "Menschen nicht als ineffizientes Problem darstellen"]
+    }
+  },
+  "strategy": {
+    "purpose": {
+      "why": "Arbeit soll sich nicht nach unpassender Software richten müssen.",
+      "mission": "SEEZ übersetzt konkrete Arbeitsabläufe in testbare Webapplikationen und baut nur weiter, was im Alltag trägt.",
+      "vision": "Individuelle Software wird für Schweizer KMU so überprüfbar und zugänglich wie ein gutes handwerkliches Projekt."
+    },
+    "positioning": {
+      "category": "Individuelle Webapplikationen, interne Tools und Produktdesign",
+      "audience": "Schweizer Unternehmen mit konkreten Abläufen, die Standardprodukte nicht sauber abdecken",
+      "need": "Ein teurer oder fehleranfälliger Vorgang muss digital abgebildet werden, ohne monatelang auf ein Grossprojekt zu wetten.",
+      "difference": "SEEZ beginnt mit einem echten Fall und einem funktionierenden Kern. Konzept, Design und Entwicklung bleiben in einer Hand.",
+      "proof": ["Picorn wurde von SEEZ konzipiert, gestaltet, programmiert und live gebracht", "MomMirror wurde von SEEZ konzipiert, gestaltet, programmiert und im Google Play Store veröffentlicht", "Der Arbeitsansatz ist als konkrete Drei-Schritt-Folge auf der Company Page dokumentiert"],
+      "alternatives": ["Excel-, E-Mail- und PDF-Umwege", "Standard-SaaS mit manuellen Nebenprozessen", "klassisches Softwareprojekt mit langem Pflichtenheft", "interne Eigenentwicklung ohne Produktdesign"],
+      "pricePosition": null
+    },
+    "offers": [
+      {
+        "name": "Testbarer Anwendungskern",
+        "job": "Einen konkreten Engpass mit Rollen, Daten, Regeln und Ausnahmen abbilden.",
+        "outcome": "Das Team prüft nach wenigen Tagen einen funktionierenden Kern mit echten Fällen.",
+        "proof": ["Oberfläche, Daten, Regeln, Schnittstellen und Freigaben werden als zusammenhängende Anwendung gebaut"],
+        "notFor": ["Projekte ohne konkreten Nutzer oder echten Fall", "reine Strategiepräsentationen ohne Umsetzungsauftrag"]
+      },
+      {
+        "name": "Website und digitale Identität",
+        "job": "Ein öffentliches Unternehmensprofil in ein klares, glaubwürdiges digitales System übersetzen.",
+        "outcome": "Eine pflegbare Website und Brand DNA, die weitere Inhalte konsistent steuert.",
+        "proof": ["SEEZweb besitzt Import, Brand Center, private Vorschläge und editierbare native Seiten als vorhandene Produktbausteine"],
+        "notFor": ["Kopieren fremder Websites ohne Erlaubnis", "automatischer Versand oder Veröffentlichung ohne Freigabe"]
+      }
+    ],
+    "audiences": [
+      {
+        "id": "operations-owner",
+        "name": "Verantwortliche Person mit einem konkreten Engpass",
+        "context": "PDFs, E-Mails, Freigaben und Ausnahmen sind über mehrere Werkzeuge verteilt.",
+        "job": "Schnell erkennen, ob der Ablauf als eigene Anwendung abbildbar ist.",
+        "barriers": ["Angst vor einem langen IT-Projekt", "unklarer Nutzen", "schlechte Erfahrungen mit Standardsoftware", "zu wenig Zeit für ein Pflichtenheft"],
+        "desiredShift": "Von 'Das wird ein riesiges Projekt' zu 'Wir können einen echten Fall in wenigen Tagen prüfen'.",
+        "language": "Konkrete Tätigkeiten, kein IT-Jargon ohne Erklärung.",
+        "evidenceIds": ["source-company", "source-brand"]
+      },
+      {
+        "id": "small-team-user",
+        "name": "Mitarbeitende, die den Ablauf täglich ausführen",
+        "context": "Sie kennen Ausnahmen und Umwege besser als jede Prozessgrafik.",
+        "job": "Sehen, dass die Anwendung ihrer tatsächlichen Arbeit folgt.",
+        "barriers": ["zusätzliche Dateneingabe", "Verlust von Kontrolle", "ein Tool, das den Sonderfall nicht kennt"],
+        "desiredShift": "Von 'noch ein Tool' zu 'dieser Schritt fällt wirklich weg'.",
+        "language": "Bodenständig, respektvoll und nah am Arbeitsschritt.",
+        "evidenceIds": ["source-company"]
+      }
+    ],
+    "values": [
+      {
+        "name": "Erst verstehen",
+        "meaning": "Die Bedeutung der Arbeit, ihre Menschen und Ausnahmen kommen vor der technischen Lösung.",
+        "behaviours": ["einen echten Fall gemeinsam durchgehen", "Rollen und Ausnahmen benennen", "unklare Stellen als Fragen festhalten"],
+        "antiBehaviours": ["Lösung vor dem Problem präsentieren", "Menschen mit einem Standardprozess überstimmen", "Branchenklischees als Recherche behandeln"]
+      },
+      {
+        "name": "Früh beweisen",
+        "meaning": "Ein funktionierender Kern ist wertvoller als lange Konzeptfolien.",
+        "behaviours": ["klein anfangen", "mit echten Daten testen", "sichtbar machen, was funktioniert und was nicht"],
+        "antiBehaviours": ["Monate im Verborgenen bauen", "Fortschritt mit Feature-Anzahl verwechseln", "Demo-Daten als Kundenbeweis verkaufen"]
+      },
+      {
+        "name": "Klar sagen",
+        "meaning": "Nutzen, Grenzen und Unsicherheit werden konkret benannt.",
+        "behaviours": ["Arbeitsschritte statt abstrakter Vorteile nennen", "unbelegte Aussagen streichen", "offene Entscheide markieren"],
+        "antiBehaviours": ["SaaS-Floskeln", "Superlative", "verschleierte Grenzen", "künstliche Euphorie"]
+      },
+      {
+        "name": "Sorgfältig bauen",
+        "meaning": "Design, Code, Daten und Betrieb werden als ein System behandelt.",
+        "behaviours": ["reale Interaktionen testen", "responsive und zugängliche Zustände prüfen", "bestehende Systeme und Rechte respektieren"],
+        "antiBehaviours": ["glänzende Oberfläche ohne funktionierenden Kern", "ungeprüfte Veröffentlichung", "fremde Arbeit oder Daten unklar übernehmen"]
+      }
+    ],
+    "messaging": {
+      "masterMessage": "Zeigen Sie uns den Ablauf, der Zeit kostet. Wir bauen daraus einen Kern, den Ihr Team mit echten Fällen prüft.",
+      "messagePillars": [
+        {"name": "Echter Fall", "claim": "Ein konkreter Vorgang reicht für den Anfang.", "proof": ["Rollen, Daten, Regeln und Ausnahmen lassen sich am Fall erkennen"]},
+        {"name": "Funktionierender Kern", "claim": "Nach wenigen Tagen arbeitet das Team mit einer prüfbaren Anwendung.", "proof": ["Der Kern verbindet Oberfläche, Regeln, Daten und erste Schnittstellen"]},
+        {"name": "Gezielt ausbauen", "claim": "Weiter kommt nur, was im Alltag hilft.", "proof": ["Das Team testet mit echten Daten und ändert zuerst, was bremst"]}
+      ],
+      "ctaHierarchy": ["Ablauf besprechen", "Vorgehen ansehen", "Produkt öffnen", "Konkreten Fall senden"],
+      "storyPattern": "Beginne beim sichtbaren Engpass. Zeige den echten Fall. Baue den prüfbaren Kern. Belege die Veränderung im Arbeitsalltag."
+    }
+  },
+  "verbal": {
+    "voice": {
+      "traits": ["klar", "direkt", "menschlich", "präzise", "ruhig", "mit Haltung"],
+      "dimensions": [
+        {"axis": "konkret statt abstrakt", "value": 95, "instruction": "Nenne Handlung, Objekt, Person und Ergebnis."},
+        {"axis": "ruhig statt euphorisch", "value": 85, "instruction": "Wirkung entsteht durch Beweis und Bild, nicht durch Adjektive."},
+        {"axis": "fachlich statt jargonlastig", "value": 70, "instruction": "Fachbegriffe dürfen bleiben, wenn sie etwas präzise benennen."},
+        {"axis": "kantig statt glatt", "value": 72, "instruction": "Ein klarer kurzer Satz ist besser als ein neutraler Beraterabsatz."}
+      ],
+      "toneByContext": {
+        "website": {"tone": ["direkt", "belegbar", "ruhig"], "do": ["mit einem echten Arbeitsschritt beginnen", "Nutzen in beobachtbaren Veränderungen zeigen"], "avoid": ["digitale Zukunftsfloskeln", "unbelegte Marktführerschaft"]},
+        "linkedin": {"tone": ["beobachtend", "konkret", "leicht kantig"], "do": ["eine echte Szene oder Spannung wählen", "einen Gedanken zu Ende führen"], "avoid": ["LinkedIn-Listen ohne Geschichte", "generische Schlussmoral"]},
+        "support": {"tone": ["ruhig", "verantwortlich", "lösungsnah"], "do": ["Problem wiederholen", "nächsten Schritt und Zeitpunkt nennen"], "avoid": ["Schuld verschieben", "Sicherheit vorspielen"]},
+        "error": {"tone": ["kurz", "sachlich", "hilfreich"], "do": ["sagen, was passiert ist und was jetzt möglich ist"], "avoid": ["lustige Fehlermeldungen bei Datenverlust oder Zahlung"]}
+      }
+    },
+    "language": {
+      "locales": ["de-CH", "fr-CH", "it-CH", "en"],
+      "defaultRegister": "Schweizer Hochdeutsch; Sie auf der Company Page, direkte Du-Form nur in passenden Produktkontexten.",
+      "sentenceRhythm": "Kurze und mittlere Sätze mischen. Kleine Brüche zulassen. Keine symmetrischen Marketingabsätze.",
+      "preferred": ["anschauen", "bauen", "zeigt", "funktioniert", "echter Fall", "Arbeitsschritt", "testbarer Kern", "prüfen", "direkt"],
+      "avoid": ["innovativ", "revolutionär", "nahtlos", "massgeschneidert", "ganzheitlich", "Mehrwert", "Transformation", "Next Level", "ermöglichen", "optimieren"],
+      "terminology": {"custom software": "individuelle Software", "workflow": "Ablauf oder Arbeitsablauf", "MVP": "testbarer Kern", "user": "Mitarbeitende, Kunde oder konkrete Rolle", "AI": "KI, danach die konkrete übernommene Arbeit nennen"},
+      "formatting": ["ss statt ß", "Schweizer Zahlen- und Datumsformat", "keine englischen Geviertstriche", "Listen nur wenn sie das Scannen wirklich erleichtern", "keine Vollversalien in längeren Texten"],
+      "inclusiveLanguage": "Konkrete Rollen nennen oder neutrale Pluralformen nutzen. Keine Personenmerkmale erfinden und keine Zielgruppe über Stereotype beschreiben."
+    },
+    "claims": {
+      "allowed": ["SEEZ hat Picorn und MomMirror konzipiert, gestaltet, programmiert und live gebracht", "SEEZ beginnt bei einem echten Arbeitsablauf", "Die geplante Arbeitsweise sieht einen testbaren Kern in wenigen Tagen vor"],
+      "requiresEvidence": ["Zeit- oder Kosteneinsparungen", "Nutzerzahlen", "Umsatzwirkung", "Kundenzufriedenheit", "Sicherheits- oder Compliance-Aussagen", "Firmenstatus nach der Gründung"],
+      "forbidden": ["Marktführer", "garantierte Einsparung", "fehlerfrei", "vollautomatisch ohne menschliche Freigabe", "Kundenreferenzen ohne Einwilligung", "erfundene Zertifikate"],
+      "disclaimers": ["MomMirror ersetzt keine professionelle oder medizinische Hilfe", "Die Firmenbezeichnung bleibt bis zur abgeschlossenen Gründung als provisorisch markiert"]
+    },
+    "examples": {
+      "onBrand": ["Sie zeigen uns einen echten Vorgang. Wir entwickeln daraus einen funktionierenden Kern.", "Kein 80-seitiges Pflichtenheft. Ein echter Fall reicht für den Anfang.", "Was bremst, ändern wir direkt. Was fehlt, kommt gezielt dazu."],
+      "offBrand": ["Wir revolutionieren Ihre Prozesse mit einer innovativen KI-Komplettlösung.", "Entdecken Sie die Zukunft der digitalen Transformation.", "Unsere massgeschneiderte Plattform maximiert Ihr Potenzial."]
+    }
+  },
+  "visual": {
+    "concept": {
+      "direction": "Alpiner Tech-Brutalismus: dunkler Gneis, rohe silbrige Flächen, präzise Raster und mintfarbene Signale.",
+      "rationale": "Gneis steht für Schichten, Druck und gebaute Substanz. Mint markiert den lebenden digitalen Eingriff. Die Gestaltung wirkt eigenständig und filmisch, während Text und Bedienung nüchtern bleiben.",
+      "keywords": ["Gneis", "Schichten", "Graphit", "Mint-Signal", "präzises Raster", "monumental", "taktil", "ruhige Technik"],
+      "visualTension": "Naturmaterial und digitale Telemetrie; monumentale Bilder und kleine präzise UI-Texte."
+    },
+    "colors": {
+      "dtcgVersion": "2025.10",
+      "palette": [
+        {"id": "mint", "name": "Mint signal", "hex": "#23EAC3", "role": "primary", "meaning": "Live, aktiv, prüfbar", "use": ["aktive Zustände", "CTA", "Konturlinien", "Telemetrie"], "avoid": ["lange Fliesstexte", "vollflächige dekorative Hintergründe"], "$type": "color"},
+        {"id": "ink", "name": "Warm ink", "hex": "#2A1D00", "role": "foreground", "meaning": "Menschliche Wärme auf hellen Flächen", "use": ["Wortmarke auf hell", "Text auf Paper"], "avoid": ["Text auf Graphit"], "$type": "color"},
+        {"id": "graphite", "name": "Graphite", "hex": "#1A1A1A", "role": "background", "meaning": "Technische Tiefe", "use": ["dunkle Bühnen", "Footer", "Nachtflächen"], "avoid": ["undifferenzierte schwarze Vollfläche ohne Material"], "$type": "color"},
+        {"id": "paper", "name": "Paper", "hex": "#F5F3EE", "role": "surface", "meaning": "Ruhige Arbeitsfläche", "use": ["helle Abschnitte", "Dokumente", "Controls"], "avoid": ["klinisch weisse Vollfläche ohne Struktur"], "$type": "color"},
+        {"id": "light-text", "name": "Light text", "hex": "#F0F0F0", "role": "on-dark", "meaning": "Klarheit auf Graphit", "use": ["Text auf dunklen Flächen"], "avoid": ["Text auf hellen Flächen"], "$type": "color"},
+        {"id": "deep-teal", "name": "Deep teal black", "hex": "#0A1012", "role": "technical-surface", "meaning": "Instrumententafel", "use": ["HUD", "technische Panels"], "avoid": ["jede normale Inhaltskarte"], "$type": "color"},
+        {"id": "amber", "name": "Amber", "hex": "#D9822B", "role": "warning", "meaning": "Geändert oder zu prüfen", "use": ["Warnung", "Diff"], "avoid": ["Markenakzent", "Erfolg"], "$type": "color"},
+        {"id": "alert", "name": "Alert red", "hex": "#FF2A2A", "role": "danger", "meaning": "Destruktiv", "use": ["Löschen", "kritischer Fehler"], "avoid": ["Dekoration", "normale Hinweise"], "$type": "color"}
+      ],
+      "pairings": [
+        {"foreground": "#F0F0F0", "background": "#1A1A1A", "ratio": 15.3, "use": "Normal text on dark"},
+        {"foreground": "#0A1012", "background": "#23EAC3", "ratio": 12.7, "use": "CTA and active labels"},
+        {"foreground": "#2A1D00", "background": "#F5F3EE", "ratio": 14.5, "use": "Normal text on light"}
+      ],
+      "usage": ["Mint ist die einzige voll gesättigte Markenfarbe", "Farbe muss eine Funktion oder einen Zustand tragen", "Materialtexturen bleiben subtil und dürfen Text nicht stören"],
+      "gradients": [
+        {"name": "Day gradient", "css": "linear-gradient(180deg,#C2C3C3 0%,#C2C3C3 70%,#908D88 88%,#86837D 100%)", "job": "Heller silbriger Übergang zur dunklen Bühne"},
+        {"name": "Pupil glow", "css": "radial-gradient(circle,rgba(35,234,195,.55) 0%,rgba(35,234,195,.28) 30%,rgba(35,234,195,.08) 60%,transparent 100%)", "job": "Gezieltes lebendes Signal"}
+      ]
+    },
+    "typography": {
+      "families": [
+        {"family": "Six Caps", "source": "fontsource or bundled WOFF2", "weights": [400], "licence": "SIL Open Font License 1.1", "use": "Monumentale Hero-Aussagen", "fallback": ["Impact", "sans-serif"]},
+        {"family": "League Gothic", "source": "fontsource or bundled WOFF2", "weights": [400], "licence": "SIL Open Font License 1.1", "use": "Wortmarke, Kapitel, kurze UI-Marken", "fallback": ["Impact", "sans-serif"]},
+        {"family": "Inter", "source": "system or bundled", "weights": [400, 500, 650, 750], "licence": "SIL Open Font License 1.1", "use": "Fliesstext und Controls", "fallback": ["system-ui", "sans-serif"]},
+        {"family": "JetBrains Mono", "source": "fontsource variable", "weights": [400, 600], "licence": "SIL Open Font License 1.1", "use": "technische Metadaten und Statuswerte", "fallback": ["ui-monospace", "monospace"]}
+      ],
+      "roles": {"display": "Six Caps", "heading": "League Gothic", "body": "Inter", "mono": "JetBrains Mono"},
+      "scale": {"display": "clamp(4rem, 10vw, 9rem)", "h1": "clamp(3rem, 8vw, 7rem)", "h2": "clamp(2.2rem, 5vw, 4.8rem)", "body": "clamp(1rem, 1.3vw, 1.2rem)", "label": ".68rem"},
+      "rules": ["Display und Markenüberschriften dürfen kondensiert und in Versalien sein", "Fliesstext nie in Six Caps oder League Gothic", "Body-Zeilenhöhe etwa 1.55 bis 1.65", "Längere Texte linksbündig", "Kleine Labels haben grosszügiges Tracking, aber keine langen Sätze"]
+    },
+    "logo": {
+      "idea": "Die SEEZ-Wortmarke ist die Marke: League Gothic, Versalien, eng und ruhig gesetzt.",
+      "variants": [
+        {"id": "ink", "asset": "logos/seez-logo-ink.webp", "foreground": "#2A1D00", "background": "light"},
+        {"id": "white", "asset": "logos/seez-logo-white.webp", "foreground": "#FFFFFF", "background": "dark or photographic"}
+      ],
+      "clearspace": "Mindestens die Höhe des grossen S auf allen Seiten.",
+      "minimumSize": {"digitalWidth": "72px", "printWidth": "22mm"},
+      "placement": ["klein oben links in Produkt- und Weboberflächen", "ruhig in einer klaren Kante ausrichten", "auf Bildern nur mit ausreichender ruhiger Fläche"],
+      "do": ["Ink auf hell", "Weiss auf dunkel oder Foto", "Seitenverhältnis exakt erhalten"],
+      "dont": ["keine Kontur", "kein Schlagschatten", "keine freie Umfärbung", "nicht strecken", "nicht in einen Badge sperren"]
+    },
+    "layout": {
+      "principle": "Ein dominanter Moment pro Fläche, danach ein präzises Raster für Inhalt und Beweis.",
+      "grid": "12 Spalten auf grossen Flächen; asymmetrische 7/5- oder 8/4-Teilung; eine Spalte auf Mobile.",
+      "spacingScale": {"1": "4px", "2": "8px", "3": "12px", "4": "16px", "6": "24px", "8": "32px", "12": "48px", "16": "64px", "24": "96px"},
+      "density": "Marketingflächen grosszügig, Arbeitsoberflächen kompakt und ruhig.",
+      "composition": ["Überschrift an einer starken Kante", "Bilder gross statt als kleine Dekoration", "Beweis nahe an der Aussage", "Mint sparsam als aktives Signal", "Materialstruktur in Hintergründen, nicht hinter Fliesstext"],
+      "responsive": ["Inhaltshierarchie bleibt auf 390 px vollständig", "Primäre Aktionen bleiben oberhalb oder klar vor der Bottom-Navigation", "Keine horizontale Dokumentbreite", "Hover ist nie die einzige Erklärung"]
+    },
+    "shapes": {
+      "geometry": "Geradlinige Raster, schmale technische Rahmen und einzelne organische Gneis- oder Irisformen.",
+      "corners": "Marketing eher scharf oder sehr leicht gerundet; Controls 6-10 px; Pillen nur für echte Status oder primäre Aktionen.",
+      "strokes": "1 px technische Linien; aktive Mint-Kontur darf leuchten, bleibt aber präzise.",
+      "motifs": ["Gesteinsschichten", "feine mintfarbene Ader", "Iris und Zielring", "Scanlinie", "Koordinaten und Statusmarken"],
+      "avoid": ["beliebige Blob-Formen", "verspielte 3D-Gradientenkugeln", "weiche SaaS-Kartenlandschaft", "Neon ohne Informationsfunktion"]
+    },
+    "iconography": {
+      "job": "Handlungen und Zustände sofort lesbar machen, ohne die ruhige Oberfläche zu dekorieren.",
+      "metaphor": "Konkreter Gegenstand oder Arbeitsschritt, auf die kleinste eindeutige Geometrie reduziert.",
+      "grid": "24 x 24 px Grundraster, optische Innenfläche 20 x 20 px.",
+      "stroke": "1.65 px, round linecap und round linejoin; bei sehr technischen Messsymbolen butt linecap nur als dokumentierte Ausnahme.",
+      "corners": "2 px optischer Radius; keine Mischung aus scharfen und sehr runden Ecken im selben Zeichen.",
+      "detail": "Maximal zwei Detailstufen; bei 16 px die zweite Detailstufe entfernen.",
+      "color": "Einfarbig Graphit oder Light Text; Mint nur für aktiv, ausgewählt oder live.",
+      "opticalRules": ["Kreise dürfen das Raster optisch leicht überragen", "Diagonalen auf Pixelmitten ausrichten", "gleiches visuelles Gewicht statt mathematisch identischer Länge", "mindestens 2 px negativer Innenraum bei 24 px"],
+      "do": ["eine klare Silhouette", "echte Systemzustände als Varianten", "SVG als Master", "Textlabel dort behalten, wo Bedeutung nicht universell ist"],
+      "dont": ["keine Buchstaben als Ersatzsymbol ausser bei ausdrücklich definierter Monogrammaufgabe", "kein 3D", "keine Illustrationsdetails", "kein Mint für jede Linie", "keine fremde Icon-Familie mischen"]
+    },
+    "illustration": {
+      "job": "Unsichtbare Abläufe, Datenflüsse oder Schichten zeigen, wenn Fotografie nichts erklärt.",
+      "style": "Monochrome technische Zeichnung mit Mint-Signal, grober Materialstruktur und klaren Beschriftungen als echte Typografie.",
+      "perspective": "Orthogonal oder flache Isometrie, nie spielzeughaft.",
+      "do": ["Ablauf und Zustand zeigen", "wenige klare Ebenen"],
+      "dont": ["generische Cartoon-Figuren", "AI-Chromobjekte", "textgenerierende Bildmodelle für Labels"]
+    },
+    "photography": {
+      "job": "Echte Arbeit, Material und Konzentration sichtbar machen; Menschen sind handelnde Personen, nicht Dekoration.",
+      "subjects": ["eine Person bei einem konkreten Arbeitsschritt", "kleine Teams in echter Zusammenarbeit", "Hände, Werkzeuge, Oberfläche und Material als Beweis", "ruhige Porträts mit Umgebungskontext"],
+      "environment": ["Schweizer Arbeitsorte ohne Tourismusklischee", "Werkstatt, Büro, Praxis oder Betrieb mit echten Gebrauchsspuren", "Gneis, Metall, Papier, Glas und dunkle technische Flächen als mögliche Materialanker"],
+      "moment": "Beobachteter Zwischenmoment statt Kamera-Pose: prüfen, zeigen, ordnen, entscheiden, bauen.",
+      "composition": ["ein eindeutiger Fokus", "asymmetrische Kante", "negative Fläche für echte Typografie", "Vordergrund darf Tiefe geben", "Hände und Werkzeuge vollständig und plausibel"],
+      "camera": "Dokumentarische Vollformat-Anmutung auf Augen- oder Arbeitshöhe; keine extreme Drohnen- oder Werbeperspektive.",
+      "lens": "35 mm für Ort und Zusammenarbeit, 50 mm für Arbeitssituationen, 85 mm für ruhige Porträts; natürliche Perspektive ohne künstliche Weitwinkelverzerrung.",
+      "light": "Seitliches natürliches Tageslicht, weiche Schatten, punktuelle kühle Reflexe; Mint darf als reales Signal oder schwache Reflexion vorkommen.",
+      "palette": "Graphit, silbrige Grautöne, warmes Papier, Hauttöne und ein kleiner Mint-Akzent.",
+      "grade": "Zurückhaltend, leicht entsättigt, tiefe aber offene Schatten, feine kühle Highlights, keine orange-teal Blockbuster-Kurve.",
+      "texture": "Glaubwürdige Haut, Staub, Papier, Metall, Stein und Gebrauchsspuren. Leichtes Korn ist erlaubt.",
+      "do": ["echte Tätigkeit zeigen", "Umgebung und Material lesbar halten", "Blickrichtung und Hände plausibel", "Serie wie aus einem Shooting graden"],
+      "dont": ["gestellte Händeschütteln", "alle schauen lächelnd in die Kamera", "Plastikhaut", "falsche Bildschrift", "Wasserzeichen", "erfundene Logos", "unmögliche Werkzeuge", "übersteuertes HDR"]
+    },
+    "motion": {
+      "principle": "Bewegung zeigt Übergang, Fokus oder Systemzustand. Nichts bewegt sich nur, weil es möglich ist.",
+      "durations": {"fast": "120ms", "normal": "240ms", "slow": "600ms", "cinematic": "1200-2400ms"},
+      "easing": {"ui": "cubic-bezier(.2,.8,.2,1)", "scan": "linear", "reveal": "cubic-bezier(.16,1,.3,1)"},
+      "signature": ["präzise Scanlinie", "Iris- oder Zielringbewegung", "Schichten, die sich auflösen oder ordnen", "Mint-Signal, das auf eine echte Zustandsänderung reagiert"],
+      "reducedMotion": "Keine räumlichen Zooms, Parallaxen oder dauernden Pulse; Zustand sofort und statisch zeigen.",
+      "avoid": ["Hover-Springen", "dauernde Dekorationsanimation", "Bounce", "bewegte Texte ohne Nutzerkontrolle"]
+    },
+    "dataVisualization": {
+      "principle": "Beleg und Unsicherheit müssen auf einen Blick unterscheidbar sein.",
+      "colors": "Graphit/Paper als Basis, Mint für aktive oder bestätigte Werte, Amber für offen, Rot nur für kritisch.",
+      "rules": ["Achsen und Einheiten ausschreiben", "Quellen und Stand nennen", "nicht bei null abgeschnittene Achsen markieren", "Farbe nie als einziges Unterscheidungsmerkmal"]
+    }
+  },
+  "representation": {
+    "principle": "Menschen erscheinen als kompetente, handelnde Personen in glaubwürdigen Schweizer Arbeitskontexten. Vielfalt ist normal und nicht als Kampagnenbehauptung inszeniert.",
+    "casting": {
+      "people": "Einzelne Person oder kleines Team, passend zum echten Arbeitsablauf; keine symbolische Menschenmenge.",
+      "age": "Arbeitsrealistische Mischung erwachsener Personen, grob 25 bis 65; bei konkreten Kunden nur nach deren tatsächlicher Belegschaft und Freigabe.",
+      "gender": "Ausgewogen über eine Bildserie, ohne Rollen über Geschlecht zuzuweisen. Einzelbilder folgen der Aufgabe, nicht einer Quote.",
+      "ethnicity": "Schweizer Alltagsvielfalt darf sichtbar sein, wird aber nie aus öffentlichen Namen oder Fotos abgeleitet. Konkrete Auswahl nur als redaktioneller Entscheid oder mit Kundenfreigabe.",
+      "ability": "Behinderung nicht ausschliessen oder als inspirierende Dekoration inszenieren; konkrete Darstellung nur glaubwürdig und respektvoll.",
+      "roles": "Die Person mit Fachwissen handelt oder erklärt. Führung wird nicht automatisch durch Anzug, Alter oder Geschlecht markiert.",
+      "wardrobe": "Echte, leicht getragene Arbeitskleidung oder ruhiger Alltag; keine makellose Kostümversion eines Berufs.",
+      "behaviour": "Konzentriert, beobachtend, im Gespräch oder in einer echten Handlung; kein erzwungenes Werbelächeln."
+    },
+    "sensitiveAttributePolicy": "Die Factory darf Ethnie, Religion, Gesundheit, sexuelle Orientierung, Geschlechtsidentität oder andere sensible Merkmale weder aus Bild, Name, Ort noch Branche schätzen. Unbekannt bleibt unbekannt.",
+    "consent": "Erkennbare reale Personen brauchen geklärte Nutzungsrechte und einen dokumentierten Zweck. Kunden- und Mitarbeitendenbilder werden nicht für neue Kontexte umgedeutet.",
+    "avoid": ["Tokenismus", "Stereotype Berufsrollen", "KI-Gesichter realen Mitarbeitenden zuschreiben", "Kinder ohne zwingenden Produktkontext und Einwilligung", "Armut, Krankheit oder Behinderung als Stimmungsmittel"]
+  },
+  "sensory": {
+    "sonicIdentity": "Ruhige technische Präzision mit taktilen, realen Materialien; kurze Signale statt futuristischer Dauerfläche.",
+    "music": {"tempo": "72-104 BPM je Format", "rhythm": "reduziert, präzise, mit Luft", "harmony": "offen, leicht gespannt, nicht triumphal", "timbre": ["trockenes Holz oder Metall", "tiefer weicher Puls", "subtile granulare Textur", "klarer analoger Ton"], "avoid": ["Corporate Uplift", "epische Trailer-Drums", "pausenloses Arpeggio", "Techno-Klischee"]},
+    "voiceover": {"voice": "Ruhige erwachsene Stimme mit natürlichem Schweizer oder neutralem deutschem Sprachrhythmus; Geschlecht folgt Format und Castingentscheidung.", "delivery": "nah, präzise, nicht werblich, kleine Pausen nach konkreten Aussagen", "pace": "140-160 Wörter pro Minute", "avoid": ["Trailerstimme", "künstliche Begeisterung", "englische Werbeintonation in deutscher Copy"]},
+    "soundEffects": {"role": "Zustand und Material bestätigen", "palette": ["leiser mechanischer Klick", "Papier oder Steinreibung", "kurzer sauberer Mint-Signalton"], "avoid": ["laute Whooshes", "Slotmachine-Sounds", "Audio bei Hover"]},
+    "silence": "Stille ist Teil der Marke. Vor wichtigen Sätzen und nach einer sichtbaren Zustandsänderung darf bewusst nichts erklingen."
+  },
+  "channels": {
+    "linkedin": {
+      "job": "Einen konkreten Blick auf Arbeit, Software und Produktentscheidungen geben und ein relevantes Gespräch auslösen.",
+      "audience": "Schweizer Unternehmensverantwortliche, Produktleute und Personen mit konkreten Prozessproblemen.",
+      "format": ["ein Beobachtungspost", "kurzer Fall mit Beweis", "Vorher/Nachher eines Arbeitsschritts", "ehrlicher Build- oder Entscheidungsbericht"],
+      "structure": ["konkrete Szene oder kantige Beobachtung", "ein Problem entfalten", "zeigen, was gebaut oder gelernt wurde", "Grenze oder offene Frage nennen", "kleiner passender CTA"],
+      "tone": ["menschlich", "direkt", "belegbar", "nicht dozierend"],
+      "visual": ["ein starkes Foto oder klarer Produktausschnitt", "echte Typografie statt Bildmodell-Text", "Mint nur als Signal", "kein generisches Quote-Card-Template"],
+      "cta": ["Wie läuft dieser Schritt bei euch?", "Zeigen Sie uns den Ablauf.", "Vollständigen Fall ansehen."],
+      "avoid": ["In der heutigen digitalen Welt", "fünf perfekte Learnings ohne Geschichte", "Selbstbeweihräucherung", "künstliche Kontroverse", "Hashtag-Teppich"]
+    },
+    "website": {
+      "job": "Angebot, Arbeitsweise, Beweis und nächsten Schritt in wenigen Minuten glaubwürdig machen.",
+      "audience": "Personen mit einem konkreten Engpass sowie spätere Nutzer der Anwendung.",
+      "format": ["Company Page", "Produktseite", "Fallstudie", "private Redesign-Proposal"],
+      "structure": ["Engpass und Ergebnis", "Arbeitsweise", "Beweis", "konkrete Produkte oder Fälle", "Team und Haltung", "Kontakt"],
+      "tone": ["direkt", "ruhig", "konkret"],
+      "visual": ["monumentaler Einstieg", "materialbasierte Abschnitte", "präzises Raster", "grosse echte Bilder", "kleine technische Labels"],
+      "cta": ["Ablauf besprechen", "Vorgehen ansehen", "Produkt öffnen"],
+      "avoid": ["Featurewand vor dem Problem", "austauschbare SaaS-Illustration", "CTA ohne realen nächsten Schritt", "Animation, die Bedienung verzögert"]
+    },
+    "brochure": {
+      "job": "Einen konkreten Fall, das Vorgehen und die Beweise in einem lesbaren physischen oder digitalen Dokument verdichten.",
+      "audience": "Entscheidende und beteiligte Personen, die das Vorhaben intern weitergeben müssen.",
+      "format": ["A4 Hochformat", "kompaktes Projektdossier", "PDF mit klickbaren Quellen"],
+      "structure": ["Titelseite mit einem Satz", "Ausgangslage", "echter Ablauf", "geplanter Kern", "Beweise", "Vorgehen", "offene Entscheide", "Kontakt"],
+      "tone": ["sachlich", "konkret", "quellenbezogen"],
+      "visual": ["Paper und Graphit", "Mint für aktive Kernaussage", "grosse Fotos", "klare Marginalien und Quellen"],
+      "cta": ["Ablauf gemeinsam durchgehen", "Testfall auswählen"],
+      "avoid": ["dekorative Doppelseiten ohne Inhalt", "Text im generierten Bild", "unbelegte Kennzahlen", "zu kleine Schrift"]
+    },
+    "advertising": {
+      "job": "Eine Person mit einem erkannten Engpass zu einem konkreten, passenden nächsten Schritt führen.",
+      "audience": "Ein eng gewähltes Segment mit beobachtbarem Ablaufproblem.",
+      "format": ["statische Social-Anzeige", "kurzes vertikales Video", "Carousel mit einem Ablauf"],
+      "structure": ["sichtbarer Arbeitsschritt", "konkrete Reibung", "testbarer neuer Zustand", "kleiner CTA"],
+      "tone": ["direkt", "ungekünstelt", "ohne Angstmache"],
+      "visual": ["echte Arbeit oder Produktoberfläche", "starker einzelner Fokus", "klare Live-Typografie"],
+      "cta": ["Ablauf zeigen", "Fall prüfen"],
+      "avoid": ["Jobverlust-FOMO", "garantierte Einsparung", "Fake-DM ohne Kennzeichnung", "Stock-Händeschütteln", "mehrere Angebote in einer Anzeige"]
+    },
+    "video": {
+      "job": "Die Veränderung eines Arbeitsablaufs zeitlich und körperlich verständlich machen.",
+      "audience": "Personen, die den Ablauf kennen oder darüber entscheiden.",
+      "format": ["30-45 Sekunden Social", "60-90 Sekunden Fallfilm", "kurze Produktsequenz"],
+      "structure": ["echter Moment", "Reibung", "Übersetzung in den Kern", "sichtbare neue Handlung", "ruhiger Abschluss"],
+      "tone": ["beobachtend", "präzise", "nicht triumphal"],
+      "visual": ["dokumentarische Kamera", "Material-Makro", "produktnahe Details", "Mint-Signal als Zustandswechsel"],
+      "cta": ["Zeigen Sie uns Ihren Ablauf."],
+      "avoid": ["epischer KI-Zukunftsfilm", "schnelle Montage ohne verständliche Handlung", "Fake-UI", "permanente Musikfläche"]
+    },
+    "presentations": {
+      "job": "Eine überprüfbare Entscheidung vorbereiten.",
+      "audience": "Kundenteam, Entscheider oder interne Produktgruppe.",
+      "format": ["16:9 Präsentation", "kompakter Entscheidungsdeck", "Produktdemo mit wenigen Stützfolien"],
+      "structure": ["echter Fall", "warum der heutige Ablauf bremst", "Kern und Grenzen", "Beweis", "Entscheid", "nächster Test"],
+      "tone": ["klar", "sachlich", "gesprochen"],
+      "visual": ["eine Idee pro Slide", "grosse Überschrift", "starke einzelne Grafik", "Quellen sichtbar"],
+      "cta": ["Testfall und Verantwortliche festlegen"],
+      "avoid": ["Textwand", "Roadmap-Theater", "Diagramm ohne Aussage", "unbelegte Marktfolie"]
+    },
+    "email": {
+      "job": "Einen konkreten nächsten Schritt ohne Reibung vereinbaren.",
+      "audience": "Eine bekannte Person oder ein klar recherchierter Kontakt.",
+      "format": ["kurze persönliche Nachricht", "Projekt-Update", "Entscheidungszusammenfassung"],
+      "structure": ["warum diese Nachricht", "konkrete Sache", "ein nächster Schritt", "klare Signatur"],
+      "tone": ["persönlich", "kurz", "respektvoll"],
+      "visual": ["Plain text oder sehr zurückhaltendes HTML"],
+      "cta": ["Passt ein kurzes Gespräch?", "Können Sie diesen Punkt bestätigen?"],
+      "avoid": ["Newsletter-Template für persönliche Akquise", "mehrere CTAs", "künstliche Dringlichkeit"]
+    }
+  },
+  "rules": {
+    "universal": ["Verifizierte Fakten, Beobachtungen, kreative Entscheide und Inferenz sichtbar auseinanderhalten", "Keine Dienstleistung, Kennzahl, Referenz, Zertifizierung, Rechtsform oder Kundenbeziehung erfinden", "SEEZ immer in Versalien schreiben", "Mint nur als aktives Signal oder bewussten Fokus einsetzen", "Echte Typografie für lesbaren Text nutzen; Bildmodelle erzeugen keine Logos, Fliesstexte oder Zertifikate", "Menschen als handelnde Fachpersonen zeigen, nicht als Dekoration", "Eine Produktion gilt erst nach dem passenden realen Qualitätscheck als fertig"],
+    "accessibility": {
+      "standard": "WCAG 2.2 AA for digital products; accessible PDF practices for documents.",
+      "contrast": ["Normaler Text mindestens 4.5:1", "Grosser Text und UI-Grenzen mindestens 3:1", "Farbe nie als einziges Zustandsmerkmal", "Nur geprüfte Farbpaare einsetzen"],
+      "motion": ["prefers-reduced-motion vollständig respektieren", "keine automatisch laufende wichtige Information ohne Pause", "keine flackernden Signale", "Zustand bleibt ohne Animation verständlich"],
+      "text": ["Fliesstext skalierbar und nicht als Bild", "verständliche Überschriftenhierarchie", "Linkzweck aus dem Text erkennbar", "Schweizer Sprache klar und ohne unnötigen Jargon"],
+      "media": ["Alternativtext beschreibt Aufgabe oder Bedeutung", "dekorative Bilder haben leeren Alt-Text", "Video hat Untertitel", "Information bleibt ohne Ton verständlich"]
+    },
+    "legal": {
+      "trademarks": ["SEEZ-Wortmarke und Produktnamen vor externer Weiterlizenzierung prüfen", "Keine Drittmarke in generierten Assets nachbauen"],
+      "assets": ["Lizenz und Herkunft jedes Fotos, Fonts, Icons und Musikstücks dokumentieren", "Logo-Master nicht durch ein Bildmodell ersetzen", "Keine fremden Website-Assets in öffentliche Beispiele übernehmen"],
+      "claims": ["Öffentliche Aussage braucht Quelle oder Owner-Freigabe", "Firmenstatus erst nach abgeschlossener Gründung aktualisieren", "Zeit- und Kostenvorteile nur mit gemessenem Bezug nennen"],
+      "privacy": ["Keine personenbezogenen Daten aus einem öffentlichen Profil in Prompts übernehmen, wenn sie für das Ergebnis nicht nötig sind", "Sensible Attribute nicht schätzen", "Erkennbare Personen nur mit geklärtem Nutzungsrecht"]
+    },
+    "quality": {
+      "beforeRelease": ["Task und Zielgruppe stimmen", "Brand-DNA-Profil enthält nur relevante Kontexte", "Fakten sind belegt", "Sprache klingt menschlich und konkret", "Visuelle Regeln sind messbar", "Desktop und Mobile sind real geprüft", "PDF oder Export ist geöffnet und visuell geprüft", "Rechte und Datenschutz sind geklärt"],
+      "failConditions": ["erfundener Beweis oder Kundenname", "unlesbarer Kontrast", "generisches SaaS- oder Stock-Ergebnis", "Text oder Logo durch Bildmodell beschädigt", "sensible Merkmale als Fakt inferiert", "horizontales Mobile-Overflow", "PDF mit abgeschnittenem Text", "externe Veröffentlichung ohne Freigabe"]
+    }
+  },
+  "provenance": {
+    "sources": [
+      {"id": "source-company", "type": "official-website", "url": "https://seez.ch/company/", "title": "SEEZ company page", "capturedAt": "2026-08-28T08:00:00+02:00", "notes": "Current noindex company page and multilingual company copy in the SEEZ repository."},
+      {"id": "source-brand", "type": "official-website", "url": "https://seez.ch/brand", "title": "SEEZ corporate design", "capturedAt": "2026-08-28T08:00:00+02:00", "notes": "Logo, colour, typography, imagery, motion and voice reference."},
+      {"id": "source-repo", "type": "document", "url": "https://github.com/cueqzapper/SEEZ", "title": "SEEZ source repository", "capturedAt": "2026-08-28T08:00:00+02:00", "notes": "Company copy and implemented visual tokens were read from the local authenticated checkout."},
+      {"id": "source-owner", "type": "owner-input", "url": "https://seez.ch/", "title": "Owner product direction", "capturedAt": "2026-08-28T08:00:00+02:00", "notes": "The Brand DNA system and SEEZweb integration are owner-directed; final brand approval remains open."}
+    ],
+    "decisions": [
+      {"path": "/brand/identity/name", "state": "declared", "confidence": 1, "sourceIds": ["source-company", "source-brand"], "rationale": "Used consistently in official SEEZ surfaces.", "approvedBy": "Simon Siegenthaler", "approvedAt": "2026-08-28T08:00:00+02:00"},
+      {"path": "/brand/identity/legalName", "state": "inferred", "confidence": 0.55, "sourceIds": ["source-company", "source-owner"], "rationale": "The planned legal name is public in the prepared company page, but formation is not yet confirmed complete.", "approvedBy": null, "approvedAt": null},
+      {"path": "/brand/essence", "state": "inferred", "confidence": 0.9, "sourceIds": ["source-company", "source-brand"], "rationale": "Condensed from repeated official messages and implemented brand guidance.", "approvedBy": null, "approvedAt": null},
+      {"path": "/visual", "state": "observed", "confidence": 0.96, "sourceIds": ["source-brand", "source-repo"], "rationale": "Colours, type, logo and visual grammar are implemented and documented.", "approvedBy": null, "approvedAt": null},
+      {"path": "/representation", "state": "inferred", "confidence": 0.65, "sourceIds": ["source-company", "source-owner"], "rationale": "A responsible production policy derived from the current human-centred brand direction; owner approval is required before it becomes binding.", "approvedBy": null, "approvedAt": null},
+      {"path": "/sensory", "state": "inferred", "confidence": 0.55, "sourceIds": ["source-brand"], "rationale": "Extended from documented motion and visual atmosphere; no existing sonic guideline was found.", "approvedBy": null, "approvedAt": null}
+    ],
+    "openQuestions": [
+      {"id": "company-formation", "question": "Wann ist die Gründung abgeschlossen und darf SEEZ Systems GmbH ohne provisorischen Hinweis öffentlich verwendet werden?", "affects": ["/brand/identity/legalName", "/verbal/claims", "/rules/legal/claims"], "priority": "blocking"},
+      {"id": "representation-approval", "question": "Welche konkrete Bildserien-Repräsentation soll SEEZ als verbindlich freigeben?", "affects": ["/representation", "/visual/photography"], "priority": "high"},
+      {"id": "sonic-approval", "question": "Soll die abgeleitete Klangwelt Teil der Marke werden oder als offene Richtung bleiben?", "affects": ["/sensory"], "priority": "medium"},
+      {"id": "price-position", "question": "Wie soll SEEZ Preisrahmen und Einstiegspaket öffentlich einordnen?", "affects": ["/strategy/positioning/pricePosition", "/strategy/offers"], "priority": "medium"}
+    ]
+  }
+}
