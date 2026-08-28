@@ -26,8 +26,9 @@
     "LICENSE"
   ],
   "scripts": {
+    "build:examples": "node scripts/generate-fictional-examples.mjs",
     "build:docs": "node scripts/build-docs.mjs",
-    "check": "node src/cli.mjs validate examples/seez/brand-dna.json",
+    "check": "node scripts/validate-examples.mjs",
     "test": "node --test",
     "prepublishOnly": "npm test && npm run check"
   },

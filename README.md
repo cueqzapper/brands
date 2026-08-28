@@ -18,6 +18,11 @@ brand-dna.json + photography profile-> detailed casting/camera/light prompt
 The complete reference and interactive prompt lab are published at
 [cueqzapper.github.io/brands](https://cueqzapper.github.io/brands/).
 
+The reference library contains the real SEEZ draft plus three deliberately
+fictional brands: a neighbourhood bakery, an outdoor-gear repair workshop and
+an editorial sound studio. Fictional names, domains, organisations, people,
+products and evidence are labelled as such and must never be presented as real.
+
 ## Why another brand format?
 
 Open formats already cover important parts:
@@ -44,6 +49,14 @@ node src/cli.mjs validate examples/seez/brand-dna.json
 node src/cli.mjs compile examples/seez/brand-dna.json \
   --for icon \
   --brief "Create a 24 px icon for an approved handoff"
+```
+
+Try a different category with a complete fictional dataset:
+
+```bash
+node src/cli.mjs compile examples/fictional/quiet-current/brand-dna.json \
+  --for linkedin \
+  --brief "Explain why one piece of room sound stayed in a documentary edit"
 ```
 
 Available commands:
@@ -113,7 +126,7 @@ but it must be a deliberate editorial or owner-approved decision.
 schema/       Brand DNA JSON Schema
 profiles/     context selectors and production contracts
 src/          pure compiler, exports and CLI
-examples/     complete reference brands
+examples/     real reference plus clearly labelled fictional brands
 docs/         GitHub Pages reference and prompt lab
 test/         validation and context-isolation tests
 ```

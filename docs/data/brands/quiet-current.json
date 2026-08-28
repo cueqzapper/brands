@@ -1,0 +1,1301 @@
+{
+  "$schema": "https://cueqzapper.github.io/brands/schema.json",
+  "schemaVersion": "1.0.0",
+  "meta": {
+    "id": "quiet-current",
+    "version": "1.0.0",
+    "status": "draft",
+    "createdAt": "2026-08-28T12:00:00+02:00",
+    "updatedAt": "2026-08-28T12:00:00+02:00",
+    "defaultLocale": "en",
+    "locales": [
+      "en"
+    ],
+    "owner": "Fictional demo dataset — no real organisation",
+    "reviewers": [
+      "Brand DNA maintainers"
+    ],
+    "reviewCycle": "Revise whenever the example is used to demonstrate a new production profile.",
+    "licence": "CC0-1.0. Names, organisations, products, people and evidence in this dataset are entirely fictional."
+  },
+  "brand": {
+    "identity": {
+      "name": "Quiet Current",
+      "legalName": null,
+      "pronunciation": "quiet current",
+      "tagline": "Sound that leaves room.",
+      "descriptor": "Editorial sound and audio post-production studio",
+      "website": "https://quiet-current.example/",
+      "origin": "The fictional riverside district of Bellweather",
+      "nameMeaning": "A current can carry a story without announcing itself; quiet names the space left for human attention."
+    },
+    "essence": {
+      "oneLine": "Quiet Current shapes documentary and spoken-word sound without polishing away the room it came from.",
+      "promise": "Speech stays intelligible, place stays present and every edit has a reason.",
+      "personality": [
+        "attentive",
+        "restrained",
+        "warm",
+        "editorial",
+        "patient",
+        "exact"
+      ],
+      "tension": "Deep night colour and luminous waveform signals held inside calm editorial whitespace.",
+      "archetypes": [
+        "listener",
+        "editor",
+        "keeper of atmosphere"
+      ]
+    },
+    "worldview": {
+      "belief": "Good sound does not call attention to processing; it helps a listener notice voice, place and silence.",
+      "opposes": [
+        "loudness as quality",
+        "generic emotional scoring",
+        "noise removal that erases place",
+        "constant music beds",
+        "technical language that excludes collaborators"
+      ],
+      "future": "Documentary and spoken-word work treats listening, accessibility and sonic consent as part of editorial craft.",
+      "humanRole": "Editors make narrative judgements, listen with contributors and decide what a silence means.",
+      "technologyRole": "Tools reveal, repair and organise audio while editorial responsibility stays with people.",
+      "politicalOrSocialBoundaries": [
+        "Do not turn the brand into a party-political position.",
+        "Do not use anxiety, shame or social status as sales pressure.",
+        "Do not romanticise labour or hide who performs it."
+      ]
+    }
+  },
+  "strategy": {
+    "purpose": {
+      "why": "Stories need sonic clarity without losing the air, distance and texture that make them true to their setting.",
+      "mission": "Edit, mix and document spoken-word sound with restraint and a clear editorial trail.",
+      "vision": "Careful listening becomes a visible, shareable part of how audio stories are made."
+    },
+    "positioning": {
+      "category": "Editorial sound, dialogue editing and audio post-production",
+      "audience": "Independent documentary teams, narrative podcasts and cultural producers",
+      "need": "Clear, emotionally honest sound with a workflow that non-audio collaborators can review.",
+      "difference": "Every mix includes a plain-language listening map that explains the role of voice, place, music and silence.",
+      "proof": [
+        "Each fictional delivery includes a timestamped listening map.",
+        "The fictional review method separates intelligibility, editorial change and technical repair."
+      ],
+      "alternatives": [
+        "general video post-production",
+        "automated one-click cleanup",
+        "music-led trailer mix",
+        "in-house edit without specialist monitoring"
+      ],
+      "pricePosition": "Project-priced by material length, editorial complexity, restoration needs and delivery versions."
+    },
+    "offers": [
+      {
+        "name": "Dialogue and place",
+        "job": "Make speech intelligible while preserving a believable sense of room and location.",
+        "outcome": "The team receives a clean editorial mix, stems and a listening map.",
+        "proof": [
+          "Fictional timestamped review record."
+        ],
+        "notFor": [
+          "secret voice cloning",
+          "changing a contributor's meaning"
+        ]
+      },
+      {
+        "name": "Series sound system",
+        "job": "Give recurring episodes a coherent voice, music, loudness and review pattern.",
+        "outcome": "Editors work from reusable session, cue and delivery rules.",
+        "proof": [
+          "Fictional template and episode audit."
+        ],
+        "notFor": [
+          "automatic publishing",
+          "licensing music without rights"
+        ]
+      }
+    ],
+    "audiences": [
+      {
+        "id": "documentary-editor",
+        "name": "Documentary editor",
+        "context": "Picture and story are moving, while location recordings vary widely.",
+        "job": "Hear what can be repaired, what should remain and where editorial choices were made.",
+        "barriers": [
+          "audio jargon",
+          "late surprises",
+          "fear that cleanup changes authenticity"
+        ],
+        "desiredShift": "From handing sound over as a black box to making informed listening decisions.",
+        "language": "Use timestamps, audible consequences and plain comparisons.",
+        "evidenceIds": [
+          "source-quiet-current-fictional-brief"
+        ]
+      },
+      {
+        "id": "series-producer",
+        "name": "Narrative series producer",
+        "context": "Several episodes, editors and remote recordings need one coherent listening experience.",
+        "job": "Keep voice, music and delivery consistent without flattening each story.",
+        "barriers": [
+          "version confusion",
+          "inconsistent remote sound",
+          "music rights"
+        ],
+        "desiredShift": "From episode-by-episode rescue to a repeatable sound system.",
+        "language": "Editorial structure first, technical specification second.",
+        "evidenceIds": [
+          "source-quiet-current-fictional-brief"
+        ]
+      }
+    ],
+    "values": [
+      {
+        "name": "Listen before cleaning",
+        "meaning": "Noise can be a problem, a place or a piece of evidence.",
+        "behaviours": [
+          "audition in context",
+          "name what removal changes"
+        ],
+        "antiBehaviours": [
+          "erase atmosphere automatically",
+          "judge from a waveform alone"
+        ]
+      },
+      {
+        "name": "Silence has a job",
+        "meaning": "Absence can carry thought, discomfort or transition.",
+        "behaviours": [
+          "protect meaningful pauses",
+          "remove gaps only with editorial reason"
+        ],
+        "antiBehaviours": [
+          "fill every second",
+          "treat pace as dead air"
+        ]
+      },
+      {
+        "name": "Review stays human",
+        "meaning": "Collaborators should understand and hear every important decision.",
+        "behaviours": [
+          "use timestamped comparisons",
+          "explain technical trade-offs plainly"
+        ],
+        "antiBehaviours": [
+          "hide behind plugins",
+          "deliver unexplained versions"
+        ]
+      }
+    ],
+    "messaging": {
+      "masterMessage": "Let the voice arrive clearly. Keep enough room around it to believe where it came from.",
+      "messagePillars": [
+        {
+          "name": "Voice",
+          "claim": "Intelligibility comes before sheen.",
+          "proof": [
+            "Fictional dialogue review pass"
+          ]
+        },
+        {
+          "name": "Place",
+          "claim": "Useful room and location remain audible.",
+          "proof": [
+            "Fictional before-and-after listening map"
+          ]
+        },
+        {
+          "name": "Reason",
+          "claim": "Major edits are explained in plain language.",
+          "proof": [
+            "Fictional timestamped decision notes"
+          ]
+        }
+      ],
+      "ctaHierarchy": [
+        "Send a listening sample",
+        "Open the review method",
+        "Read the process"
+      ],
+      "storyPattern": "Begin with one sound the listener should notice. Reveal what obscures it. Show the editorial choice. End with the space that remains."
+    }
+  },
+  "verbal": {
+    "voice": {
+      "traits": [
+        "attentive",
+        "clear",
+        "restrained",
+        "warm",
+        "editorial",
+        "precise"
+      ],
+      "dimensions": [
+        {
+          "axis": "attentive over assertive",
+          "value": 91,
+          "instruction": "Describe what can be heard before stating what should change."
+        },
+        {
+          "axis": "editorial over technical",
+          "value": 79,
+          "instruction": "Lead with story effect; give the technical method after it."
+        },
+        {
+          "axis": "warm over polished",
+          "value": 70,
+          "instruction": "Keep natural cadence and avoid luxury-studio language."
+        }
+      ],
+      "toneByContext": {
+        "website": {
+          "tone": [
+            "attentive",
+            "clear",
+            "restrained"
+          ],
+          "do": [
+            "start with a recognisable scene",
+            "make the next step concrete"
+          ],
+          "avoid": [
+            "category slogans",
+            "claims with no physical or recorded proof"
+          ]
+        },
+        "linkedin": {
+          "tone": [
+            "attentive",
+            "observant",
+            "human"
+          ],
+          "do": [
+            "follow one thought",
+            "name the material detail"
+          ],
+          "avoid": [
+            "generic lessons",
+            "performative certainty"
+          ]
+        },
+        "support": {
+          "tone": [
+            "calm",
+            "responsible",
+            "specific"
+          ],
+          "do": [
+            "repeat the issue",
+            "give an owner and next update"
+          ],
+          "avoid": [
+            "blame",
+            "false reassurance"
+          ]
+        },
+        "error": {
+          "tone": [
+            "brief",
+            "plain",
+            "useful"
+          ],
+          "do": [
+            "say what happened and what remains safe",
+            "offer the next available action"
+          ],
+          "avoid": [
+            "jokes during loss or payment issues",
+            "technical codes without explanation"
+          ]
+        }
+      }
+    },
+    "language": {
+      "locales": [
+        "en"
+      ],
+      "defaultRegister": "Clear editorial English. Quiet confidence, no studio mystique and no treating collaborators as technically naive.",
+      "sentenceRhythm": "Measured sentences with deliberate space. A short sentence may stand alone when the pause is part of the thought.",
+      "preferred": [
+        "listen",
+        "room",
+        "voice",
+        "place",
+        "pause",
+        "clear",
+        "edit",
+        "version",
+        "audible"
+      ],
+      "avoid": [
+        "innovative",
+        "world-class",
+        "seamless",
+        "game-changing",
+        "premium solution",
+        "unlock",
+        "elevate",
+        "journey"
+      ],
+      "terminology": {
+        "cleanup": "dialogue repair or noise reduction with named consequence",
+        "ambience": "room or location sound",
+        "silence": "pause, gap or room tone by its actual role",
+        "client": "editor, producer or contributor",
+        "AI": "name the specific tool and retained human decision"
+      },
+      "formatting": [
+        "sentence case",
+        "short paragraphs",
+        "contractions are welcome when natural",
+        "lists only when they improve scanning",
+        "no decorative all-caps paragraphs"
+      ],
+      "inclusiveLanguage": "Name real roles and actions. Do not invent personal characteristics or reduce an audience to a demographic stereotype."
+    },
+    "claims": {
+      "allowed": [
+        "This fictional mix follows the stated delivery specification.",
+        "This fictional decision is documented at the named timestamp.",
+        "Quiet Current does not clone a voice without explicit, documented consent in this fictional policy."
+      ],
+      "requiresEvidence": [
+        "time saved",
+        "durability",
+        "customer numbers",
+        "environmental impact",
+        "comparative quality",
+        "health or safety outcomes"
+      ],
+      "forbidden": [
+        "best in the world",
+        "guaranteed result",
+        "zero impact",
+        "perfect",
+        "a customer quote without permission",
+        "a certification that does not exist"
+      ],
+      "disclaimers": [
+        "This is a fictional Brand DNA dataset. No company, product, customer or performance claim is real."
+      ]
+    },
+    "examples": {
+      "onBrand": [
+        "At 03:18, the room gets quieter. We kept the chair movement; it tells you the speaker has turned away.",
+        "Clearer speech. Same room.",
+        "There is no music under this answer. It does not need instructions on how to feel."
+      ],
+      "offBrand": [
+        "Immersive sonic excellence that elevates every story.",
+        "Crystal-clear audio, powered by cutting-edge AI.",
+        "We turn content into unforgettable auditory journeys."
+      ]
+    }
+  },
+  "visual": {
+    "concept": {
+      "direction": "Midnight violet, fog-white editorial space and a coral current line that appears only where listening changes.",
+      "rationale": "The system gives silence visible space and treats waveforms as evidence, not decoration.",
+      "keywords": [
+        "room tone",
+        "editorial margin",
+        "midnight violet",
+        "coral current",
+        "listening map",
+        "soft meter",
+        "tape note",
+        "held silence"
+      ],
+      "visualTension": "Dark acoustic depth and pale paper; continuous audio and sharply edited margins."
+    },
+    "colors": {
+      "dtcgVersion": "2025.10",
+      "palette": [
+        {
+          "id": "midnight",
+          "name": "Midnight violet",
+          "hex": "#171329",
+          "role": "background",
+          "meaning": "Listening depth",
+          "use": [
+            "studio surfaces",
+            "film backgrounds",
+            "wordmark"
+          ],
+          "avoid": [
+            "decoration without a defined job"
+          ],
+          "$type": "color"
+        },
+        {
+          "id": "fog",
+          "name": "Room fog",
+          "hex": "#F2F1ED",
+          "role": "surface",
+          "meaning": "Editorial breathing room",
+          "use": [
+            "documents",
+            "light pages",
+            "captions"
+          ],
+          "avoid": [
+            "decoration without a defined job"
+          ],
+          "$type": "color"
+        },
+        {
+          "id": "coral",
+          "name": "Current coral",
+          "hex": "#FF6B62",
+          "role": "primary",
+          "meaning": "Editorial change",
+          "use": [
+            "active marker",
+            "CTA",
+            "edit point"
+          ],
+          "avoid": [
+            "decoration without a defined job"
+          ],
+          "$type": "color"
+        },
+        {
+          "id": "lavender",
+          "name": "Monitor lavender",
+          "hex": "#B8A7FF",
+          "role": "secondary",
+          "meaning": "Listening focus",
+          "use": [
+            "selection",
+            "secondary data",
+            "hover focus"
+          ],
+          "avoid": [
+            "decoration without a defined job"
+          ],
+          "$type": "color"
+        },
+        {
+          "id": "river",
+          "name": "River blue",
+          "hex": "#3B6D88",
+          "role": "material",
+          "meaning": "Place and room",
+          "use": [
+            "location layers",
+            "charts",
+            "quiet panels"
+          ],
+          "avoid": [
+            "decoration without a defined job"
+          ],
+          "$type": "color"
+        },
+        {
+          "id": "meter",
+          "name": "Meter green",
+          "hex": "#8FD4B0",
+          "role": "status",
+          "meaning": "Within target",
+          "use": [
+            "verified delivery state",
+            "accessible success"
+          ],
+          "avoid": [
+            "decoration without a defined job"
+          ],
+          "$type": "color"
+        }
+      ],
+      "pairings": [
+        {
+          "foreground": "#F2F1ED",
+          "background": "#171329",
+          "ratio": 15.9,
+          "use": "Body text on midnight"
+        },
+        {
+          "foreground": "#171329",
+          "background": "#FF6B62",
+          "ratio": 6.5,
+          "use": "CTA and edit marker"
+        },
+        {
+          "foreground": "#171329",
+          "background": "#B8A7FF",
+          "ratio": 8.7,
+          "use": "Focus state"
+        }
+      ],
+      "usage": [
+        "Midnight and fog carry most surfaces.",
+        "Coral marks an editorial intervention, never generic energy.",
+        "Meter green appears only after a named check passes."
+      ],
+      "gradients": [
+        {
+          "name": "Room falloff",
+          "css": "radial-gradient(circle at 38% 42%,#3B6D88 0%,#171329 58%,#0D0B16 100%)",
+          "job": "Slow atmospheric depth behind an isolated listening object"
+        }
+      ]
+    },
+    "typography": {
+      "families": [
+        {
+          "family": "Space Grotesk",
+          "source": "Google Fonts or bundled WOFF2",
+          "weights": [
+            500,
+            600
+          ],
+          "licence": "SIL Open Font License 1.1",
+          "use": "Headlines and navigation"
+        },
+        {
+          "family": "Source Serif 4",
+          "source": "Google Fonts or bundled WOFF2",
+          "weights": [
+            400,
+            600
+          ],
+          "licence": "SIL Open Font License 1.1",
+          "use": "Long editorial reading"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "source": "Google Fonts or bundled WOFF2",
+          "weights": [
+            400,
+            500
+          ],
+          "licence": "SIL Open Font License 1.1",
+          "use": "Timestamps and delivery data"
+        }
+      ],
+      "roles": {
+        "display": "Space Grotesk 600",
+        "heading": "Space Grotesk 500",
+        "body": "Source Serif 4 400",
+        "mono": "IBM Plex Mono 500"
+      },
+      "scale": {
+        "display": "clamp(4rem, 12vw, 11rem)",
+        "h1": "clamp(2.8rem, 7vw, 6rem)",
+        "h2": "clamp(2rem, 4vw, 3.8rem)",
+        "body": "clamp(1rem, 1.2vw, 1.2rem)",
+        "label": "0.72rem"
+      },
+      "rules": [
+        "Use sentence case.",
+        "Give long text generous leading.",
+        "Set timestamps and version names in mono.",
+        "Keep line length near 60-70 characters.",
+        "Never stretch type into a fake waveform."
+      ]
+    },
+    "logo": {
+      "idea": "Two quiet parallel lines joined by one shallow current bend; the gap is as important as the stroke.",
+      "variants": [
+        {
+          "id": "primary",
+          "asset": "logos/quiet-current-primary.svg",
+          "foreground": "#171329",
+          "background": "light"
+        },
+        {
+          "id": "reverse",
+          "asset": "logos/quiet-current-reverse.svg",
+          "foreground": "#F2F1ED",
+          "background": "dark or photographic"
+        }
+      ],
+      "clearspace": "At least the cap height of the first letter on every side.",
+      "minimumSize": {
+        "digitalWidth": "24 px symbol; 104 px wordmark",
+        "printWidth": "8 mm symbol; 28 mm wordmark"
+      },
+      "placement": [
+        "align to the primary content grid",
+        "keep away from photography focal points",
+        "use one-colour variants when contrast is uncertain"
+      ],
+      "do": [
+        "use approved vector masters",
+        "preserve spacing",
+        "test the smallest delivered size"
+      ],
+      "dont": [
+        "redraw with an image model",
+        "stretch",
+        "add shadows",
+        "place over a busy detail",
+        "use the symbol as a decorative texture"
+      ]
+    },
+    "layout": {
+      "principle": "Editorial margins act as silence; a single current line connects related moments without filling the page.",
+      "grid": "Eight columns on desktop, four on tablet and one generous reading column on mobile.",
+      "spacingScale": {
+        "1": "4px",
+        "2": "8px",
+        "3": "12px",
+        "4": "16px",
+        "6": "24px",
+        "8": "32px",
+        "12": "48px",
+        "16": "64px",
+        "24": "96px"
+      },
+      "density": "Low around narrative and listening prompts; compact only in timestamps and delivery lists.",
+      "composition": [
+        "protect empty margin",
+        "align timestamps to a stable rail",
+        "use one current line per view",
+        "pair waveform detail with plain-language note",
+        "let still images hold longer than expected"
+      ],
+      "responsive": [
+        "preserve hierarchy, not desktop coordinates",
+        "keep the primary action above bottom navigation",
+        "allow text to wrap without collision",
+        "prove zero horizontal overflow at 390 px"
+      ]
+    },
+    "shapes": {
+      "geometry": "Long rails, shallow arcs, timestamp ticks and open-ended frames.",
+      "corners": "6 px for controls, square frames for evidence, fully rounded only for playheads.",
+      "strokes": "1 px rails and waveforms, 2 px icons, 3 px active current.",
+      "motifs": [
+        "open current line",
+        "room-tone band",
+        "edit bracket",
+        "timestamp rail",
+        "held gap"
+      ],
+      "avoid": [
+        "equaliser wallpaper",
+        "neon nightclub waves",
+        "music-note icons",
+        "audio-reactive clutter"
+      ]
+    },
+    "iconography": {
+      "job": "Identify listening, edit, comment, version and delivery actions without borrowing consumer-player decoration.",
+      "metaphor": "Editorial marks and simple acoustic relationships drawn with open lines.",
+      "grid": "24 × 24 px with a 2 px optical safe area.",
+      "stroke": "1.75 px with round joins and open terminals.",
+      "corners": "Quietly rounded, never bubbly.",
+      "detail": "One primary form and no more than one supporting detail; test at 16 px.",
+      "color": "One colour by default; current coral marks only an active or selected state.",
+      "opticalRules": [
+        "centre by perceived mass",
+        "open narrow gaps at small sizes",
+        "round joins consistently",
+        "align repeated elements to whole pixels where possible"
+      ],
+      "do": [
+        "start from the semantic job",
+        "use category-specific physical metaphors",
+        "supply an accessible text label",
+        "deliver SVG geometry"
+      ],
+      "dont": [
+        "trace the logo",
+        "use emoji anatomy",
+        "mix outline weights",
+        "add words or letters",
+        "put the icon in a presentation mockup"
+      ]
+    },
+    "illustration": {
+      "job": "Explain voice, place, music and silence as separate but related listening layers.",
+      "style": "Sparse editorial diagrams with translucent bands and one coral edit mark.",
+      "perspective": "Flat timeline or sectional listening map.",
+      "do": [
+        "show a specific relationship",
+        "keep objects physically plausible"
+      ],
+      "dont": [
+        "generic floating shapes",
+        "fictional labels or certificates",
+        "cute characters without a narrative job"
+      ]
+    },
+    "photography": {
+      "job": "Show the concentration, place and small physical gestures behind listening and editorial sound.",
+      "subjects": [
+        "one editor listening",
+        "a contributor in a real recording context",
+        "hand on a physical control",
+        "room details that remain audible in the story"
+      ],
+      "environment": [
+        "quiet edit room with ordinary equipment",
+        "credible documentary location",
+        "desk with notes and version marks"
+      ],
+      "moment": "The pause before a decision: listening back, marking a time, or asking to hear it once more.",
+      "composition": [
+        "room for stillness",
+        "subject off-centre",
+        "screen content unreadable or replaced with approved real UI",
+        "eye-height or seated shoulder-height camera",
+        "negative space on the listening side"
+      ],
+      "camera": "Locked or gently handheld at seated height; movement should feel like breathing, not coverage.",
+      "lens": "40-65 mm natural perspective; shallow only enough to isolate attention.",
+      "light": "Soft side light with monitor spill kept subtle; preserve dark detail.",
+      "palette": "Midnight shadows, fog paper, skin kept natural and a single coral object or edit mark.",
+      "grade": "Low saturation, open shadows, quiet warm skin and cool room separation.",
+      "texture": "Paper notes, acoustic cloth, worn controls and room surfaces remain believable.",
+      "do": [
+        "keep working detail legible",
+        "show believable hands and tools",
+        "leave crop-safe space deliberately",
+        "grade a series as one shoot"
+      ],
+      "dont": [
+        "posed handshake",
+        "everyone smiling at the lens",
+        "plastic skin",
+        "fake text",
+        "watermarks",
+        "invented logos",
+        "impossible tools",
+        "overdriven HDR"
+      ]
+    },
+    "motion": {
+      "principle": "Movement follows listening: arrive, hold, mark, compare and release.",
+      "durations": {
+        "fast": "120ms",
+        "normal": "240ms",
+        "slow": "600ms",
+        "cinematic": "1200-2400ms"
+      },
+      "easing": {
+        "ui": "cubic-bezier(.2,.8,.2,1)",
+        "scan": "linear",
+        "reveal": "cubic-bezier(.16,1,.3,1)"
+      },
+      "signature": [
+        "a current line pausing at an edit",
+        "room-tone bands breathing once",
+        "a timestamp resolving after playback stops",
+        "two versions crossfading without a flash"
+      ],
+      "reducedMotion": "Replace spatial movement and looping signals with an immediate static state change.",
+      "avoid": [
+        "hover bounce",
+        "permanent decoration",
+        "text moving without control",
+        "motion that competes with the task"
+      ]
+    },
+    "dataVisualization": {
+      "principle": "Waveform, loudness and version data must support an audible editorial decision, not imply scientific certainty.",
+      "colors": "Fog and midnight as base, lavender for selection, coral for change, meter green only for a passed named check.",
+      "rules": [
+        "spell out axes and units",
+        "show source and date",
+        "mark estimates and incomplete series",
+        "never use colour as the only distinction"
+      ]
+    }
+  },
+  "representation": {
+    "principle": "Show contributors, editors and producers as people with editorial agency; listening is an action, not passive ambience.",
+    "casting": {
+      "people": "Usually one listener or a two-person review; larger groups only when collaboration is the actual subject.",
+      "age": "Adults across realistic editorial roles and career stages.",
+      "gender": "Do not code technical control, sensitivity or authority through gender.",
+      "ethnicity": "Choose series casting deliberately and never infer contributor identity from recordings or names.",
+      "ability": "Include varied ways of listening and communicating when relevant, with authentic input rather than inspiration framing.",
+      "roles": "The contributor retains ownership of their words; the editor is shown making accountable choices.",
+      "wardrobe": "Quiet ordinary clothing suited to the actual room or location, without creative-industry costume.",
+      "behaviour": "Listening, marking, explaining, recording or sitting with a pause; no headphone dance."
+    },
+    "sensitiveAttributePolicy": "Never infer ethnicity, religion, health, sexual orientation, gender identity or another sensitive attribute from a name, face, place or industry. Unknown remains unknown.",
+    "consent": "Recognisable real people require documented permission for the exact channel and context. Do not reuse customer or staff imagery as generic campaign material.",
+    "avoid": [
+      "token casting",
+      "roles assigned through gender or age stereotypes",
+      "synthetic faces presented as real staff",
+      "disability used as inspirational decoration",
+      "children without a necessary context and explicit guardian consent"
+    ]
+  },
+  "sensory": {
+    "sonicIdentity": "Near-field clarity with preserved room, short coral edit signals and silence treated as an active layer.",
+    "music": {
+      "tempo": "56-88 BPM when music is needed",
+      "rhythm": "sparse and asymmetrical with long rests",
+      "harmony": "open intervals, gentle tension, no automatic emotional resolution",
+      "timbre": [
+        "soft bowed texture",
+        "felted key",
+        "room impulse",
+        "low tape-like tone"
+      ],
+      "avoid": [
+        "constant ambient bed",
+        "inspirational piano",
+        "cinematic swell",
+        "lo-fi beat cliché"
+      ]
+    },
+    "voiceover": {
+      "voice": "Natural adult voice appropriate to the story; no default prestige accent.",
+      "delivery": "Close, thoughtful and unperformed, with complete breaths and meaningful pauses.",
+      "pace": "125-150 words per minute",
+      "avoid": [
+        "trailer authority",
+        "artificial whisper",
+        "over-cleaned breaths"
+      ]
+    },
+    "soundEffects": {
+      "role": "Mark editorial state without entering the story world as decoration.",
+      "palette": [
+        "soft edit tick",
+        "short tape stop",
+        "subtle version chime"
+      ],
+      "avoid": [
+        "loud whoosh",
+        "consumer notification copy",
+        "sound on hover"
+      ]
+    },
+    "silence": "Silence is authored. Protect it before testimony, after difficult material and wherever a listener needs time rather than instruction."
+  },
+  "channels": {
+    "linkedin": {
+      "job": "Share one specific listening decision and what it changed in a story, without exposing confidential material.",
+      "audience": "Independent documentary teams, narrative podcasts and cultural producers",
+      "format": [
+        "one observed moment",
+        "a short process story",
+        "a material or craft detail",
+        "an honest decision note"
+      ],
+      "structure": [
+        "specific opening scene",
+        "one tension",
+        "what changed or was learned",
+        "proof or limit",
+        "one proportionate next step"
+      ],
+      "tone": [
+        "attentive",
+        "clear",
+        "restrained",
+        "warm"
+      ],
+      "visual": [
+        "The pause before a decision: listening back, marking a time, or asking to hear it once more.",
+        "one decisive crop",
+        "live typography outside the image",
+        "use current coral only as a deliberate signal"
+      ],
+      "cta": [
+        "Send a listening sample",
+        "Open the review method"
+      ],
+      "avoid": [
+        "generic professional inspiration",
+        "a list with no lived example",
+        "inflated certainty",
+        "hashtag carpet",
+        "manufactured controversy"
+      ]
+    },
+    "website": {
+      "job": "Help independent documentary teams, narrative podcasts and cultural producers understand the offer, proof and next step without category theatre.",
+      "audience": "Independent documentary teams, narrative podcasts and cultural producers",
+      "format": [
+        "home page",
+        "service page",
+        "process page",
+        "field note or case study"
+      ],
+      "structure": [
+        "recognisable situation",
+        "clear offer",
+        "how the work happens",
+        "evidence",
+        "limits and practical details",
+        "next step"
+      ],
+      "tone": [
+        "attentive",
+        "clear",
+        "restrained"
+      ],
+      "visual": [
+        "Midnight violet, fog-white editorial space and a coral current line that appears only where listening changes.",
+        "Editorial margins act as silence; a single current line connects related moments without filling the page.",
+        "The pause before a decision: listening back, marking a time, or asking to hear it once more.",
+        "functional current coral accents"
+      ],
+      "cta": [
+        "Send a listening sample",
+        "Open the review method"
+      ],
+      "avoid": [
+        "offer hidden behind atmosphere",
+        "unverifiable counters",
+        "generic stock scenes",
+        "motion that delays reading"
+      ]
+    },
+    "brochure": {
+      "job": "Turn the offer, process and proof into a document that can be understood and passed on without a presenter.",
+      "audience": "Independent documentary teams, narrative podcasts and cultural producers",
+      "format": [
+        "A4 portrait PDF",
+        "short printed field guide",
+        "accessible digital handout"
+      ],
+      "structure": [
+        "cover with one useful sentence",
+        "reader situation",
+        "offer",
+        "process",
+        "proof",
+        "limits",
+        "practical details",
+        "contact"
+      ],
+      "tone": [
+        "attentive",
+        "clear",
+        "source-aware"
+      ],
+      "visual": [
+        "Editorial margins act as silence; a single current line connects related moments without filling the page.",
+        "large purposeful images",
+        "real type for every word",
+        "sources in readable marginal notes"
+      ],
+      "cta": [
+        "Send a listening sample"
+      ],
+      "avoid": [
+        "decorative spreads with no information",
+        "tiny body type",
+        "generated text inside images",
+        "claims without a source"
+      ]
+    },
+    "advertising": {
+      "job": "Show one recognisable need and lead to send a listening sample.",
+      "audience": "Independent documentary teams, narrative podcasts and cultural producers",
+      "format": [
+        "static social placement",
+        "three-frame carousel",
+        "short vertical film"
+      ],
+      "structure": [
+        "visible situation",
+        "specific friction or desire",
+        "credible changed state",
+        "one action"
+      ],
+      "tone": [
+        "attentive",
+        "clear",
+        "unforced"
+      ],
+      "visual": [
+        "The pause before a decision: listening back, marking a time, or asking to hear it once more.",
+        "one focal point",
+        "live headline typography"
+      ],
+      "cta": [
+        "Send a listening sample"
+      ],
+      "avoid": [
+        "fear as pressure",
+        "fake testimonials",
+        "guaranteed outcomes",
+        "multiple offers in one placement",
+        "synthetic urgency"
+      ]
+    },
+    "video": {
+      "job": "Make the physical and emotional change behind editorial sound, dialogue editing and audio post-production understandable over time.",
+      "audience": "Independent documentary teams, narrative podcasts and cultural producers",
+      "format": [
+        "20-30 second social film",
+        "60-second process portrait",
+        "quiet product or service sequence"
+      ],
+      "structure": [
+        "real opening detail",
+        "friction",
+        "human action",
+        "visible result",
+        "restrained end frame"
+      ],
+      "tone": [
+        "attentive",
+        "clear",
+        "observant"
+      ],
+      "visual": [
+        "The pause before a decision: listening back, marking a time, or asking to hear it once more.",
+        "a current line pausing at an edit",
+        "material close-ups",
+        "clear caption safe areas"
+      ],
+      "cta": [
+        "Send a listening sample"
+      ],
+      "avoid": [
+        "trailer pacing",
+        "montage without a legible action",
+        "fake interfaces or labels",
+        "music that masks speech"
+      ]
+    },
+    "presentations": {
+      "job": "Support one spoken decision with visible evidence and a clear next action.",
+      "audience": "Independent documentary teams, narrative podcasts and cultural producers",
+      "format": [
+        "16:9 presentation",
+        "short decision deck",
+        "visual process walkthrough"
+      ],
+      "structure": [
+        "opening situation",
+        "tension",
+        "point of view",
+        "proof",
+        "decision",
+        "next action"
+      ],
+      "tone": [
+        "attentive",
+        "spoken",
+        "specific"
+      ],
+      "visual": [
+        "one idea per slide",
+        "Editorial margins act as silence; a single current line connects related moments without filling the page.",
+        "large type",
+        "sources beside the claim"
+      ],
+      "cta": [
+        "Send a listening sample"
+      ],
+      "avoid": [
+        "document pages pasted onto slides",
+        "tiny charts",
+        "evidence-free market claims",
+        "decorative roadmap theatre"
+      ]
+    },
+    "email": {
+      "job": "Make one practical next step easy to understand and answer.",
+      "audience": "A known customer, partner or relevant enquirer.",
+      "format": [
+        "short personal note",
+        "order or project update",
+        "decision summary"
+      ],
+      "structure": [
+        "reason for writing",
+        "the concrete matter",
+        "one next step",
+        "plain sign-off"
+      ],
+      "tone": [
+        "attentive",
+        "brief",
+        "respectful"
+      ],
+      "visual": [
+        "plain text or restrained semantic HTML"
+      ],
+      "cta": [
+        "Send a listening sample",
+        "Open the review method"
+      ],
+      "avoid": [
+        "newsletter chrome for a personal message",
+        "several competing asks",
+        "false deadlines"
+      ]
+    }
+  },
+  "rules": {
+    "universal": [
+      "Keep verified facts, fictional demonstration content, creative decisions and inference visibly separate.",
+      "Write Quiet Current exactly as shown; do not invent variants or sub-brands.",
+      "current coral must have a functional or narrative job.",
+      "Use real typography for readable words; image models do not create logos, labels or certificates.",
+      "Show people as capable participants, not decoration.",
+      "Do not publish a claim that the fictional evidence model would reject.",
+      "A production is complete only after its real target size and channel have been checked."
+    ],
+    "accessibility": {
+      "standard": "WCAG 2.2 AA for digital work; accessible PDF practices for documents.",
+      "contrast": [
+        "Normal text must reach at least 4.5:1.",
+        "Large text and interface boundaries must reach at least 3:1.",
+        "Colour can never be the only carrier of state.",
+        "Use only pairings that have been measured, not guessed from appearance."
+      ],
+      "motion": [
+        "Respect prefers-reduced-motion without losing meaning.",
+        "Do not autoplay essential information without controls.",
+        "Avoid flashes and persistent pulses.",
+        "Every animated state needs an immediate static equivalent."
+      ],
+      "text": [
+        "Keep body copy as selectable, scalable text.",
+        "Use a meaningful heading hierarchy.",
+        "Write links that describe their destination.",
+        "Explain specialist terms at first use."
+      ],
+      "media": [
+        "Alt text describes the image's communication job.",
+        "Decorative images receive empty alt text.",
+        "Video includes captions and a transcript.",
+        "Information remains understandable without sound."
+      ]
+    },
+    "legal": {
+      "trademarks": [
+        "The name is fictional but still requires a real clearance search before commercial adoption.",
+        "Never recreate a third-party mark in generated assets."
+      ],
+      "assets": [
+        "Record the source and licence for every font, image, icon and sound.",
+        "Keep logo masters as vectors outside image-generation prompts.",
+        "Do not copy imagery from an unrelated real organisation into this example."
+      ],
+      "claims": [
+        "Every public claim needs a real source or owner approval.",
+        "Fictional proof cannot be reused as a real testimonial.",
+        "Measure environmental, time and performance claims before stating them."
+      ],
+      "privacy": [
+        "Do not add personal data that is unnecessary for the artifact.",
+        "Do not infer sensitive attributes.",
+        "Use recognisable people only with documented rights."
+      ]
+    },
+    "quality": {
+      "beforeRelease": [
+        "task and audience match",
+        "compiled profile contains only relevant context",
+        "facts and fiction are labelled",
+        "language is concrete and human",
+        "visual rules are measurable",
+        "desktop and mobile are checked",
+        "exports are opened and inspected",
+        "rights and privacy are cleared"
+      ],
+      "failConditions": [
+        "fiction presented as fact",
+        "unreadable contrast",
+        "generic category stock",
+        "damaged text or logo",
+        "sensitive attributes inferred as fact",
+        "horizontal overflow at 390 px",
+        "cut-off document content",
+        "external publication without approval"
+      ]
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "id": "source-quiet-current-fictional-brief",
+        "type": "other",
+        "url": "https://quiet-current.example/fictional-brief",
+        "title": "Quiet Current fictional demonstration brief",
+        "capturedAt": "2026-08-28T12:00:00+02:00",
+        "notes": "Synthetic source written for the open Brand DNA repository. It does not describe a real organisation, person, product, customer or result."
+      }
+    ],
+    "decisions": [
+      {
+        "path": "/brand",
+        "state": "owner-approved",
+        "confidence": 1,
+        "sourceIds": [
+          "source-quiet-current-fictional-brief"
+        ],
+        "rationale": "Deliberately authored as the coherent strategic premise for this fictional example.",
+        "approvedBy": "Fictional demo editor",
+        "approvedAt": "2026-08-28T12:00:00+02:00"
+      },
+      {
+        "path": "/verbal",
+        "state": "owner-approved",
+        "confidence": 1,
+        "sourceIds": [
+          "source-quiet-current-fictional-brief"
+        ],
+        "rationale": "Deliberately authored to demonstrate a distinct operational voice.",
+        "approvedBy": "Fictional demo editor",
+        "approvedAt": "2026-08-28T12:00:00+02:00"
+      },
+      {
+        "path": "/visual",
+        "state": "owner-approved",
+        "confidence": 1,
+        "sourceIds": [
+          "source-quiet-current-fictional-brief"
+        ],
+        "rationale": "Deliberately authored to demonstrate task-ready visual constraints.",
+        "approvedBy": "Fictional demo editor",
+        "approvedAt": "2026-08-28T12:00:00+02:00"
+      },
+      {
+        "path": "/sensory",
+        "state": "inferred",
+        "confidence": 0.8,
+        "sourceIds": [
+          "source-quiet-current-fictional-brief"
+        ],
+        "rationale": "An exploratory extension of the fictional visual and verbal direction.",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    ],
+    "openQuestions": [
+      {
+        "id": "consent-language",
+        "question": "What exact consent wording should cover restoration and synthetic voice tools?",
+        "affects": [
+          "/rules/legal/privacy",
+          "/verbal/claims"
+        ],
+        "priority": "blocking"
+      },
+      {
+        "id": "delivery-meter",
+        "question": "Which delivery standards should meter green represent for each channel?",
+        "affects": [
+          "/visual/colors",
+          "/visual/dataVisualization",
+          "/channels/video"
+        ],
+        "priority": "high"
+      },
+      {
+        "id": "signature-sound",
+        "question": "Should the short coral edit signal become an audible brand signature or remain a UI-only cue?",
+        "affects": [
+          "/sensory/soundEffects"
+        ],
+        "priority": "medium"
+      }
+    ]
+  }
+}

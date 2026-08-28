@@ -1,0 +1,54 @@
+[
+  {
+    "id": "seez",
+    "name": "SEEZ",
+    "kind": "real-reference",
+    "badge": "Real reference",
+    "description": "The current SEEZ company and design system, with unresolved owner decisions kept visible.",
+    "data": "./data/brands/seez.json",
+    "downloadName": "seez-brand-dna.json",
+    "displaySample": "WORK\nIN USE.",
+    "displayFont": "Six Caps",
+    "starterProfile": "photography",
+    "starterBrief": "Create an image that shows how a real work process becomes a testable software core."
+  },
+  {
+    "id": "rook-and-rye",
+    "name": "Rook & Rye",
+    "kind": "fictional-demo",
+    "badge": "Fictional demo",
+    "description": "Neighbourhood bakery and grain workshop",
+    "data": "./data/brands/rook-and-rye.json",
+    "downloadName": "rook-and-rye-brand-dna.json",
+    "displaySample": "TODAY'S\nBATCH.",
+    "displayFont": "Fraunces",
+    "starterProfile": "photography",
+    "starterBrief": "Create a photograph for today's rye loaf, from warm rack to a neighbour's hands."
+  },
+  {
+    "id": "northline-repair",
+    "name": "Northline Repair",
+    "kind": "fictional-demo",
+    "badge": "Fictional demo",
+    "description": "Outdoor clothing and equipment repair workshop",
+    "data": "./data/brands/northline-repair.json",
+    "downloadName": "northline-repair-brand-dna.json",
+    "displaySample": "REPAIR.\nRECORD.",
+    "displayFont": "Archivo Black",
+    "starterProfile": "icon",
+    "starterBrief": "Create an icon and inspection label for a repaired jacket zip that passed its named test."
+  },
+  {
+    "id": "quiet-current",
+    "name": "Quiet Current",
+    "kind": "fictional-demo",
+    "badge": "Fictional demo",
+    "description": "Editorial sound and audio post-production studio",
+    "data": "./data/brands/quiet-current.json",
+    "downloadName": "quiet-current-brand-dna.json",
+    "displaySample": "LEAVE\nROOM.",
+    "displayFont": "Space Grotesk",
+    "starterProfile": "linkedin",
+    "starterBrief": "Write a LinkedIn post about leaving a meaningful room sound in a documentary interview."
+  }
+]

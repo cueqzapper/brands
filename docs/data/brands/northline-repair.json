@@ -1,0 +1,1300 @@
+{
+  "$schema": "https://cueqzapper.github.io/brands/schema.json",
+  "schemaVersion": "1.0.0",
+  "meta": {
+    "id": "northline-repair",
+    "version": "1.0.0",
+    "status": "draft",
+    "createdAt": "2026-08-28T12:00:00+02:00",
+    "updatedAt": "2026-08-28T12:00:00+02:00",
+    "defaultLocale": "en",
+    "locales": [
+      "en"
+    ],
+    "owner": "Fictional demo dataset — no real organisation",
+    "reviewers": [
+      "Brand DNA maintainers"
+    ],
+    "reviewCycle": "Revise whenever the example is used to demonstrate a new production profile.",
+    "licence": "CC0-1.0. Names, organisations, products, people and evidence in this dataset are entirely fictional."
+  },
+  "brand": {
+    "identity": {
+      "name": "Northline Repair",
+      "legalName": null,
+      "pronunciation": "north-line repair",
+      "tagline": "Keep the good gear moving.",
+      "descriptor": "Outdoor clothing and equipment repair workshop",
+      "website": "https://northline-repair.example/",
+      "origin": "The fictional northern city of Calder",
+      "nameMeaning": "Northline is the route where weather, use and repair become visible rather than hidden."
+    },
+    "essence": {
+      "oneLine": "Northline Repair keeps trusted outdoor gear in use through visible, documented repairs.",
+      "promise": "You see the repair, its limits, its material and the test it passed before the item comes back.",
+      "personality": [
+        "capable",
+        "clear",
+        "resourceful",
+        "steady",
+        "technical",
+        "unsentimental"
+      ],
+      "tension": "Field abrasion and fluorescent workshop marks meet a disciplined technical grid.",
+      "archetypes": [
+        "repairer",
+        "guide",
+        "custodian of useful objects"
+      ]
+    },
+    "worldview": {
+      "belief": "Wear is information. A good repair respects how an object is used instead of pretending damage never happened.",
+      "opposes": [
+        "disposable upgrade culture",
+        "invisible repair claims",
+        "outdoor hero theatre",
+        "green claims without counts",
+        "safety certainty beyond the test"
+      ],
+      "future": "Repair history becomes a normal part of owning equipment, and products are judged partly by how well they can be maintained.",
+      "humanRole": "Repair technicians inspect damage, choose a method and explain when replacement is safer.",
+      "technologyRole": "Technology records materials, repair history and tests; it does not overrule physical inspection.",
+      "politicalOrSocialBoundaries": [
+        "Do not turn the brand into a party-political position.",
+        "Do not use anxiety, shame or social status as sales pressure.",
+        "Do not romanticise labour or hide who performs it."
+      ]
+    }
+  },
+  "strategy": {
+    "purpose": {
+      "why": "Useful equipment should not become waste because one component failed.",
+      "mission": "Inspect, repair and document outdoor gear with methods matched to its real use.",
+      "vision": "Repairability becomes a visible product quality rather than an afterthought."
+    },
+    "positioning": {
+      "category": "Outdoor clothing and soft-equipment repair service",
+      "audience": "People who use outdoor gear regularly, rental teams and small expedition operators",
+      "need": "A trustworthy decision on what can be repaired, how it will perform and when replacement is the safer choice.",
+      "difference": "Every job receives a visible repair map, material note and test result instead of a vague 'fixed' label.",
+      "proof": [
+        "Each fictional repair record names method, material and test.",
+        "The fictional intake flow separates cosmetic, functional and safety-critical damage."
+      ],
+      "alternatives": [
+        "replacement",
+        "manufacturer return",
+        "unrecorded home repair",
+        "general alterations shop"
+      ],
+      "pricePosition": "Priced by inspection, repair class and testing rather than the retail value of the item."
+    },
+    "offers": [
+      {
+        "name": "Bench repair",
+        "job": "Restore a worn zip, seam, panel or fastening where a defined repair is appropriate.",
+        "outcome": "The item returns with a repair map, visible limits and completed test.",
+        "proof": [
+          "Fictional repair record and test label."
+        ],
+        "notFor": [
+          "climbing hardware",
+          "damage that cannot be made safe"
+        ]
+      },
+      {
+        "name": "Fleet record",
+        "job": "Track repeat repairs across rental or field equipment.",
+        "outcome": "A team sees failure patterns and replacement decisions by item.",
+        "proof": [
+          "Fictional item history and reason codes."
+        ],
+        "notFor": [
+          "automatic safety certification",
+          "inventory work without physical inspection"
+        ]
+      }
+    ],
+    "audiences": [
+      {
+        "id": "gear-owner",
+        "name": "Regular gear owner",
+        "context": "A trusted jacket or pack has a specific failure but the rest still works.",
+        "job": "Know whether repair is sensible and what will remain visible.",
+        "barriers": [
+          "unclear price",
+          "fear of losing weather resistance",
+          "long turnaround"
+        ],
+        "desiredShift": "From 'replace it just in case' to an informed repair or replacement decision.",
+        "language": "Name the part, damage, method and limit.",
+        "evidenceIds": [
+          "source-northline-repair-fictional-brief"
+        ]
+      },
+      {
+        "id": "fleet-lead",
+        "name": "Rental or field-equipment lead",
+        "context": "Many numbered items return with different patterns of wear.",
+        "job": "Keep a consistent repair history and retire unsafe gear promptly.",
+        "barriers": [
+          "missing records",
+          "subjective descriptions",
+          "pressure to keep everything in service"
+        ],
+        "desiredShift": "From scattered notes to a visible decision trail.",
+        "language": "Operational, countable and explicit about uncertainty.",
+        "evidenceIds": [
+          "source-northline-repair-fictional-brief"
+        ]
+      }
+    ],
+    "values": [
+      {
+        "name": "Inspect before promise",
+        "meaning": "The material and use case decide what is possible.",
+        "behaviours": [
+          "photograph damage",
+          "name safety limits"
+        ],
+        "antiBehaviours": [
+          "quote certainty from a blurry image",
+          "accept work outside scope"
+        ]
+      },
+      {
+        "name": "Repair stays visible",
+        "meaning": "A repair can look deliberate without pretending to be factory-new.",
+        "behaviours": [
+          "choose honest patches",
+          "record the method"
+        ],
+        "antiBehaviours": [
+          "fake invisible results",
+          "cosmetic cover-up"
+        ]
+      },
+      {
+        "name": "Retire responsibly",
+        "meaning": "Keeping gear moving never overrides a safety boundary.",
+        "behaviours": [
+          "state no-repair decisions clearly",
+          "separate salvageable parts"
+        ],
+        "antiBehaviours": [
+          "extend unsafe use",
+          "turn safety into a marketing claim"
+        ]
+      }
+    ],
+    "messaging": {
+      "masterMessage": "Show us the failure. We will show you the repair, the test and the limit.",
+      "messagePillars": [
+        {
+          "name": "Visible inspection",
+          "claim": "Damage is classified before a repair is offered.",
+          "proof": [
+            "Fictional intake map"
+          ]
+        },
+        {
+          "name": "Documented method",
+          "claim": "Material and construction are recorded.",
+          "proof": [
+            "Fictional repair record"
+          ]
+        },
+        {
+          "name": "Known limit",
+          "claim": "A no-repair decision is a valid outcome.",
+          "proof": [
+            "Fictional safety boundary checklist"
+          ]
+        }
+      ],
+      "ctaHierarchy": [
+        "Start an inspection",
+        "See repair classes",
+        "Read the process"
+      ],
+      "storyPattern": "Begin with the worn part. Classify the failure. Show method and test. End with repair, limit or retirement."
+    }
+  },
+  "verbal": {
+    "voice": {
+      "traits": [
+        "clear",
+        "capable",
+        "technical",
+        "calm",
+        "honest",
+        "compact"
+      ],
+      "dimensions": [
+        {
+          "axis": "specific over reassuring",
+          "value": 94,
+          "instruction": "Name what was inspected and what remains unknown."
+        },
+        {
+          "axis": "technical over adventurous",
+          "value": 82,
+          "instruction": "Use outdoor context only to explain use, not to create hero drama."
+        },
+        {
+          "axis": "direct over friendly",
+          "value": 74,
+          "instruction": "Be respectful and short; never soften a safety limit."
+        }
+      ],
+      "toneByContext": {
+        "website": {
+          "tone": [
+            "clear",
+            "capable",
+            "technical"
+          ],
+          "do": [
+            "start with a recognisable scene",
+            "make the next step concrete"
+          ],
+          "avoid": [
+            "category slogans",
+            "claims with no physical or recorded proof"
+          ]
+        },
+        "linkedin": {
+          "tone": [
+            "clear",
+            "observant",
+            "human"
+          ],
+          "do": [
+            "follow one thought",
+            "name the material detail"
+          ],
+          "avoid": [
+            "generic lessons",
+            "performative certainty"
+          ]
+        },
+        "support": {
+          "tone": [
+            "calm",
+            "responsible",
+            "specific"
+          ],
+          "do": [
+            "repeat the issue",
+            "give an owner and next update"
+          ],
+          "avoid": [
+            "blame",
+            "false reassurance"
+          ]
+        },
+        "error": {
+          "tone": [
+            "brief",
+            "plain",
+            "useful"
+          ],
+          "do": [
+            "say what happened and what remains safe",
+            "offer the next available action"
+          ],
+          "avoid": [
+            "jokes during loss or payment issues",
+            "technical codes without explanation"
+          ]
+        }
+      }
+    },
+    "language": {
+      "locales": [
+        "en"
+      ],
+      "defaultRegister": "Plain international English with precise material and component terms.",
+      "sentenceRhythm": "Short diagnostic statements followed by one explanatory sentence. Use verbs and measured conditions.",
+      "preferred": [
+        "inspect",
+        "wear",
+        "repair class",
+        "material",
+        "test",
+        "limit",
+        "return to use",
+        "retire",
+        "record"
+      ],
+      "avoid": [
+        "innovative",
+        "world-class",
+        "seamless",
+        "game-changing",
+        "premium solution",
+        "unlock",
+        "elevate",
+        "journey"
+      ],
+      "terminology": {
+        "damage": "name the failed component",
+        "fix": "repair and named method",
+        "safe": "passed the stated test, never safe without scope",
+        "sustainable": "state the measured material or life-extension fact",
+        "customer": "owner, technician or fleet lead"
+      },
+      "formatting": [
+        "sentence case",
+        "short paragraphs",
+        "contractions are welcome when natural",
+        "lists only when they improve scanning",
+        "no decorative all-caps paragraphs"
+      ],
+      "inclusiveLanguage": "Name real roles and actions. Do not invent personal characteristics or reduce an audience to a demographic stereotype."
+    },
+    "claims": {
+      "allowed": [
+        "This fictional job passed the test named on its repair record.",
+        "This fictional repair remains intentionally visible.",
+        "Northline Repair may decline work outside its fictional scope."
+      ],
+      "requiresEvidence": [
+        "time saved",
+        "durability",
+        "customer numbers",
+        "environmental impact",
+        "comparative quality",
+        "health or safety outcomes"
+      ],
+      "forbidden": [
+        "best in the world",
+        "guaranteed result",
+        "zero impact",
+        "perfect",
+        "a customer quote without permission",
+        "a certification that does not exist"
+      ],
+      "disclaimers": [
+        "This is a fictional Brand DNA dataset. No company, product, customer or performance claim is real."
+      ]
+    },
+    "examples": {
+      "onBrand": [
+        "Zip failure, not jacket failure. Inspection class B. Photos first.",
+        "The patch will show. So will the stitch line and the test it passed.",
+        "This webbing should be retired, not repaired. Here is why."
+      ],
+      "offBrand": [
+        "Adventure further with our game-changing repair solutions.",
+        "We make every item as good as new.",
+        "Sustainability without compromise, guaranteed."
+      ]
+    }
+  },
+  "visual": {
+    "concept": {
+      "direction": "Charcoal technical sheets, repair-tape yellow, ice blue and exposed stitch paths over field-worn material.",
+      "rationale": "The system treats every artifact like a repair record: damage, intervention and test remain visible at the same time.",
+      "keywords": [
+        "repair map",
+        "field abrasion",
+        "bar tack",
+        "inspection light",
+        "serial label",
+        "tape yellow",
+        "cold blue",
+        "measured utility"
+      ],
+      "visualTension": "Rough worn surfaces and exact vector annotation; cold field light and warm repair-bench focus."
+    },
+    "colors": {
+      "dtcgVersion": "2025.10",
+      "palette": [
+        {
+          "id": "charcoal",
+          "name": "Bench charcoal",
+          "hex": "#161C1E",
+          "role": "background",
+          "meaning": "Technical base",
+          "use": [
+            "dark panels",
+            "wordmark",
+            "inspection UI"
+          ],
+          "avoid": [
+            "decoration without a defined job"
+          ],
+          "$type": "color"
+        },
+        {
+          "id": "chalk",
+          "name": "Chalk white",
+          "hex": "#F4F5EF",
+          "role": "surface",
+          "meaning": "Readable record",
+          "use": [
+            "documents",
+            "light UI",
+            "reverse labels"
+          ],
+          "avoid": [
+            "decoration without a defined job"
+          ],
+          "$type": "color"
+        },
+        {
+          "id": "tape",
+          "name": "Repair-tape yellow",
+          "hex": "#F2D53C",
+          "role": "primary",
+          "meaning": "Intervention and active work",
+          "use": [
+            "repair path",
+            "CTA",
+            "selected state"
+          ],
+          "avoid": [
+            "decoration without a defined job"
+          ],
+          "$type": "color"
+        },
+        {
+          "id": "ice",
+          "name": "Inspection blue",
+          "hex": "#8ED8F8",
+          "role": "secondary",
+          "meaning": "Measured observation",
+          "use": [
+            "dimensions",
+            "information",
+            "focus"
+          ],
+          "avoid": [
+            "decoration without a defined job"
+          ],
+          "$type": "color"
+        },
+        {
+          "id": "rust",
+          "name": "Field rust",
+          "hex": "#A84E35",
+          "role": "warning",
+          "meaning": "Wear or review",
+          "use": [
+            "warnings",
+            "unresolved inspection"
+          ],
+          "avoid": [
+            "decoration without a defined job"
+          ],
+          "$type": "color"
+        },
+        {
+          "id": "steel",
+          "name": "Tool steel",
+          "hex": "#66757A",
+          "role": "neutral",
+          "meaning": "Equipment and secondary data",
+          "use": [
+            "rules",
+            "inactive lines",
+            "charts"
+          ],
+          "avoid": [
+            "decoration without a defined job"
+          ],
+          "$type": "color"
+        }
+      ],
+      "pairings": [
+        {
+          "foreground": "#F4F5EF",
+          "background": "#161C1E",
+          "ratio": 15.6,
+          "use": "Primary text on charcoal"
+        },
+        {
+          "foreground": "#161C1E",
+          "background": "#F2D53C",
+          "ratio": 12.1,
+          "use": "Active labels"
+        },
+        {
+          "foreground": "#161C1E",
+          "background": "#8ED8F8",
+          "ratio": 10.4,
+          "use": "Inspection information"
+        }
+      ],
+      "usage": [
+        "Charcoal and chalk carry records.",
+        "Yellow marks intervention, never general decoration.",
+        "Rust means unresolved or worn, never automatic failure."
+      ],
+      "gradients": [
+        {
+          "name": "Inspection sweep",
+          "css": "linear-gradient(90deg,#161C1E 0%,#253136 62%,#8ED8F8 100%)",
+          "job": "Short scanning transitions in diagnostic media"
+        }
+      ]
+    },
+    "typography": {
+      "families": [
+        {
+          "family": "Archivo Black",
+          "source": "Google Fonts or bundled WOFF2",
+          "weights": [
+            400
+          ],
+          "licence": "SIL Open Font License 1.1",
+          "use": "Compressed technical statements"
+        },
+        {
+          "family": "Source Sans 3",
+          "source": "Google Fonts or bundled WOFF2",
+          "weights": [
+            400,
+            600
+          ],
+          "licence": "SIL Open Font License 1.1",
+          "use": "Instructions and UI"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "source": "Google Fonts or bundled WOFF2",
+          "weights": [
+            400,
+            500
+          ],
+          "licence": "SIL Open Font License 1.1",
+          "use": "Measurements and repair records"
+        }
+      ],
+      "roles": {
+        "display": "Archivo Black 400",
+        "heading": "Source Sans 3 600",
+        "body": "Source Sans 3 400",
+        "mono": "IBM Plex Mono 500"
+      },
+      "scale": {
+        "display": "clamp(4rem, 12vw, 11rem)",
+        "h1": "clamp(2.8rem, 7vw, 6rem)",
+        "h2": "clamp(2rem, 4vw, 3.8rem)",
+        "body": "clamp(1rem, 1.2vw, 1.2rem)",
+        "label": "0.72rem"
+      },
+      "rules": [
+        "Use short display lines.",
+        "Set measurements and codes in mono.",
+        "Keep units with their values.",
+        "Use tabular figures in records.",
+        "Do not italicise safety information."
+      ]
+    },
+    "logo": {
+      "idea": "A north-pointing route line interrupted and rejoined by a visible bar-tack stitch.",
+      "variants": [
+        {
+          "id": "primary",
+          "asset": "logos/northline-repair-primary.svg",
+          "foreground": "#161C1E",
+          "background": "light"
+        },
+        {
+          "id": "reverse",
+          "asset": "logos/northline-repair-reverse.svg",
+          "foreground": "#F4F5EF",
+          "background": "dark or photographic"
+        }
+      ],
+      "clearspace": "At least the cap height of the first letter on every side.",
+      "minimumSize": {
+        "digitalWidth": "24 px symbol; 104 px wordmark",
+        "printWidth": "8 mm symbol; 28 mm wordmark"
+      },
+      "placement": [
+        "align to the primary content grid",
+        "keep away from photography focal points",
+        "use one-colour variants when contrast is uncertain"
+      ],
+      "do": [
+        "use approved vector masters",
+        "preserve spacing",
+        "test the smallest delivered size"
+      ],
+      "dont": [
+        "redraw with an image model",
+        "stretch",
+        "add shadows",
+        "place over a busy detail",
+        "use the symbol as a decorative texture"
+      ]
+    },
+    "layout": {
+      "principle": "A layered inspection sheet: object, damage, intervention and decision each have a stable lane.",
+      "grid": "Twelve columns on desktop, six on tablet and one stacked inspection lane on mobile.",
+      "spacingScale": {
+        "1": "4px",
+        "2": "8px",
+        "3": "12px",
+        "4": "16px",
+        "6": "24px",
+        "8": "32px",
+        "12": "48px",
+        "16": "64px",
+        "24": "96px"
+      },
+      "density": "Dense where records need comparison, open around decisions and safety limits.",
+      "composition": [
+        "annotate beside damage, never over it",
+        "keep the repair path in one accent",
+        "align codes and measurements",
+        "reserve a full-width decision band",
+        "make before and after use identical crops"
+      ],
+      "responsive": [
+        "preserve hierarchy, not desktop coordinates",
+        "keep the primary action above bottom navigation",
+        "allow text to wrap without collision",
+        "prove zero horizontal overflow at 390 px"
+      ]
+    },
+    "shapes": {
+      "geometry": "Route lines, stitch bars, measurement ticks and clipped label corners.",
+      "corners": "0-2 px; clipped 6 px corners may mark inspection cards.",
+      "strokes": "1.5 px records, 2 px icons, 3 px repair paths.",
+      "motifs": [
+        "broken and rejoined line",
+        "bar tack",
+        "measurement tick",
+        "serial plate",
+        "inspection cone"
+      ],
+      "avoid": [
+        "mountain badge cliché",
+        "shield promises",
+        "military chevrons",
+        "random tech hexagons"
+      ]
+    },
+    "iconography": {
+      "job": "Identify damage class, repair method, test and item status at a glance.",
+      "metaphor": "Components and workshop actions drawn like field-manual symbols.",
+      "grid": "24 × 24 px with a 2 px optical safe area.",
+      "stroke": "2 px, square-ended with clear joins.",
+      "corners": "Mostly square; small optical relief inside tight joints.",
+      "detail": "One primary form and no more than one supporting detail; test at 16 px.",
+      "color": "One colour by default; repair-tape yellow marks only an active or selected state.",
+      "opticalRules": [
+        "centre by perceived mass",
+        "open narrow gaps at small sizes",
+        "round joins consistently",
+        "align repeated elements to whole pixels where possible"
+      ],
+      "do": [
+        "start from the semantic job",
+        "use category-specific physical metaphors",
+        "supply an accessible text label",
+        "deliver SVG geometry"
+      ],
+      "dont": [
+        "trace the logo",
+        "use emoji anatomy",
+        "mix outline weights",
+        "add words or letters",
+        "put the icon in a presentation mockup"
+      ]
+    },
+    "illustration": {
+      "job": "Explain the relationship between material layers, damage and repair method.",
+      "style": "Exploded technical sections with one fluorescent intervention layer.",
+      "perspective": "Flat orthographic view; no decorative pseudo-3D.",
+      "do": [
+        "show a specific relationship",
+        "keep objects physically plausible"
+      ],
+      "dont": [
+        "generic floating shapes",
+        "fictional labels or certificates",
+        "cute characters without a narrative job"
+      ]
+    },
+    "photography": {
+      "job": "Let a viewer inspect damage, material and repair quality before reading the caption.",
+      "subjects": [
+        "one technician inspecting",
+        "damaged component before work",
+        "repair in progress",
+        "same component after testing"
+      ],
+      "environment": [
+        "neutral inspection table",
+        "working sewing bench",
+        "credible field context after repair"
+      ],
+      "moment": "The exact point where damage is classified, stitched, sealed or tested.",
+      "composition": [
+        "matched before-and-after angle",
+        "component fills the frame",
+        "hands enter only when doing work",
+        "scale reference without fake ruler text",
+        "negative space for live annotation"
+      ],
+      "camera": "Stable camera at object or shoulder height; tripod for comparison records.",
+      "lens": "50-90 mm with low distortion; enough depth of field to read the failure.",
+      "light": "Large neutral inspection source plus warm task light when stitching; no dramatic rim light.",
+      "palette": "Charcoal bench, actual material colours, yellow intervention markers and cool inspection light.",
+      "grade": "Neutral material colour, restrained contrast and recoverable highlights.",
+      "texture": "Abrasion, sealant, thread, weave and tool marks stay sharp and honest.",
+      "do": [
+        "keep working detail legible",
+        "show believable hands and tools",
+        "leave crop-safe space deliberately",
+        "grade a series as one shoot"
+      ],
+      "dont": [
+        "posed handshake",
+        "everyone smiling at the lens",
+        "plastic skin",
+        "fake text",
+        "watermarks",
+        "invented logos",
+        "impossible tools",
+        "overdriven HDR"
+      ]
+    },
+    "motion": {
+      "principle": "Motion traces inspection and intervention in the order a technician performs them.",
+      "durations": {
+        "fast": "120ms",
+        "normal": "240ms",
+        "slow": "600ms",
+        "cinematic": "1200-2400ms"
+      },
+      "easing": {
+        "ui": "cubic-bezier(.2,.8,.2,1)",
+        "scan": "linear",
+        "reveal": "cubic-bezier(.16,1,.3,1)"
+      },
+      "signature": [
+        "a route line stopping at damage and continuing after repair",
+        "measurement ticks resolving",
+        "a before/after crop locking into place",
+        "a status plate changing only after test"
+      ],
+      "reducedMotion": "Replace spatial movement and looping signals with an immediate static state change.",
+      "avoid": [
+        "hover bounce",
+        "permanent decoration",
+        "text moving without control",
+        "motion that competes with the task"
+      ]
+    },
+    "dataVisualization": {
+      "principle": "A repair record must distinguish observation, action, test and decision without relying on colour.",
+      "colors": "Chalk and charcoal as base, ice for observation, yellow for action, rust for unresolved review.",
+      "rules": [
+        "spell out axes and units",
+        "show source and date",
+        "mark estimates and incomplete series",
+        "never use colour as the only distinction"
+      ]
+    }
+  },
+  "representation": {
+    "principle": "Show technicians and owners as practical decision-makers; outdoor identity comes from use and objects, not heroic demographics.",
+    "casting": {
+      "people": "One technician or owner at a real task; groups only for a fleet handoff.",
+      "age": "Adults whose age fits the real role; keep a series varied without signalling authority by age.",
+      "gender": "Do not assign technical skill or outdoor experience by gender.",
+      "ethnicity": "Choose deliberately across a series without inferring from customer or staff data.",
+      "ability": "Show adaptable benches and realistic handling where relevant, without using access as campaign decoration.",
+      "roles": "Hands belong to the person performing or receiving the repair.",
+      "wardrobe": "Plain work layers, repair apron and used outdoor clothing; no expedition costume.",
+      "behaviour": "Inspecting, measuring, sewing, testing and explaining; direct attention to the item."
+    },
+    "sensitiveAttributePolicy": "Never infer ethnicity, religion, health, sexual orientation, gender identity or another sensitive attribute from a name, face, place or industry. Unknown remains unknown.",
+    "consent": "Recognisable real people require documented permission for the exact channel and context. Do not reuse customer or staff imagery as generic campaign material.",
+    "avoid": [
+      "token casting",
+      "roles assigned through gender or age stereotypes",
+      "synthetic faces presented as real staff",
+      "disability used as inspirational decoration",
+      "children without a necessary context and explicit guardian consent"
+    ]
+  },
+  "sensory": {
+    "sonicIdentity": "Measured workshop mechanics: thread, zip, snap and test tone with field air kept at the edge.",
+    "music": {
+      "tempo": "84-112 BPM",
+      "rhythm": "precise, interrupted patterns",
+      "harmony": "spare and slightly tense until the test resolves",
+      "timbre": [
+        "dry machine pulse",
+        "muted metal",
+        "short low synth",
+        "field wind texture"
+      ],
+      "avoid": [
+        "epic outdoor score",
+        "trailer drums",
+        "victory rise",
+        "constant machine loop"
+      ]
+    },
+    "voiceover": {
+      "voice": "Steady adult voice with clear technical diction.",
+      "delivery": "Diagnostic, calm and honest about limits.",
+      "pace": "145-165 words per minute",
+      "avoid": [
+        "adventure narrator",
+        "military command",
+        "false reassurance"
+      ]
+    },
+    "soundEffects": {
+      "role": "Confirm real material actions and status.",
+      "palette": [
+        "zip test",
+        "sewing machine stop",
+        "fastening snap"
+      ],
+      "avoid": [
+        "weapon-like impacts",
+        "arcade success",
+        "hover audio"
+      ]
+    },
+    "silence": "Use silence before a no-repair decision and after the named test result."
+  },
+  "channels": {
+    "linkedin": {
+      "job": "Share one useful repair observation, material failure pattern or honest no-repair decision.",
+      "audience": "People who use outdoor gear regularly, rental teams and small expedition operators",
+      "format": [
+        "one observed moment",
+        "a short process story",
+        "a material or craft detail",
+        "an honest decision note"
+      ],
+      "structure": [
+        "specific opening scene",
+        "one tension",
+        "what changed or was learned",
+        "proof or limit",
+        "one proportionate next step"
+      ],
+      "tone": [
+        "clear",
+        "capable",
+        "technical",
+        "calm"
+      ],
+      "visual": [
+        "The exact point where damage is classified, stitched, sealed or tested.",
+        "one decisive crop",
+        "live typography outside the image",
+        "use repair-tape yellow only as a deliberate signal"
+      ],
+      "cta": [
+        "Start an inspection",
+        "See repair classes"
+      ],
+      "avoid": [
+        "generic professional inspiration",
+        "a list with no lived example",
+        "inflated certainty",
+        "hashtag carpet",
+        "manufactured controversy"
+      ]
+    },
+    "website": {
+      "job": "Help people who use outdoor gear regularly, rental teams and small expedition operators understand the offer, proof and next step without category theatre.",
+      "audience": "People who use outdoor gear regularly, rental teams and small expedition operators",
+      "format": [
+        "home page",
+        "service page",
+        "process page",
+        "field note or case study"
+      ],
+      "structure": [
+        "recognisable situation",
+        "clear offer",
+        "how the work happens",
+        "evidence",
+        "limits and practical details",
+        "next step"
+      ],
+      "tone": [
+        "clear",
+        "capable",
+        "technical"
+      ],
+      "visual": [
+        "Charcoal technical sheets, repair-tape yellow, ice blue and exposed stitch paths over field-worn material.",
+        "A layered inspection sheet: object, damage, intervention and decision each have a stable lane.",
+        "The exact point where damage is classified, stitched, sealed or tested.",
+        "functional repair-tape yellow accents"
+      ],
+      "cta": [
+        "Start an inspection",
+        "See repair classes"
+      ],
+      "avoid": [
+        "offer hidden behind atmosphere",
+        "unverifiable counters",
+        "generic stock scenes",
+        "motion that delays reading"
+      ]
+    },
+    "brochure": {
+      "job": "Turn the offer, process and proof into a document that can be understood and passed on without a presenter.",
+      "audience": "People who use outdoor gear regularly, rental teams and small expedition operators",
+      "format": [
+        "A4 portrait PDF",
+        "short printed field guide",
+        "accessible digital handout"
+      ],
+      "structure": [
+        "cover with one useful sentence",
+        "reader situation",
+        "offer",
+        "process",
+        "proof",
+        "limits",
+        "practical details",
+        "contact"
+      ],
+      "tone": [
+        "clear",
+        "capable",
+        "source-aware"
+      ],
+      "visual": [
+        "A layered inspection sheet: object, damage, intervention and decision each have a stable lane.",
+        "large purposeful images",
+        "real type for every word",
+        "sources in readable marginal notes"
+      ],
+      "cta": [
+        "Start an inspection"
+      ],
+      "avoid": [
+        "decorative spreads with no information",
+        "tiny body type",
+        "generated text inside images",
+        "claims without a source"
+      ]
+    },
+    "advertising": {
+      "job": "Show one recognisable need and lead to start an inspection.",
+      "audience": "People who use outdoor gear regularly, rental teams and small expedition operators",
+      "format": [
+        "static social placement",
+        "three-frame carousel",
+        "short vertical film"
+      ],
+      "structure": [
+        "visible situation",
+        "specific friction or desire",
+        "credible changed state",
+        "one action"
+      ],
+      "tone": [
+        "clear",
+        "capable",
+        "unforced"
+      ],
+      "visual": [
+        "The exact point where damage is classified, stitched, sealed or tested.",
+        "one focal point",
+        "live headline typography"
+      ],
+      "cta": [
+        "Start an inspection"
+      ],
+      "avoid": [
+        "fear as pressure",
+        "fake testimonials",
+        "guaranteed outcomes",
+        "multiple offers in one placement",
+        "synthetic urgency"
+      ]
+    },
+    "video": {
+      "job": "Make the physical and emotional change behind outdoor clothing and soft-equipment repair service understandable over time.",
+      "audience": "People who use outdoor gear regularly, rental teams and small expedition operators",
+      "format": [
+        "20-30 second social film",
+        "60-second process portrait",
+        "quiet product or service sequence"
+      ],
+      "structure": [
+        "real opening detail",
+        "friction",
+        "human action",
+        "visible result",
+        "restrained end frame"
+      ],
+      "tone": [
+        "clear",
+        "capable",
+        "observant"
+      ],
+      "visual": [
+        "The exact point where damage is classified, stitched, sealed or tested.",
+        "a route line stopping at damage and continuing after repair",
+        "material close-ups",
+        "clear caption safe areas"
+      ],
+      "cta": [
+        "Start an inspection"
+      ],
+      "avoid": [
+        "trailer pacing",
+        "montage without a legible action",
+        "fake interfaces or labels",
+        "music that masks speech"
+      ]
+    },
+    "presentations": {
+      "job": "Support one spoken decision with visible evidence and a clear next action.",
+      "audience": "People who use outdoor gear regularly, rental teams and small expedition operators",
+      "format": [
+        "16:9 presentation",
+        "short decision deck",
+        "visual process walkthrough"
+      ],
+      "structure": [
+        "opening situation",
+        "tension",
+        "point of view",
+        "proof",
+        "decision",
+        "next action"
+      ],
+      "tone": [
+        "clear",
+        "spoken",
+        "specific"
+      ],
+      "visual": [
+        "one idea per slide",
+        "A layered inspection sheet: object, damage, intervention and decision each have a stable lane.",
+        "large type",
+        "sources beside the claim"
+      ],
+      "cta": [
+        "Start an inspection"
+      ],
+      "avoid": [
+        "document pages pasted onto slides",
+        "tiny charts",
+        "evidence-free market claims",
+        "decorative roadmap theatre"
+      ]
+    },
+    "email": {
+      "job": "Make one practical next step easy to understand and answer.",
+      "audience": "A known customer, partner or relevant enquirer.",
+      "format": [
+        "short personal note",
+        "order or project update",
+        "decision summary"
+      ],
+      "structure": [
+        "reason for writing",
+        "the concrete matter",
+        "one next step",
+        "plain sign-off"
+      ],
+      "tone": [
+        "clear",
+        "brief",
+        "respectful"
+      ],
+      "visual": [
+        "plain text or restrained semantic HTML"
+      ],
+      "cta": [
+        "Start an inspection",
+        "See repair classes"
+      ],
+      "avoid": [
+        "newsletter chrome for a personal message",
+        "several competing asks",
+        "false deadlines"
+      ]
+    }
+  },
+  "rules": {
+    "universal": [
+      "Keep verified facts, fictional demonstration content, creative decisions and inference visibly separate.",
+      "Write Northline Repair exactly as shown; do not invent variants or sub-brands.",
+      "repair-tape yellow must have a functional or narrative job.",
+      "Use real typography for readable words; image models do not create logos, labels or certificates.",
+      "Show people as capable participants, not decoration.",
+      "Do not publish a claim that the fictional evidence model would reject.",
+      "A production is complete only after its real target size and channel have been checked."
+    ],
+    "accessibility": {
+      "standard": "WCAG 2.2 AA for digital work; accessible PDF practices for documents.",
+      "contrast": [
+        "Normal text must reach at least 4.5:1.",
+        "Large text and interface boundaries must reach at least 3:1.",
+        "Colour can never be the only carrier of state.",
+        "Use only pairings that have been measured, not guessed from appearance."
+      ],
+      "motion": [
+        "Respect prefers-reduced-motion without losing meaning.",
+        "Do not autoplay essential information without controls.",
+        "Avoid flashes and persistent pulses.",
+        "Every animated state needs an immediate static equivalent."
+      ],
+      "text": [
+        "Keep body copy as selectable, scalable text.",
+        "Use a meaningful heading hierarchy.",
+        "Write links that describe their destination.",
+        "Explain specialist terms at first use."
+      ],
+      "media": [
+        "Alt text describes the image's communication job.",
+        "Decorative images receive empty alt text.",
+        "Video includes captions and a transcript.",
+        "Information remains understandable without sound."
+      ]
+    },
+    "legal": {
+      "trademarks": [
+        "The name is fictional but still requires a real clearance search before commercial adoption.",
+        "Never recreate a third-party mark in generated assets."
+      ],
+      "assets": [
+        "Record the source and licence for every font, image, icon and sound.",
+        "Keep logo masters as vectors outside image-generation prompts.",
+        "Do not copy imagery from an unrelated real organisation into this example."
+      ],
+      "claims": [
+        "Every public claim needs a real source or owner approval.",
+        "Fictional proof cannot be reused as a real testimonial.",
+        "Measure environmental, time and performance claims before stating them."
+      ],
+      "privacy": [
+        "Do not add personal data that is unnecessary for the artifact.",
+        "Do not infer sensitive attributes.",
+        "Use recognisable people only with documented rights."
+      ]
+    },
+    "quality": {
+      "beforeRelease": [
+        "task and audience match",
+        "compiled profile contains only relevant context",
+        "facts and fiction are labelled",
+        "language is concrete and human",
+        "visual rules are measurable",
+        "desktop and mobile are checked",
+        "exports are opened and inspected",
+        "rights and privacy are cleared"
+      ],
+      "failConditions": [
+        "fiction presented as fact",
+        "unreadable contrast",
+        "generic category stock",
+        "damaged text or logo",
+        "sensitive attributes inferred as fact",
+        "horizontal overflow at 390 px",
+        "cut-off document content",
+        "external publication without approval"
+      ]
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "id": "source-northline-repair-fictional-brief",
+        "type": "other",
+        "url": "https://northline-repair.example/fictional-brief",
+        "title": "Northline Repair fictional demonstration brief",
+        "capturedAt": "2026-08-28T12:00:00+02:00",
+        "notes": "Synthetic source written for the open Brand DNA repository. It does not describe a real organisation, person, product, customer or result."
+      }
+    ],
+    "decisions": [
+      {
+        "path": "/brand",
+        "state": "owner-approved",
+        "confidence": 1,
+        "sourceIds": [
+          "source-northline-repair-fictional-brief"
+        ],
+        "rationale": "Deliberately authored as the coherent strategic premise for this fictional example.",
+        "approvedBy": "Fictional demo editor",
+        "approvedAt": "2026-08-28T12:00:00+02:00"
+      },
+      {
+        "path": "/verbal",
+        "state": "owner-approved",
+        "confidence": 1,
+        "sourceIds": [
+          "source-northline-repair-fictional-brief"
+        ],
+        "rationale": "Deliberately authored to demonstrate a distinct operational voice.",
+        "approvedBy": "Fictional demo editor",
+        "approvedAt": "2026-08-28T12:00:00+02:00"
+      },
+      {
+        "path": "/visual",
+        "state": "owner-approved",
+        "confidence": 1,
+        "sourceIds": [
+          "source-northline-repair-fictional-brief"
+        ],
+        "rationale": "Deliberately authored to demonstrate task-ready visual constraints.",
+        "approvedBy": "Fictional demo editor",
+        "approvedAt": "2026-08-28T12:00:00+02:00"
+      },
+      {
+        "path": "/sensory",
+        "state": "inferred",
+        "confidence": 0.8,
+        "sourceIds": [
+          "source-northline-repair-fictional-brief"
+        ],
+        "rationale": "An exploratory extension of the fictional visual and verbal direction.",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    ],
+    "openQuestions": [
+      {
+        "id": "safety-scope",
+        "question": "Which product categories require an external safety standard before the fictional service could accept them?",
+        "affects": [
+          "/strategy/offers",
+          "/rules/legal/claims"
+        ],
+        "priority": "blocking"
+      },
+      {
+        "id": "status-language",
+        "question": "Which status names remain clearest to both technicians and owners?",
+        "affects": [
+          "/verbal/language",
+          "/visual/dataVisualization"
+        ],
+        "priority": "high"
+      },
+      {
+        "id": "visible-repair-choice",
+        "question": "When should a repair deliberately contrast with the original material?",
+        "affects": [
+          "/visual/colors",
+          "/visual/photography"
+        ],
+        "priority": "medium"
+      }
+    ]
+  }
+}
