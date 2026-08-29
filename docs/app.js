@@ -1,6 +1,6 @@
-import { compileBrandDNA } from "./compiler.js?v=1.1.1";
+import { compileBrandDNA } from "./compiler.js?v=1.1.2";
 
-const DOCS_VERSION = "1.1.1";
+const DOCS_VERSION = "1.1.2";
 
 function versioned(path) {
   const url = new URL(path, window.location.href);

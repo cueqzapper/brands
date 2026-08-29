@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2 - 2026-08-29
+
+- Version the catalog, profiles and Brand DNA requests so a new language release cannot reuse stale text from the browser cache.
+
 ## 1.1.1 - 2026-08-29
 
 - Use each Brand DNA's `meta.defaultLocale` in the reference UI and compiler.
