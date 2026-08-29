@@ -72,6 +72,18 @@ brand-dna export brand-dna.json --format brand-yml
 brand-dna export brand-dna.json --format tokens-css
 ```
 
+The compiler treats `meta.defaultLocale` as the source language of the Brand
+DNA. If `--locale` is omitted, every packet uses that language automatically.
+Requested output languages are accepted only when they are declared in
+`meta.locales`; otherwise the compiler falls back to the brand default instead
+of silently creating a mixed-language packet. When source and output language
+differ, the packet names both and requires a faithful translation of approved
+terms, facts, numbers and legal wording.
+
+The interactive reference follows the same rule: SEEZ opens in `de-CH`, while
+the fictional bakery, repair workshop and sound studio open in English. The
+language selector only shows locales declared by the active Brand DNA.
+
 ## Task profiles
 
 The v1.1 distribution includes `icon`, `logo`, `linkedin`, `photography`,

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "icon",
+    "label": "ein Icon oder Element eines Icon-Systems",
+    "description": "Ein einzelnes Icon oder ein neues Element einer zusammenhängenden Icon-Familie.",
+    "instructions": [
+      "Beginne mit der Bedeutung des Icons und wähle eine Metapher, die sofort lesbar ist.",
+      "Halte dich an Raster, Strichstärke, Ecken und optische Korrekturen. Ahme das Logo nur nach, wenn dies ausdrücklich verlangt wird.",
+      "Beschreibe Vektorkonstruktion, Begrenzungsrahmen, Innenabstand, Ausrichtung, Farbzustände, Verhalten in kleinen Grössen und Barrierefreiheit.",
+      "Verlange bei einem Bildmodell ein sauberes, freigestelltes Symbol ohne Mock-up, Wörter, Buchstaben, Wasserzeichen oder Hintergrundszene."
+    ],
+    "productionChecklist": [
+      "Die Bedeutung ist ohne Beschriftung verständlich",
+      "Die Silhouette bleibt in der kleinsten Zielgrösse klar",
+      "Strichstärken und Ecken passen zur Familie",
+      "Gefüllte, umrandete, aktive und deaktivierte Zustände nutzen freigegebene Farben",
+      "Kein versehentliches Logo, kein Buchstabe und kein kulturell missverständliches Symbol",
+      "Die SVG-Geometrie lässt sich aus dem Ergebnis rekonstruieren"
+    ],
+    "outputContract": [
+      "Semantische Absicht in einem Satz",
+      "Ausführlicher Prompt für Bild- oder Vektorerzeugung",
+      "Negativ-Prompt",
+      "Konstruktionsvorgabe mit Raster, Strich, Innenabstand und Farben",
+      "Prüfungen für kleine Grössen und Barrierefreiheit"
+    ]
+  },
+  {
+    "id": "logo",
+    "label": "ein Logo oder eine Markensignatur",
+    "description": "Eine Verfeinerung des Logos, eine Kombination oder eine freigegebene Variante.",
+    "instructions": [
+      "Drücke eine dauerhafte Markenidee aus und keinen kurzfristigen Kampagnenslogan.",
+      "Beschreibe Symbol, Wortmarke, Geometrie der Kombinationen, Schutzraum, Grössengrenzen, einfarbiges Verhalten und Varianten je Hintergrund.",
+      "Vermeide austauschbare KI-Logo-Muster, Verläufe ohne Bedeutung und Effekte, die einfarbig nicht funktionieren."
+    ],
+    "productionChecklist": [
+      "Einfarbig erkennbar",
+      "In der Mindestgrösse lesbar",
+      "Von üblichen Zeichen der Branche unterscheidbar",
+      "Schutzraum und Kombinationen dokumentiert",
+      "Datei- und Markenrechtsfragen geklärt",
+      "Vektor-Master vorhanden"
+    ],
+    "outputContract": [
+      "Begründung des Konzepts",
+      "Ausführlicher Erzeugungs- oder Konstruktions-Prompt",
+      "Variantenmatrix",
+      "Vorgabe für Schutzraum und Mindestgrösse",
+      "Fehlanwendungen und rechtlich zu prüfende Punkte"
+    ]
+  },
+  {
+    "id": "linkedin",
+    "label": "einen LinkedIn-Beitrag",
+    "description": "Ein markengerechter organischer LinkedIn-Beitrag mit optionaler visueller Richtung.",
+    "instructions": [
+      "Wähle eine konkrete Spannung, Beobachtung oder einen Beleg und baue den Beitrag darum auf.",
+      "Schreibe für die genannte Zielgruppe und den Leserythmus des Kanals. Mache aus dem Beitrag keine Broschüre.",
+      "Nutze einen konkreten Einstieg, kurze Absätze, einen zusammenhängenden Gedanken und die freigegebene CTA-Hierarchie.",
+      "Falls ein Bild dazugehört, liefere dafür eine getrennte Art Direction. Setze keine Textabsätze ins Bild."
+    ],
+    "productionChecklist": [
+      "Der Einstieg weckt Aufmerksamkeit ohne Ragebait, sofern die Marke diesen nicht erlaubt",
+      "Pro Absatz eine Aussage",
+      "Jede Tatsachenbehauptung ist belegt",
+      "Stimme, Sprache und Anrede passen",
+      "Kein generischer LinkedIn-Rhythmus und kein aufgeblasener Schluss",
+      "Der CTA passt zum Beitrag"
+    ],
+    "outputContract": [
+      "Publikationsfertiger Beitrag",
+      "Optionale visuelle Vorgabe",
+      "Hinweis zu Aussagen und Belegen",
+      "Kurze Prüfung mit offenen Fakten"
+    ]
+  },
+  {
+    "id": "photography",
+    "label": "ein Markenfoto",
+    "description": "Ein fotorealistisches Markenbild oder eine zusammenhängende Fotoserie.",
+    "instructions": [
+      "Bestimme zuerst die kommunikative Aufgabe des Bildes. Lege Menschen, Ort und Kamera erst danach fest.",
+      "Beschreibe Menschen nur anhand einer expliziten Repräsentationsregel oder des Auftrags. Leite sensible Merkmale nie aus Namen, Gesichtern oder Branchenklischees ab.",
+      "Definiere Anzahl Personen, Altersspanne, Erscheinung, Rollen, Verhalten, Kleidung, Umgebung, Moment, Komposition, Kamerahöhe, Objektivcharakter, Tiefenschärfe, Lichtrichtung, Farbtemperatur, Palette, Oberflächen, Grading und sicheren Raum für Zuschnitte.",
+      "Verlange gelebte physische Details und glaubwürdige Arbeit. Vermeide Stockfoto-Gesten, Plastikhaut, falschen Text, falsche Logos sowie unmögliche Hände oder Werkzeuge."
+    ],
+    "productionChecklist": [
+      "Menschen und Casting folgen der expliziten Regel",
+      "Die Szene zeigt einen glaubwürdigen Moment statt einer Pose",
+      "Kamera, Objektiv und Licht erzeugen die beabsichtigte Stimmung",
+      "Die Markenpalette entsteht durch Umgebung und Grading, nicht durch farbigen Nebel",
+      "Der Zuschnitt funktioniert im verlangten Seitenverhältnis",
+      "Kein Text, Logo, Wasserzeichen oder erfundenes Zertifikat",
+      "Einwilligung und Datenschutz sind geklärt"
+    ],
+    "outputContract": [
+      "Absicht des Bildes",
+      "Ausführlicher positiver Prompt",
+      "Ausführlicher Negativ-Prompt",
+      "Hinweis zu Casting und Repräsentation",
+      "Vorgabe für Kamera, Licht und Grading",
+      "Zuschnitte und Abnahmekriterien"
+    ]
+  },
+  {
+    "id": "photo-graphic",
+    "label": "eine Fotografie mit grafischer Gestaltung",
+    "description": "Eine Fotografie mit grafischer Komposition für Social Media, Redaktion oder Kampagne.",
+    "instructions": [
+      "Trenne Bilderzeugung, Typografie und Layout. Erzeuge zuerst ein sauberes Foto und setze echten Text danach mit dem freigegebenen Schriftsystem.",
+      "Reserviere klaren Leerraum für Überschrift und CTA. Definiere Hierarchie, Raster, Zuschnittvarianten und Sicherheitsabstände.",
+      "Leite Überlagerungen und Effekte aus dem visuellen Konzept ab. Nutze sie nicht als Dekoration."
+    ],
+    "productionChecklist": [
+      "Das Foto funktioniert ohne erzeugten Text",
+      "Die Überschrift bleibt echte Typografie",
+      "Raster, Schrift, Farbe und Abstände stimmen mit der Marke überein",
+      "Desktop- und Mobile-Zuschnitte erhalten das Motiv",
+      "Der Kontrast besteht die Prüfung",
+      "Aussagen und CTA sind belegt"
+    ],
+    "outputContract": [
+      "Konzept und kommunikative Aufgabe",
+      "Prompt und Negativ-Prompt für das Rasterbild",
+      "Layoutvorgabe",
+      "Exakte Texthierarchie",
+      "Matrix der responsiven Zuschnitte",
+      "Prüfliste"
+    ]
+  },
+  {
+    "id": "video",
+    "label": "ein Markenvideo",
+    "description": "Ein Kurzfilm, Social-Video, Produktfilm oder eine Motion-Grafik.",
+    "instructions": [
+      "Baue ein Argument in der Zeit mit klarem Anfang, Wendung und Ende.",
+      "Beschreibe für jeden Abschnitt Bildabsicht, Handlung, Ausschnitt, Kamerabewegung, Dauer, Übergang, Klang, Musik, Sprechertext und Typografie im Bild.",
+      "Halte menschliches Verhalten natürlich und Produktabläufe physisch glaubwürdig.",
+      "Plane Untertitel, Audiodeskription und eine Alternative mit reduzierter Bewegung."
+    ],
+    "productionChecklist": [
+      "Jede Einstellung bringt die Aussage weiter",
+      "Das Casting folgt der Regel",
+      "Die Bewegungssprache bleibt konsistent",
+      "Musik und Klang stützen die Sprache und verdecken sie nicht",
+      "Untertitel und sichere Typografieflächen sind geplant",
+      "Kein erfundenes Produktverhalten und keine erfundene Aussage",
+      "Schlussbild und CTA passen zum Kanal"
+    ],
+    "outputContract": [
+      "Kreative Grundidee",
+      "Ablauf von Moment zu Moment",
+      "Einstellungsliste mit Kamera und Handlung",
+      "Sprechertext und Text im Bild",
+      "Vorgabe für Musik und Klang",
+      "Erzeugungs-Prompts je Einstellung",
+      "Barrierefreiheit und Lieferformate"
+    ]
+  },
+  {
+    "id": "brochure",
+    "label": "eine Broschüre oder ein Dokument",
+    "description": "Eine gedruckte oder digitale Broschüre, ein Dossier, Bericht oder Verkaufsdokument.",
+    "instructions": [
+      "Definiere Leser, Entscheid und Seitenweg, bevor du Text schreibst.",
+      "Beschreibe Umschlag, Navigation, Rhythmus der Abschnitte, Platzierung der Belege, Hervorhebungen, Diagramme, Bildzuschnitte, Papier- und PDF-Verhalten, Ränder, Beschnitt und Barrierefreiheit.",
+      "Setze sämtlichen Text mit echter Typografie. Erzeugte Bilder enthalten keine Wörter und Logos."
+    ],
+    "productionChecklist": [
+      "Das Dokument hat einen klaren Leser und Entscheid",
+      "Die Seitenfolge funktioniert beim Überfliegen und beim Lesen",
+      "Fakten und Quellen sind sichtbar",
+      "Schrift bleibt im Druck und PDF lesbar",
+      "Bilder haben genug Auflösung",
+      "Beschnitt, Sicherheitsabstand und Exportprofil sind definiert",
+      "Getaggtes PDF oder eine zugängliche digitale Alternative ist geplant"
+    ],
+    "outputContract": [
+      "Dokumentarchitektur",
+      "Inhalt je Seite",
+      "Text- und Beleganforderungen",
+      "Layout- und Druckvorgaben",
+      "Bildbriefings",
+      "Preflight-Prüfung"
+    ]
+  },
+  {
+    "id": "advertising",
+    "label": "eine Werbeanzeige",
+    "description": "Eine bezahlte statische Anzeige, ein Karussell, Display-Ad oder Social-Ad.",
+    "instructions": [
+      "Wähle pro Konzept eine Zielgruppe, eine Spannung, ein Angebot und eine Handlung.",
+      "Trenne kreative Hypothesen von belegten Aussagen und markiere nötige Nachweise.",
+      "Gestalte erstes Bild oder Standbild so, dass die Aussage vor dem Begleittext verständlich ist.",
+      "Liefere Produktionsvarianten, ohne die zentrale Markenidee zu verwässern."
+    ],
+    "productionChecklist": [
+      "Eine Zielgruppe und eine Handlung",
+      "Der Einstieg passt zur Zielseite",
+      "Die Aussage ist belegt",
+      "Logo und CTA bleiben in der Platzierungsgrösse lesbar",
+      "Das Bild ist ohne Clickbait erkennbar",
+      "Text- und Sicherheitsgrenzen der Plattform sind eingehalten",
+      "Die Varianten unterscheiden sich prüfbar"
+    ],
+    "outputContract": [
+      "Kreative Strategie",
+      "Drei prüfbare Konzepte",
+      "Textvarianten für die Plattform",
+      "Visuelle Vorgaben für Standbild oder Video",
+      "Liste der nötigen Belege",
+      "Messhypothese"
+    ]
+  },
+  {
+    "id": "website",
+    "label": "Webdesign und Website-Text",
+    "description": "Eine vollständige Website, Landingpage oder wiederverwendbare Web-Komponente.",
+    "instructions": [
+      "Ordne Absicht der Besucher, Informationsarchitektur, Belege und Konversion, bevor du Komponenten gestaltest.",
+      "Übersetze Markenregeln in semantische Design-Tokens, responsives Layout, Interaktionszustände und wiederverwendbare Komponenten.",
+      "Nutze belegte Quellinhalte. Zeige offene Fragen, statt Lücken mit generischem Text zu füllen."
+    ],
+    "productionChecklist": [
+      "Das Angebot ist in fünf Sekunden verständlich",
+      "Die Informationshierarchie folgt den Fragen der Zielgruppe",
+      "Jede Komponente nutzt gemeinsame Tokens",
+      "Die Bedienung auf Mobile entspricht Desktop",
+      "WCAG-Prüfungen sind bestanden",
+      "Kein horizontaler Überlauf bei 390 px",
+      "Leistung, SEO und strukturierte Daten sind geprüft",
+      "Aussagen und rechtliche Inhalte bleiben exakt"
+    ],
+    "outputContract": [
+      "Seitenziel und Zielgruppe",
+      "Informationsarchitektur",
+      "Text je Abschnitt",
+      "Vertrag für Design-Tokens und Komponenten",
+      "Responsive Interaktionszustände",
+      "Prompts für benötigte Dateien",
+      "Technische und barrierefreie Abnahmekriterien"
+    ]
+  },
+  {
+    "id": "presentation",
+    "label": "eine Präsentation",
+    "description": "Ein Pitch, Vortrag, internes Deck oder eine Kundenpräsentation.",
+    "instructions": [
+      "Baue zuerst das gesprochene Argument. Folien stützen es visuell und sind kein auf Rahmen verteilter Bericht.",
+      "Definiere Einstieg, Spannung, Belegfolge, Wendepunkt und Schluss.",
+      "Lege Master-Layouts, Schriftgrössen, Diagrammregeln, Bildzuschnitte und Anforderungen an Sprechernotizen fest."
+    ],
+    "productionChecklist": [
+      "Eine Idee pro Folie",
+      "Die Erzählung funktioniert gesprochen",
+      "Schrift ist auch hinten im Raum lesbar",
+      "Belege und Quellen sind sichtbar",
+      "Diagramme nutzen freigegebene semantische Farben",
+      "Bilder folgen der Casting-Regel",
+      "Das Deck endet mit einer klaren nächsten Handlung"
+    ],
+    "outputContract": [
+      "Zielgruppe und Präsentationsziel",
+      "Erzählbogen",
+      "Gliederung je Folie",
+      "Vorgabe für Master-Layouts",
+      "Vorgaben für Text, Diagramme und Bilder",
+      "Vortrag und Barrierefreiheit"
+    ]
+  }
+]

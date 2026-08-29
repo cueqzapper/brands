@@ -11,19 +11,19 @@
     "locales": ["de-CH", "fr-CH", "it-CH", "en"],
     "owner": "SEEZ",
     "reviewers": ["Simon Siegenthaler"],
-    "reviewCycle": "Review after company formation and every material offer or identity change.",
-    "licence": "Brand data CC BY 4.0; software and schema MIT; referenced brand assets retain their stated rights."
+    "reviewCycle": "Nach der Firmengründung sowie bei jeder wesentlichen Änderung des Angebots oder der Identität prüfen.",
+    "licence": "Markendaten CC BY 4.0; Software und Schema MIT; für referenzierte Markendateien gelten die jeweils genannten Rechte."
   },
   "brand": {
     "identity": {
       "name": "SEEZ",
-      "legalName": "SEEZ Systems GmbH (provisional until formation is complete)",
-      "pronunciation": "English: sees",
-      "tagline": "Software built around the work people do.",
+      "legalName": "SEEZ Systems GmbH (provisorisch bis zum Abschluss der Gründung)",
+      "pronunciation": "Englisch ausgesprochen: sees",
+      "tagline": "Software, gebaut um die Arbeit, die Menschen wirklich tun.",
       "descriptor": "Individuelle Webapplikationen für Schweizer Unternehmen",
       "website": "https://seez.ch/",
       "origin": "Reinach, Schweiz",
-      "nameMeaning": "A short, direct name built around seeing the real work before building technology."
+      "nameMeaning": "Ein kurzer, direkter Name. Erst die echte Arbeit sehen, dann Technik bauen."
     },
     "essence": {
       "oneLine": "SEEZ schaut zuerst auf die echte Arbeit und baut erst dann die passende Software.",
@@ -178,7 +178,7 @@
     "colors": {
       "dtcgVersion": "2025.10",
       "palette": [
-        {"id": "mint", "name": "Mint signal", "hex": "#23EAC3", "role": "primary", "meaning": "Live, aktiv, prüfbar", "use": ["aktive Zustände", "CTA", "Konturlinien", "Telemetrie"], "avoid": ["lange Fliesstexte", "vollflächige dekorative Hintergründe"], "$type": "color"},
+        {"id": "mint", "name": "Mint-Signal", "hex": "#23EAC3", "role": "primary", "meaning": "Live, aktiv, prüfbar", "use": ["aktive Zustände", "CTA", "Konturlinien", "Telemetrie"], "avoid": ["lange Fliesstexte", "vollflächige dekorative Hintergründe"], "$type": "color"},
         {"id": "ink", "name": "Warm ink", "hex": "#2A1D00", "role": "foreground", "meaning": "Menschliche Wärme auf hellen Flächen", "use": ["Wortmarke auf hell", "Text auf Paper"], "avoid": ["Text auf Graphit"], "$type": "color"},
         {"id": "graphite", "name": "Graphite", "hex": "#1A1A1A", "role": "background", "meaning": "Technische Tiefe", "use": ["dunkle Bühnen", "Footer", "Nachtflächen"], "avoid": ["undifferenzierte schwarze Vollfläche ohne Material"], "$type": "color"},
         {"id": "paper", "name": "Paper", "hex": "#F5F3EE", "role": "surface", "meaning": "Ruhige Arbeitsfläche", "use": ["helle Abschnitte", "Dokumente", "Controls"], "avoid": ["klinisch weisse Vollfläche ohne Struktur"], "$type": "color"},
@@ -189,7 +189,7 @@
       ],
       "pairings": [
         {"foreground": "#F0F0F0", "background": "#1A1A1A", "ratio": 15.3, "use": "Normal text on dark"},
-        {"foreground": "#0A1012", "background": "#23EAC3", "ratio": 12.7, "use": "CTA and active labels"},
+        {"foreground": "#0A1012", "background": "#23EAC3", "ratio": 12.7, "use": "CTA und aktive Beschriftungen"},
         {"foreground": "#2A1D00", "background": "#F5F3EE", "ratio": 14.5, "use": "Normal text on light"}
       ],
       "usage": ["Mint ist die einzige voll gesättigte Markenfarbe", "Farbe muss eine Funktion oder einen Zustand tragen", "Materialtexturen bleiben subtil und dürfen Text nicht stören"],
@@ -410,7 +410,7 @@
   "rules": {
     "universal": ["Verifizierte Fakten, Beobachtungen, kreative Entscheide und Inferenz sichtbar auseinanderhalten", "Keine Dienstleistung, Kennzahl, Referenz, Zertifizierung, Rechtsform oder Kundenbeziehung erfinden", "SEEZ immer in Versalien schreiben", "Mint nur als aktives Signal oder bewussten Fokus einsetzen", "Echte Typografie für lesbaren Text nutzen; Bildmodelle erzeugen keine Logos, Fliesstexte oder Zertifikate", "Menschen als handelnde Fachpersonen zeigen, nicht als Dekoration", "Eine Produktion gilt erst nach dem passenden realen Qualitätscheck als fertig"],
     "accessibility": {
-      "standard": "WCAG 2.2 AA for digital products; accessible PDF practices for documents.",
+      "standard": "WCAG 2.2 AA für digitale Produkte; barrierefreie PDF-Praxis für Dokumente.",
       "contrast": ["Normaler Text mindestens 4.5:1", "Grosser Text und UI-Grenzen mindestens 3:1", "Farbe nie als einziges Zustandsmerkmal", "Nur geprüfte Farbpaare einsetzen"],
       "motion": ["prefers-reduced-motion vollständig respektieren", "keine automatisch laufende wichtige Information ohne Pause", "keine flackernden Signale", "Zustand bleibt ohne Animation verständlich"],
       "text": ["Fliesstext skalierbar und nicht als Bild", "verständliche Überschriftenhierarchie", "Linkzweck aus dem Text erkennbar", "Schweizer Sprache klar und ohne unnötigen Jargon"],
@@ -429,18 +429,18 @@
   },
   "provenance": {
     "sources": [
-      {"id": "source-company", "type": "official-website", "url": "https://seez.ch/company/", "title": "SEEZ company page", "capturedAt": "2026-08-28T08:00:00+02:00", "notes": "Current noindex company page and multilingual company copy in the SEEZ repository."},
-      {"id": "source-brand", "type": "official-website", "url": "https://seez.ch/brand", "title": "SEEZ corporate design", "capturedAt": "2026-08-28T08:00:00+02:00", "notes": "Logo, colour, typography, imagery, motion and voice reference."},
-      {"id": "source-repo", "type": "document", "url": "https://github.com/cueqzapper/SEEZ", "title": "SEEZ source repository", "capturedAt": "2026-08-28T08:00:00+02:00", "notes": "Company copy and implemented visual tokens were read from the local authenticated checkout."},
-      {"id": "source-owner", "type": "owner-input", "url": "https://seez.ch/", "title": "Owner product direction", "capturedAt": "2026-08-28T08:00:00+02:00", "notes": "The Brand DNA system and SEEZweb integration are owner-directed; final brand approval remains open."}
+      {"id": "source-company", "type": "official-website", "url": "https://seez.ch/company/", "title": "SEEZ Company Page", "capturedAt": "2026-08-28T08:00:00+02:00", "notes": "Aktuelle nicht indexierte Company Page und mehrsprachige Unternehmenstexte im SEEZ-Repository."},
+      {"id": "source-brand", "type": "official-website", "url": "https://seez.ch/brand", "title": "SEEZ Corporate Design", "capturedAt": "2026-08-28T08:00:00+02:00", "notes": "Referenz für Logo, Farbe, Typografie, Bildwelt, Bewegung und Stimme."},
+      {"id": "source-repo", "type": "document", "url": "https://github.com/cueqzapper/SEEZ", "title": "SEEZ Quell-Repository", "capturedAt": "2026-08-28T08:00:00+02:00", "notes": "Unternehmenstexte und umgesetzte visuelle Tokens wurden aus dem lokalen authentifizierten Checkout gelesen."},
+      {"id": "source-owner", "type": "owner-input", "url": "https://seez.ch/", "title": "Produktrichtung des Inhabers", "capturedAt": "2026-08-28T08:00:00+02:00", "notes": "Brand-DNA-System und SEEZweb-Verbindung folgen der Vorgabe des Inhabers; die endgültige Markenfreigabe ist noch offen."}
     ],
     "decisions": [
-      {"path": "/brand/identity/name", "state": "declared", "confidence": 1, "sourceIds": ["source-company", "source-brand"], "rationale": "Used consistently in official SEEZ surfaces.", "approvedBy": "Simon Siegenthaler", "approvedAt": "2026-08-28T08:00:00+02:00"},
-      {"path": "/brand/identity/legalName", "state": "inferred", "confidence": 0.55, "sourceIds": ["source-company", "source-owner"], "rationale": "The planned legal name is public in the prepared company page, but formation is not yet confirmed complete.", "approvedBy": null, "approvedAt": null},
-      {"path": "/brand/essence", "state": "inferred", "confidence": 0.9, "sourceIds": ["source-company", "source-brand"], "rationale": "Condensed from repeated official messages and implemented brand guidance.", "approvedBy": null, "approvedAt": null},
-      {"path": "/visual", "state": "observed", "confidence": 0.96, "sourceIds": ["source-brand", "source-repo"], "rationale": "Colours, type, logo and visual grammar are implemented and documented.", "approvedBy": null, "approvedAt": null},
-      {"path": "/representation", "state": "inferred", "confidence": 0.65, "sourceIds": ["source-company", "source-owner"], "rationale": "A responsible production policy derived from the current human-centred brand direction; owner approval is required before it becomes binding.", "approvedBy": null, "approvedAt": null},
-      {"path": "/sensory", "state": "inferred", "confidence": 0.55, "sourceIds": ["source-brand"], "rationale": "Extended from documented motion and visual atmosphere; no existing sonic guideline was found.", "approvedBy": null, "approvedAt": null}
+      {"path": "/brand/identity/name", "state": "declared", "confidence": 1, "sourceIds": ["source-company", "source-brand"], "rationale": "Wird auf den offiziellen SEEZ-Oberflächen einheitlich verwendet.", "approvedBy": "Simon Siegenthaler", "approvedAt": "2026-08-28T08:00:00+02:00"},
+      {"path": "/brand/identity/legalName", "state": "inferred", "confidence": 0.55, "sourceIds": ["source-company", "source-owner"], "rationale": "Der geplante Firmenname ist auf der vorbereiteten Company Page öffentlich, die abgeschlossene Gründung ist aber noch nicht bestätigt.", "approvedBy": null, "approvedAt": null},
+      {"path": "/brand/essence", "state": "inferred", "confidence": 0.9, "sourceIds": ["source-company", "source-brand"], "rationale": "Aus wiederkehrenden offiziellen Botschaften und der umgesetzten Markenführung verdichtet.", "approvedBy": null, "approvedAt": null},
+      {"path": "/visual", "state": "observed", "confidence": 0.96, "sourceIds": ["source-brand", "source-repo"], "rationale": "Farben, Schriften, Logo und visuelle Grammatik sind umgesetzt und dokumentiert.", "approvedBy": null, "approvedAt": null},
+      {"path": "/representation", "state": "inferred", "confidence": 0.65, "sourceIds": ["source-company", "source-owner"], "rationale": "Verantwortungsvolle Produktionsregel aus der aktuellen menschenzentrierten Markenrichtung; vor verbindlicher Nutzung ist die Freigabe des Inhabers nötig.", "approvedBy": null, "approvedAt": null},
+      {"path": "/sensory", "state": "inferred", "confidence": 0.55, "sourceIds": ["source-brand"], "rationale": "Aus dokumentierter Bewegung und visueller Atmosphäre erweitert; eine bestehende Klangrichtlinie wurde nicht gefunden.", "approvedBy": null, "approvedAt": null}
     ],
     "openQuestions": [
       {"id": "company-formation", "question": "Wann ist die Gründung abgeschlossen und darf SEEZ Systems GmbH ohne provisorischen Hinweis öffentlich verwendet werden?", "affects": ["/brand/identity/legalName", "/verbal/claims", "/rules/legal/claims"], "priority": "blocking"},

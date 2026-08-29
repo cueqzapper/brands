@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1 - 2026-08-29
+
+- Use each Brand DNA's `meta.defaultLocale` in the reference UI and compiler.
+- Limit selectable output languages to the locales declared by the active brand.
+- Add German prompt scaffolding, German task-profile translations and explicit source/output language handling.
+- Localise the SEEZ kit and remove mixed English copy from its main human-facing fields.
+
 ## 1.1.0 - 2026-08-28
 
 - Added the rights-aware `assets` contract for logos, icons, photography,

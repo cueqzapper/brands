@@ -9,6 +9,7 @@ await Promise.all(["seez", "rook-and-rye", "northline-repair", "quiet-current"].
 await Promise.all([
   copyFile(new URL("src/compiler.mjs", root), new URL("compiler.js", docs)),
   copyFile(new URL("profiles/task-profiles.json", root), new URL("data/task-profiles.json", docs)),
+  copyFile(new URL("profiles/task-profiles.de-CH.json", root), new URL("data/task-profiles.de-CH.json", docs)),
   copyFile(new URL("examples/catalog.json", root), new URL("data/brand-catalog.json", docs)),
   copyFile(new URL("examples/seez/brand-dna.json", root), new URL("data/brands/seez/brand-dna.json", docs)),
   copyFile(new URL("examples/seez/brand-dna.json", root), new URL("data/brands/seez.json", docs)),

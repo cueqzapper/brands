@@ -1,6 +1,6 @@
 {
   "name": "@cueqzapper/brands",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An open, evidence-aware Brand DNA format and task-context compiler for humans, tools and AI agents.",
   "type": "module",
   "license": "MIT",

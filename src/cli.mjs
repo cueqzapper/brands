@@ -14,7 +14,17 @@ async function readJson(path) {
 }
 
 async function profiles() {
-  return JSON.parse(await readFile(new URL("../profiles/task-profiles.json", import.meta.url), "utf8"));
+  const [base, german] = await Promise.all([
+    readFile(new URL("../profiles/task-profiles.json", import.meta.url), "utf8").then(JSON.parse),
+    readFile(new URL("../profiles/task-profiles.de-CH.json", import.meta.url), "utf8").then(JSON.parse),
+  ]);
+  return base.map((profile) => ({
+    ...profile,
+    translations: {
+      ...(profile.translations || {}),
+      "de-CH": german.find((candidate) => candidate.id === profile.id),
+    },
+  }));
 }
 
 function option(args, name, fallback = "") {

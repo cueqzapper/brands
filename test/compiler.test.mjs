@@ -13,7 +13,12 @@ const fictionalDnas = await Promise.all([
   "quiet-current",
 ].map(async (id) => JSON.parse(await readFile(new URL(`../examples/fictional/${id}/brand-dna.json`, import.meta.url)))));
 const catalog = JSON.parse(await readFile(new URL("../examples/catalog.json", import.meta.url)));
-const profiles = JSON.parse(await readFile(new URL("../profiles/task-profiles.json", import.meta.url)));
+const baseProfiles = JSON.parse(await readFile(new URL("../profiles/task-profiles.json", import.meta.url)));
+const germanProfiles = JSON.parse(await readFile(new URL("../profiles/task-profiles.de-CH.json", import.meta.url)));
+const profiles = baseProfiles.map((profile) => ({
+  ...profile,
+  translations: { "de-CH": germanProfiles.find((candidate) => candidate.id === profile.id) },
+}));
 const schema = JSON.parse(await readFile(new URL("../schema/brand-dna.schema.json", import.meta.url)));
 
 test("all examples validate against the current Brand DNA schema", () => {
@@ -54,9 +59,42 @@ test("all distributed profiles compile exhaustive packets", () => {
     const packet = compileBrandDNA(dna, profiles, { profile: profile.id, brief: "Produce one test artifact." });
     assert.equal(packet.profile.id, profile.id);
     assert.ok(packet.prompt.length > 2500, `${profile.id} prompt is unexpectedly thin`);
-    assert.match(packet.prompt, /Production checklist/);
-    assert.match(packet.prompt, /unresolved decisions/i);
+    assert.match(packet.prompt, /Produktionsprüfung/);
+    assert.match(packet.prompt, /offenen Entscheiden/i);
   }
+});
+
+test("each Brand DNA compiles in its own default language", () => {
+  const seezPacket = compileBrandDNA(dna, profiles, { profile: "photography" });
+  assert.equal(seezPacket.locale, "de-CH");
+  assert.equal(seezPacket.sourceLocale, "de-CH");
+  assert.match(seezPacket.prompt, /^# Produktionsbrief der Marke:/);
+  assert.match(seezPacket.prompt, /Produktionsvorgaben für dieses Profil/);
+  assert.doesNotMatch(seezPacket.prompt, /^# Brand production brief:/);
+
+  for (const example of fictionalDnas) {
+    const packet = compileBrandDNA(example, profiles, { profile: "photography" });
+    assert.equal(packet.locale, "en");
+    assert.equal(packet.sourceLocale, "en");
+    assert.match(packet.prompt, /^# Brand production brief:/);
+  }
+});
+
+test("unsupported output locales fall back to the brand default", () => {
+  const packet = compileBrandDNA(fictionalDnas[0], profiles, { profile: "linkedin", locale: "de-CH" });
+  assert.equal(packet.requestedLocale, "de-CH");
+  assert.equal(packet.locale, "en");
+  assert.equal(packet.localeFallback, true);
+  assert.match(packet.prompt, /^# Brand production brief:/);
+});
+
+test("supported translations name source and output language", () => {
+  const packet = compileBrandDNA(dna, profiles, { profile: "linkedin", locale: "fr-CH" });
+  assert.equal(packet.locale, "fr-CH");
+  assert.equal(packet.sourceLocale, "de-CH");
+  assert.match(packet.prompt, /^# Brief de production de la marque:/);
+  assert.match(packet.prompt, /Langue source de la Brand DNA:\*\* de-CH/);
+  assert.match(packet.prompt, /traduisez le sens avec précision/);
 });
 
 test("icon context excludes photography, people, sound and LinkedIn", () => {
@@ -74,8 +112,8 @@ test("photography context contains casting and camera but no LinkedIn cadence", 
   assert.ok(packet.context.visual.photography);
   assert.ok(packet.context.representation.casting);
   assert.equal(packet.context.channels, undefined);
-  assert.match(packet.prompt, /lens/i);
-  assert.match(packet.prompt, /sensitive/i);
+  assert.match(packet.prompt, /Objektiv/i);
+  assert.match(packet.prompt, /sensible/i);
   assert.doesNotMatch(packet.prompt, /Hashtag-Teppich/);
 });
 
@@ -85,7 +123,7 @@ test("LinkedIn context contains voice and channel but no camera or sonic rules",
   assert.ok(packet.context.channels.linkedin);
   assert.equal(packet.context.visual.photography, undefined);
   assert.equal(packet.context.sensory, undefined);
-  assert.match(packet.prompt, /evidence/i);
+  assert.match(packet.prompt, /Beleg/i);
 });
 
 test("portable exports include core SEEZ tokens", () => {

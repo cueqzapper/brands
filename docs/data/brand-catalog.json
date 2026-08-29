@@ -3,14 +3,14 @@
     "id": "seez",
     "name": "SEEZ",
     "kind": "real-reference",
-    "badge": "Real reference",
-    "description": "The current SEEZ company and design system, with unresolved owner decisions kept visible.",
+    "badge": "Reale Referenz",
+    "description": "Das aktuelle Unternehmen und Designsystem von SEEZ. Offene Entscheide bleiben sichtbar.",
     "data": "./data/brands/seez/brand-dna.json",
     "downloadName": "seez-brand-dna.json",
     "displaySample": "WORK\nIN USE.",
     "displayFont": "Six Caps",
     "starterProfile": "photography",
-    "starterBrief": "Create an image that shows how a real work process becomes a testable software core."
+    "starterBrief": "Erstelle ein Bild, das zeigt, wie aus einem echten Arbeitsablauf ein testbarer Software-Kern entsteht."
   },
   {
     "id": "rook-and-rye",
