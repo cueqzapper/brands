@@ -70,6 +70,7 @@ test("each Brand DNA compiles in its own default language", () => {
   assert.equal(seezPacket.sourceLocale, "de-CH");
   assert.match(seezPacket.prompt, /^# Produktionsbrief der Marke:/);
   assert.match(seezPacket.prompt, /Produktionsvorgaben für dieses Profil/);
+  assert.match(seezPacket.prompt, /\*\*Detailgrad:\*\* ausführlich/);
   assert.doesNotMatch(seezPacket.prompt, /^# Brand production brief:/);
 
   for (const example of fictionalDnas) {

@@ -105,6 +105,7 @@ const PROMPT_COPY = {
     outputLanguage: "Output language",
     sourceLanguage: "Brand DNA source language",
     detail: "Detail level",
+    detailValues: { exhaustive: "exhaustive" },
     profileId: "Profile id",
     translation: "When source and output language differ, translate meaning faithfully. Preserve approved terminology, names, claims, numbers and legal wording; flag anything that cannot be translated safely.",
     method: "Working method",
@@ -132,6 +133,7 @@ const PROMPT_COPY = {
     outputLanguage: "Ausgabesprache",
     sourceLanguage: "Quellsprache der Brand DNA",
     detail: "Detailgrad",
+    detailValues: { exhaustive: "ausführlich" },
     profileId: "Profil-ID",
     translation: "Wenn Quell- und Ausgabesprache nicht übereinstimmen, übersetze den Sinn präzise. Übernimm freigegebene Begriffe, Namen, Aussagen, Zahlen und rechtliche Formulierungen unverändert. Markiere alles, was sich nicht sicher übersetzen lässt.",
     method: "Arbeitsweise",
@@ -159,6 +161,7 @@ const PROMPT_COPY = {
     outputLanguage: "Langue de sortie",
     sourceLanguage: "Langue source de la Brand DNA",
     detail: "Niveau de détail",
+    detailValues: { exhaustive: "exhaustif" },
     profileId: "Identifiant du profil",
     translation: "Si les langues source et cible diffèrent, traduisez le sens avec précision. Conservez la terminologie approuvée, les noms, les affirmations, les chiffres et les formulations juridiques; signalez tout élément qui ne peut pas être traduit de manière sûre.",
     method: "Méthode de travail",
@@ -186,6 +189,7 @@ const PROMPT_COPY = {
     outputLanguage: "Lingua di uscita",
     sourceLanguage: "Lingua sorgente della Brand DNA",
     detail: "Livello di dettaglio",
+    detailValues: { exhaustive: "esaustivo" },
     profileId: "ID del profilo",
     translation: "Se la lingua sorgente e quella di uscita differiscono, traduci il significato con precisione. Mantieni terminologia approvata, nomi, affermazioni, numeri e formulazioni legali; segnala ciò che non può essere tradotto in modo sicuro.",
     method: "Metodo di lavoro",
@@ -343,7 +347,7 @@ export function renderPromptPacket(packet) {
     `## ${copy.task}\n\n${brief || copy.noBrief}\n\n` +
     `- **${copy.outputLanguage}:** ${locale}\n` +
     `- **${copy.sourceLanguage}:** ${sourceLocale}\n` +
-    `- **${copy.detail}:** ${detail}\n` +
+    `- **${copy.detail}:** ${copy.detailValues?.[detail] || detail}\n` +
     `- **${copy.profileId}:** ${profile.id}\n\n` +
     `${sourceLocale !== locale ? `${copy.translation}\n\n` : ""}` +
     `## ${copy.method}\n\n` +

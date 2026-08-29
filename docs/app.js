@@ -1,9 +1,17 @@
 import { compileBrandDNA } from "./compiler.js?v=1.1.1";
 
+const DOCS_VERSION = "1.1.1";
+
+function versioned(path) {
+  const url = new URL(path, window.location.href);
+  url.searchParams.set("v", DOCS_VERSION);
+  return url.href;
+}
+
 const [catalog, baseProfiles, germanProfiles] = await Promise.all([
-  fetch("./data/brand-catalog.json").then(assertJsonResponse),
-  fetch("./data/task-profiles.json").then(assertJsonResponse),
-  fetch("./data/task-profiles.de-CH.json").then(assertJsonResponse),
+  fetch(versioned("./data/brand-catalog.json")).then(assertJsonResponse),
+  fetch(versioned("./data/task-profiles.json")).then(assertJsonResponse),
+  fetch(versioned("./data/task-profiles.de-CH.json")).then(assertJsonResponse),
 ]);
 const profiles = baseProfiles.map((profile) => ({
   ...profile,
@@ -14,7 +22,7 @@ const profiles = baseProfiles.map((profile) => ({
 }));
 const library = await Promise.all(catalog.map(async (entry) => ({
   ...entry,
-  dna: await fetch(entry.data).then(assertJsonResponse),
+  dna: await fetch(versioned(entry.data)).then(assertJsonResponse),
 })));
 
 function assertJsonResponse(response) {
