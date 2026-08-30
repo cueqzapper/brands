@@ -19,7 +19,7 @@
   ],
   "properties": {
     "$schema": { "type": "string", "format": "uri-reference" },
-    "schemaVersion": { "enum": ["1.0.0", "1.1.0"] },
+    "schemaVersion": { "enum": ["1.0.0", "1.1.0", "1.2.0"] },
     "meta": { "$ref": "#/$defs/meta" },
     "brand": { "$ref": "#/$defs/brand" },
     "strategy": { "$ref": "#/$defs/strategy" },
@@ -42,6 +42,23 @@
     {
       "if": { "properties": { "schemaVersion": { "const": "1.1.0" } }, "required": ["schemaVersion"] },
       "then": { "properties": { "assets": { "$ref": "#/$defs/assets" } }, "required": ["assets"] }
+    },
+    {
+      "if": { "properties": { "schemaVersion": { "const": "1.2.0" } }, "required": ["schemaVersion"] },
+      "then": {
+        "required": ["assets"],
+        "properties": {
+          "assets": { "$ref": "#/$defs/assets" },
+          "visual": {
+            "allOf": [{
+              "type": "object",
+              "properties": {
+                "logo": { "type": "object", "properties": { "components": true }, "required": ["components"] }
+              }
+            }]
+          }
+        }
+      }
     }
   ],
   "$defs": {
@@ -77,6 +94,37 @@
       "type": "array",
       "items": { "$ref": "#/$defs/asset" },
       "uniqueItems": true
+    },
+    "logoComponent": {
+      "type": "object",
+      "required": ["id", "assetId", "description", "use", "status"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$" },
+        "assetId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$" },
+        "description": { "type": "string", "minLength": 1 },
+        "use": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["draft", "approved", "deprecated"] }
+      },
+      "additionalProperties": false
+    },
+    "logoLockup": {
+      "type": "object",
+      "required": ["id", "assetId", "composition", "orientation", "use", "status"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$" },
+        "assetId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$" },
+        "composition": {
+          "type": "array",
+          "items": { "enum": ["signet", "wordmark"] },
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "orientation": { "enum": ["horizontal", "vertical", "compact"] },
+        "use": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["draft", "approved", "deprecated"] }
+      },
+      "additionalProperties": false
     },
     "assets": {
       "type": "object",
@@ -429,6 +477,21 @@
           "required": ["idea", "variants", "clearspace", "minimumSize", "placement", "do", "dont"],
           "properties": {
             "idea": { "type": "string" },
+            "components": {
+              "type": "object",
+              "description": "The reusable logo system. Signet and wordmark are independent source components; lockups define approved combinations.",
+              "required": ["signet", "wordmark", "lockups"],
+              "properties": {
+                "signet": { "$ref": "#/$defs/logoComponent" },
+                "wordmark": { "$ref": "#/$defs/logoComponent" },
+                "lockups": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": { "$ref": "#/$defs/logoLockup" }
+                }
+              },
+              "additionalProperties": false
+            },
             "variants": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
             "clearspace": { "type": "string" },
             "minimumSize": { "type": "object", "additionalProperties": { "type": ["string", "number"] } },

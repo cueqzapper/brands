@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cueqzapper.github.io/brands/schema/brand-project.schema.json",
+  "title": "Brand Project",
+  "description": "A portable, secret-free project manifest that binds editable artifacts to one Brand DNA source of truth.",
+  "type": "object",
+  "required": ["schemaVersion", "project", "brandDna", "tokens", "artifacts"],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri-reference" },
+    "schemaVersion": { "const": "1.0.0" },
+    "project": { "$ref": "#/$defs/project" },
+    "brandDna": { "$ref": "#/$defs/brandDnaReference" },
+    "tokens": {
+      "type": "object",
+      "description": "Named live values resolved from Brand DNA. Values are never copied into this manifest.",
+      "propertyNames": { "pattern": "^[a-z][a-z0-9]*(?:[.-][a-z0-9]+)*$" },
+      "additionalProperties": { "$ref": "#/$defs/tokenBinding" }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/artifact" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]+$"
+    },
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?![A-Za-z][A-Za-z0-9+.-]*:)(?!.*[?#\\\\])(?!(?:.*/)?\\.\\.(?:/|$)).+$",
+      "description": "A package-relative path without query strings, fragments or embedded credentials."
+    },
+    "jsonPointer": {
+      "type": "string",
+      "pattern": "^(?:|(?:/(?:[^~/]|~[01])*)+)$",
+      "description": "An RFC 6901 JSON Pointer."
+    },
+    "project": {
+      "type": "object",
+      "required": ["id", "name", "version", "status", "createdAt", "updatedAt", "owner"],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "name": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "status": { "enum": ["draft", "active", "archived"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "owner": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "brandDnaReference": {
+      "type": "object",
+      "required": ["path", "mediaType", "schemaVersion"],
+      "properties": {
+        "path": { "$ref": "#/$defs/relativePath" },
+        "mediaType": { "const": "application/vnd.cueqzapper.brand-dna+json" },
+        "schemaVersion": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "integrity": {
+          "type": "string",
+          "pattern": "^sha256-[A-Za-z0-9+/]{43}=$",
+          "description": "Optional Subresource Integrity-style digest for immutable deliveries."
+        }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": ["document", "pointer"],
+      "properties": {
+        "document": { "const": "brand-dna" },
+        "pointer": { "$ref": "#/$defs/jsonPointer" }
+      },
+      "additionalProperties": false
+    },
+    "tokenBinding": {
+      "type": "object",
+      "required": ["source", "valueType", "mode"],
+      "properties": {
+        "source": { "$ref": "#/$defs/source" },
+        "valueType": { "enum": ["color", "dimension", "font-family", "font-weight", "string", "number", "boolean", "asset", "object", "array"] },
+        "mode": { "const": "live" }
+      },
+      "additionalProperties": false
+    },
+    "document": {
+      "type": "object",
+      "required": ["path", "mediaType", "formatVersion"],
+      "properties": {
+        "path": { "$ref": "#/$defs/relativePath" },
+        "mediaType": { "type": "string", "pattern": "^[a-z0-9!#$&^_.+-]+/[a-z0-9!#$&^_.+-]+$" },
+        "formatVersion": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "editor": {
+      "type": "object",
+      "required": ["provider"],
+      "properties": {
+        "provider": { "enum": ["seezweb", "picorn", "portable"] },
+        "projectId": { "$ref": "#/$defs/identifier" },
+        "documentId": { "$ref": "#/$defs/identifier" },
+        "surface": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "binding": {
+      "type": "object",
+      "required": ["target", "source", "mode", "required"],
+      "properties": {
+        "target": { "$ref": "#/$defs/jsonPointer" },
+        "source": { "$ref": "#/$defs/source" },
+        "mode": { "const": "live" },
+        "required": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "readinessCheck": {
+      "type": "object",
+      "required": ["id", "status", "label"],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "status": { "enum": ["pending", "passed", "failed", "waived"] },
+        "label": { "type": "string", "minLength": 1 },
+        "evidence": { "$ref": "#/$defs/relativePath" }
+      },
+      "additionalProperties": false
+    },
+    "readiness": {
+      "type": "object",
+      "required": ["state", "checks", "updatedAt"],
+      "properties": {
+        "state": { "enum": ["planned", "draft", "review", "ready", "blocked", "deprecated"] },
+        "checks": { "type": "array", "items": { "$ref": "#/$defs/readinessCheck" } },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    },
+    "deliveryExport": {
+      "type": "object",
+      "required": ["id", "path", "mediaType", "createdAt"],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "path": { "$ref": "#/$defs/relativePath" },
+        "mediaType": { "type": "string", "pattern": "^[a-z0-9!#$&^_.+-]+/[a-z0-9!#$&^_.+-]+$" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    },
+    "delivery": {
+      "type": "object",
+      "required": ["state", "exports", "updatedAt"],
+      "properties": {
+        "state": { "enum": ["not-requested", "prepared", "delivered", "accepted", "rejected"] },
+        "exports": { "type": "array", "items": { "$ref": "#/$defs/deliveryExport" } },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    },
+    "artifact": {
+      "type": "object",
+      "required": ["id", "kind", "name", "document", "editor", "bindings", "assetIds", "readiness", "delivery"],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "kind": { "enum": ["website", "business-card", "label", "social", "icon-set", "backgrounds", "photography", "decorative"] },
+        "name": { "type": "string", "minLength": 1 },
+        "document": { "$ref": "#/$defs/document" },
+        "editor": { "$ref": "#/$defs/editor" },
+        "bindings": { "type": "array", "items": { "$ref": "#/$defs/binding" } },
+        "assetIds": { "type": "array", "items": { "$ref": "#/$defs/identifier" }, "uniqueItems": true },
+        "readiness": { "$ref": "#/$defs/readiness" },
+        "delivery": { "$ref": "#/$defs/delivery" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -11,6 +11,11 @@ the physical logo, icon, image, illustration, texture, motion, audio and
 template files. A task profile then selects only the relevant parts and turns
 them into an exhaustive production brief.
 
+Version 1.2 adds an optional, backward-compatible logo-component contract and
+a separate portable `brand-project.json`. A v1.2 logo identifies its reusable
+signet and wordmark independently, then records the approved combined lockups.
+Existing v1.0 and v1.1 Brand DNA documents remain valid without this field.
+
 ```text
 brand-dna.json + icon profile       -> detailed icon prompt
 brand-dna.json + linkedin profile   -> detailed writing brief
@@ -148,6 +153,54 @@ approved icon masters and logo reference, a photography prompt receives images
 and textures, while a complete website packet can receive the whole manifest.
 The repository examples ship the actual files displayed by GitHub Pages.
 
+## Portable Brand Projects
+
+[`brand-project.schema.json`](schema/brand-project.schema.json) is the open
+handoff between SEEZWeb, Picorn and other editors. It does not copy brand
+values. Every token and document binding points back to `brand-dna.json` with
+an RFC 6901 JSON Pointer, so a changed colour or logo resolves consistently in
+the website, business card, label and social templates.
+
+```json
+{
+  "schemaVersion": "1.0.0",
+  "brandDna": {
+    "path": "./brand-dna.json",
+    "mediaType": "application/vnd.cueqzapper.brand-dna+json",
+    "schemaVersion": "1.2.0"
+  },
+  "tokens": {
+    "color.primary": {
+      "source": { "document": "brand-dna", "pointer": "/visual/colors/palette/0/hex" },
+      "valueType": "color",
+      "mode": "live"
+    }
+  },
+  "artifacts": []
+}
+```
+
+The standard artifact kinds are `website`, `business-card`, `label`, `social`,
+`icon-set`, `backgrounds`, `photography` and `decorative`. Each artifact names
+its portable document, editor surface, Brand DNA bindings, referenced asset
+IDs, readiness checks and delivery exports. Paths are package-relative. The
+strict schema deliberately has no credential, API-key, signed-URL or arbitrary
+metadata fields; secrets belong in the consuming system's protected runtime.
+
+JavaScript consumers can resolve live values without mutating either file:
+
+```js
+import { resolveBrandProjectTokens, resolveArtifactBindings } from "@cueqzapper/brands/project";
+
+const tokens = resolveBrandProjectTokens(project, brandDna);
+const bindings = resolveArtifactBindings(project, "business-card-main", brandDna);
+```
+
+See the complete
+[`portable-brand-project.json`](examples/portable-brand-project.json), the
+[TypeScript declarations](types/index.d.ts) and the
+[project schema](schema/brand-project.schema.json).
+
 ## Evidence states
 
 Every important decision can be linked to sources and marked as:
@@ -165,6 +218,9 @@ but it must be a deliberate editorial or owner-approved decision.
 ## Compatibility
 
 - The root schema uses JSON Schema Draft 2020-12.
+- Brand DNA v1.0 and v1.1 documents remain valid under the v1.2 schema.
+- Brand Projects use their own `1.0.0` contract and may reference any supported
+  Brand DNA schema version.
 - Colour tokens can carry the DTCG `$type: "color"` marker.
 - `brand-dna export --format brand-yml` creates a conservative Posit
   `_brand.yml` starting point.
@@ -173,10 +229,11 @@ but it must be a deliberate editorial or owner-approved decision.
 ## Repository map
 
 ```text
-schema/       Brand DNA JSON Schema
+schema/       Brand DNA and portable Brand Project JSON Schemas
 profiles/     context selectors and production contracts
-src/          pure compiler, exports and CLI
-examples/     real reference plus fictional brands and their physical assets
+src/          pure compiler, project resolver, exports and CLI
+types/        public TypeScript declarations
+examples/     brand references, assets and a portable project manifest
 docs/         GitHub Pages reference and prompt lab
 test/         validation and context-isolation tests
 ```

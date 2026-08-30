@@ -5,6 +5,7 @@ const docs = new URL("../docs/", import.meta.url);
 await mkdir(new URL("data/", docs), { recursive: true });
 await mkdir(new URL("data/brands/", docs), { recursive: true });
 await mkdir(new URL("schema/", docs), { recursive: true });
+await mkdir(new URL("types/", docs), { recursive: true });
 await Promise.all(["seez", "rook-and-rye", "northline-repair", "quiet-current"].map((id) => mkdir(new URL(`data/brands/${id}/`, docs), { recursive: true })));
 await Promise.all([
   copyFile(new URL("src/compiler.mjs", root), new URL("compiler.js", docs)),
@@ -22,6 +23,9 @@ await Promise.all([
   copyFile(new URL("examples/fictional/quiet-current/brand-dna.json", root), new URL("data/brands/quiet-current.json", docs)),
   copyFile(new URL("schema/brand-dna.schema.json", root), new URL("schema.json", docs)),
   copyFile(new URL("schema/brand-dna.schema.json", root), new URL("schema/brand-dna.schema.json", docs)),
+  copyFile(new URL("schema/brand-project.schema.json", root), new URL("schema/brand-project.schema.json", docs)),
+  copyFile(new URL("examples/portable-brand-project.json", root), new URL("data/portable-brand-project.json", docs)),
+  copyFile(new URL("types/index.d.ts", root), new URL("types/index.d.ts", docs)),
   cp(new URL("examples/seez/assets/", root), new URL("data/brands/seez/assets/", docs), { recursive: true }),
   cp(new URL("examples/fictional/rook-and-rye/assets/", root), new URL("data/brands/rook-and-rye/assets/", docs), { recursive: true }),
   cp(new URL("examples/fictional/northline-repair/assets/", root), new URL("data/brands/northline-repair/assets/", docs), { recursive: true }),

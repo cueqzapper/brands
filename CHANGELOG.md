@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.0 - 2026-08-30
+
+- Added a backward-compatible Brand DNA logo-component contract for signet,
+  wordmark and approved lockups.
+- Added the strict, secret-free Brand Project schema for portable SEEZWeb and
+  Picorn documents, live JSON Pointer bindings, readiness and delivery state.
+- Added JavaScript resolvers, TypeScript declarations, a complete project
+  example, validation tests and GitHub Pages reference links.
+
 ## 1.1.2 - 2026-08-29
 
 - Version the catalog, profiles and Brand DNA requests so a new language release cannot reuse stale text from the browser cache.

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://cueqzapper.github.io/brands/schema/brand-project.schema.json",
+  "schemaVersion": "1.0.0",
+  "project": {
+    "id": "seez-reference-project",
+    "name": "SEEZ portable reference project",
+    "version": "1.0.0",
+    "status": "active",
+    "createdAt": "2026-08-30T09:00:00Z",
+    "updatedAt": "2026-08-30T09:00:00Z",
+    "owner": "SEEZ"
+  },
+  "brandDna": {
+    "path": "./seez/brand-dna.json",
+    "mediaType": "application/vnd.cueqzapper.brand-dna+json",
+    "schemaVersion": "1.1.0"
+  },
+  "tokens": {
+    "color.primary": { "source": { "document": "brand-dna", "pointer": "/visual/colors/palette/0/hex" }, "valueType": "color", "mode": "live" },
+    "color.background": { "source": { "document": "brand-dna", "pointer": "/visual/colors/palette/2/hex" }, "valueType": "color", "mode": "live" },
+    "font.heading": { "source": { "document": "brand-dna", "pointer": "/visual/typography/roles/heading" }, "valueType": "font-family", "mode": "live" },
+    "logo.primary": { "source": { "document": "brand-dna", "pointer": "/assets/logos/0/path" }, "valueType": "asset", "mode": "live" }
+  },
+  "artifacts": [
+    {
+      "id": "website-main", "kind": "website", "name": "Main website",
+      "document": { "path": "documents/website.json", "mediaType": "application/json", "formatVersion": "1.0.0" },
+      "editor": { "provider": "seezweb", "projectId": "seez-reference-project", "documentId": "website-main", "surface": "website" },
+      "bindings": [{ "target": "/theme/colors/primary", "source": { "document": "brand-dna", "pointer": "/visual/colors/palette/0/hex" }, "mode": "live", "required": true }],
+      "assetIds": ["logo-ink"],
+      "readiness": { "state": "review", "checks": [{ "id": "responsive-review", "status": "passed", "label": "Responsive layout reviewed" }], "updatedAt": "2026-08-30T09:00:00Z" },
+      "delivery": { "state": "not-requested", "exports": [], "updatedAt": "2026-08-30T09:00:00Z" }
+    },
+    {
+      "id": "business-card-main", "kind": "business-card", "name": "Business card",
+      "document": { "path": "documents/business-card.json", "mediaType": "application/json", "formatVersion": "1.0.0" },
+      "editor": { "provider": "picorn", "projectId": "seez-reference-project", "documentId": "business-card-main", "surface": "print" },
+      "bindings": [{ "target": "/design/logo", "source": { "document": "brand-dna", "pointer": "/assets/logos/0/path" }, "mode": "live", "required": true }],
+      "assetIds": ["logo-ink"],
+      "readiness": { "state": "draft", "checks": [{ "id": "print-review", "status": "pending", "label": "Print specifications reviewed" }], "updatedAt": "2026-08-30T09:00:00Z" },
+      "delivery": { "state": "not-requested", "exports": [], "updatedAt": "2026-08-30T09:00:00Z" }
+    },
+    {
+      "id": "label-main", "kind": "label", "name": "Product label",
+      "document": { "path": "documents/label.json", "mediaType": "application/json", "formatVersion": "1.0.0" },
+      "editor": { "provider": "picorn", "surface": "print" },
+      "bindings": [{ "target": "/design/color", "source": { "document": "brand-dna", "pointer": "/visual/colors/palette/0/hex" }, "mode": "live", "required": true }],
+      "assetIds": [], "readiness": { "state": "planned", "checks": [], "updatedAt": "2026-08-30T09:00:00Z" }, "delivery": { "state": "not-requested", "exports": [], "updatedAt": "2026-08-30T09:00:00Z" }
+    },
+    {
+      "id": "social-main", "kind": "social", "name": "Social post system",
+      "document": { "path": "documents/social.json", "mediaType": "application/json", "formatVersion": "1.0.0" },
+      "editor": { "provider": "picorn", "surface": "social" },
+      "bindings": [{ "target": "/design/font", "source": { "document": "brand-dna", "pointer": "/visual/typography/roles/heading" }, "mode": "live", "required": true }],
+      "assetIds": [], "readiness": { "state": "planned", "checks": [], "updatedAt": "2026-08-30T09:00:00Z" }, "delivery": { "state": "not-requested", "exports": [], "updatedAt": "2026-08-30T09:00:00Z" }
+    },
+    {
+      "id": "icon-set-main", "kind": "icon-set", "name": "Core icon set",
+      "document": { "path": "documents/icon-set.json", "mediaType": "application/json", "formatVersion": "1.0.0" },
+      "editor": { "provider": "portable", "surface": "assets" },
+      "bindings": [{ "target": "/style/color", "source": { "document": "brand-dna", "pointer": "/visual/colors/palette/0/hex" }, "mode": "live", "required": true }],
+      "assetIds": [], "readiness": { "state": "planned", "checks": [], "updatedAt": "2026-08-30T09:00:00Z" }, "delivery": { "state": "not-requested", "exports": [], "updatedAt": "2026-08-30T09:00:00Z" }
+    },
+    {
+      "id": "backgrounds-main", "kind": "backgrounds", "name": "Background library",
+      "document": { "path": "documents/backgrounds.json", "mediaType": "application/json", "formatVersion": "1.0.0" },
+      "editor": { "provider": "picorn", "surface": "assets" },
+      "bindings": [{ "target": "/style/background", "source": { "document": "brand-dna", "pointer": "/visual/colors/palette/2/hex" }, "mode": "live", "required": true }],
+      "assetIds": [], "readiness": { "state": "planned", "checks": [], "updatedAt": "2026-08-30T09:00:00Z" }, "delivery": { "state": "not-requested", "exports": [], "updatedAt": "2026-08-30T09:00:00Z" }
+    },
+    {
+      "id": "photography-main", "kind": "photography", "name": "Photography set",
+      "document": { "path": "documents/photography.json", "mediaType": "application/json", "formatVersion": "1.0.0" },
+      "editor": { "provider": "picorn", "surface": "assets" },
+      "bindings": [{ "target": "/direction/palette", "source": { "document": "brand-dna", "pointer": "/visual/photography/palette" }, "mode": "live", "required": true }],
+      "assetIds": [], "readiness": { "state": "planned", "checks": [], "updatedAt": "2026-08-30T09:00:00Z" }, "delivery": { "state": "not-requested", "exports": [], "updatedAt": "2026-08-30T09:00:00Z" }
+    },
+    {
+      "id": "decorative-main", "kind": "decorative", "name": "Decorative elements",
+      "document": { "path": "documents/decorative.json", "mediaType": "application/json", "formatVersion": "1.0.0" },
+      "editor": { "provider": "picorn", "surface": "assets" },
+      "bindings": [{ "target": "/style/motifs", "source": { "document": "brand-dna", "pointer": "/visual/shapes/motifs" }, "mode": "live", "required": true }],
+      "assetIds": [], "readiness": { "state": "planned", "checks": [], "updatedAt": "2026-08-30T09:00:00Z" }, "delivery": { "state": "not-requested", "exports": [], "updatedAt": "2026-08-30T09:00:00Z" }
+    }
+  ]
+}

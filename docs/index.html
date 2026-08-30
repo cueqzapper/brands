@@ -14,6 +14,7 @@
       <a class="mark" href="#top" aria-label="Brand DNA home"><span aria-hidden="true">B</span><b>Brand DNA</b></a>
       <nav aria-label="Primary">
         <a href="#contract">Contract</a>
+        <a href="#projects">Projects</a>
         <a href="#example">Brand examples</a>
         <a href="#compiler">Prompt compiler</a>
       </nav>
@@ -23,7 +24,7 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Open specification · v1.1</p>
+          <p class="eyebrow">Open specification · v1.2</p>
           <h1>
             <span>One brand.</span>
             <em>Exact context</em>
@@ -64,6 +65,24 @@
           <div><span>Visual values</span><strong>DTCG-compatible colour tokens</strong></div>
           <div><span>Accessibility</span><strong>WCAG 2.2 baseline</strong></div>
           <div><span>Exports</span><strong>brand.yml · CSS · JSON</strong></div>
+        </div>
+      </section>
+
+      <section id="projects" class="section contract">
+        <header class="section-head split">
+          <div><p class="eyebrow">Portable Brand Projects</p><h2>One source. Every editable surface.</h2></div>
+          <p>A secret-free project manifest connects SEEZWeb, Picorn and other editors. Live JSON Pointer bindings keep every website, business card, label, post and visual asset tied to the same Brand DNA.</p>
+        </header>
+        <div class="principles">
+          <article><span>01</span><h2>Logo parts</h2><p>Brand DNA v1.2 records signet and wordmark separately, then defines the approved horizontal, vertical or compact lockups.</p></article>
+          <article><span>02</span><h2>Live bindings</h2><p>Documents reference colours, type and logo assets by JSON Pointer. Editors resolve the current value instead of storing another copy.</p></article>
+          <article><span>03</span><h2>Safe delivery</h2><p>Readiness checks and file exports travel with each artifact. Credentials, signed URLs and arbitrary secret metadata do not.</p></article>
+        </div>
+        <div class="standards">
+          <div><span>Artifact kinds</span><strong>Web · print · social · visual assets</strong></div>
+          <div><span>Editors</span><strong>SEEZWeb · Picorn · portable</strong></div>
+          <div><span>Contract</span><strong><a href="./schema/brand-project.schema.json">Project JSON Schema</a></strong></div>
+          <div><span>Example</span><strong><a href="./data/portable-brand-project.json">Open project manifest</a></strong></div>
         </div>
       </section>
 
@@ -123,7 +142,7 @@
       </section>
     </main>
 
-    <footer><div><strong>Brand DNA</strong><span>MIT-licensed schema and compiler by SEEZ.</span></div><div><a href="https://github.com/cueqzapper/brands">Source</a><a href="./schema.json">Schema</a><a href="./data/task-profiles.json">Profiles</a></div></footer>
-    <script type="module" src="./app.js?v=1.1.2"></script>
+    <footer><div><strong>Brand DNA</strong><span>MIT-licensed schemas and compiler by SEEZ.</span></div><div><a href="https://github.com/cueqzapper/brands">Source</a><a href="./schema.json">Brand DNA schema</a><a href="./schema/brand-project.schema.json">Project schema</a><a href="./data/task-profiles.json">Profiles</a></div></footer>
+    <script type="module" src="./app.js?v=1.2.0"></script>
   </body>
 </html>
