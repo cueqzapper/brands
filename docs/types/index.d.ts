@@ -1,4 +1,4 @@
-export type ArtifactKind = "website" | "business-card" | "label" | "social" | "icon-set" | "backgrounds" | "photography" | "decorative";
+export type ArtifactKind = "website" | "logo-system" | "business-card" | "cv" | "label" | "social" | "icon-set" | "backgrounds" | "photography" | "decorative";
 export type ReadinessState = "planned" | "draft" | "review" | "ready" | "blocked" | "deprecated";
 export type DeliveryState = "not-requested" | "prepared" | "delivered" | "accepted" | "rejected";
 export type EditorProvider = "seezweb" | "picorn" | "portable";
@@ -79,7 +79,7 @@ export interface BrandProjectArtifact {
 
 export interface BrandProject {
   $schema?: string;
-  schemaVersion: "1.0.0";
+  schemaVersion: "1.0.0" | "1.1.0";
   project: {
     id: string;
     name: string;
@@ -101,12 +101,26 @@ export interface BrandProject {
 
 export interface ResolvedArtifactBinding extends BrandProjectBinding { value: unknown }
 
+export interface BrandDnaValidationError {
+  instancePath: string;
+  keyword: string;
+  message: string;
+  params: Record<string, unknown>;
+}
+
+export interface BrandDnaValidationResult {
+  valid: boolean;
+  errors: BrandDnaValidationError[];
+}
+
 export const BRAND_PROJECT_ARTIFACT_KINDS: readonly ArtifactKind[];
 export const BRAND_PROJECT_READINESS_STATES: readonly ReadinessState[];
 export const BRAND_PROJECT_DELIVERY_STATES: readonly DeliveryState[];
 export function getByJsonPointer<T = unknown>(document: unknown, pointer: JsonPointer): T;
 export function resolveBrandProjectTokens(project: BrandProject, brandDna: unknown): Record<string, unknown>;
 export function resolveArtifactBindings(project: BrandProject, artifactId: string, brandDna: unknown): ResolvedArtifactBinding[];
+export function validateBrandDNA(value: unknown): BrandDnaValidationResult;
+export function assertValidBrandDNA<T>(value: T): T;
 
 export function compileBrandDNA(...args: unknown[]): unknown;
 export function compileBrandDNAWithProfile(...args: unknown[]): unknown;

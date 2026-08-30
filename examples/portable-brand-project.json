@@ -1,6 +1,6 @@
 {
   "$schema": "https://cueqzapper.github.io/brands/schema/brand-project.schema.json",
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "project": {
     "id": "seez-reference-project",
     "name": "SEEZ portable reference project",
@@ -23,6 +23,18 @@
   },
   "artifacts": [
     {
+      "id": "logo-system-main", "kind": "logo-system", "name": "Logo system",
+      "document": { "path": "documents/logo-system.json", "mediaType": "application/json", "formatVersion": "1.0.0" },
+      "editor": { "provider": "picorn", "projectId": "seez-reference-project", "documentId": "logo-system-main", "surface": "brand" },
+      "bindings": [
+        { "target": "/logo/primary", "source": { "document": "brand-dna", "pointer": "/assets/logos/0/path" }, "mode": "live", "required": true },
+        { "target": "/logo/inverse", "source": { "document": "brand-dna", "pointer": "/assets/logos/1/path" }, "mode": "live", "required": false }
+      ],
+      "assetIds": ["logo-ink", "logo-white"],
+      "readiness": { "state": "review", "checks": [{ "id": "logo-components", "status": "pending", "label": "Signet, wordmark and lockups reviewed" }], "updatedAt": "2026-08-30T09:00:00Z" },
+      "delivery": { "state": "not-requested", "exports": [], "updatedAt": "2026-08-30T09:00:00Z" }
+    },
+    {
       "id": "website-main", "kind": "website", "name": "Main website",
       "document": { "path": "documents/website.json", "mediaType": "application/json", "formatVersion": "1.0.0" },
       "editor": { "provider": "seezweb", "projectId": "seez-reference-project", "documentId": "website-main", "surface": "website" },
@@ -38,6 +50,18 @@
       "bindings": [{ "target": "/design/logo", "source": { "document": "brand-dna", "pointer": "/assets/logos/0/path" }, "mode": "live", "required": true }],
       "assetIds": ["logo-ink"],
       "readiness": { "state": "draft", "checks": [{ "id": "print-review", "status": "pending", "label": "Print specifications reviewed" }], "updatedAt": "2026-08-30T09:00:00Z" },
+      "delivery": { "state": "not-requested", "exports": [], "updatedAt": "2026-08-30T09:00:00Z" }
+    },
+    {
+      "id": "cv-main", "kind": "cv", "name": "Curriculum vitae",
+      "document": { "path": "documents/cv.json", "mediaType": "application/json", "formatVersion": "1.0.0" },
+      "editor": { "provider": "picorn", "projectId": "seez-reference-project", "documentId": "cv-main", "surface": "document" },
+      "bindings": [
+        { "target": "/design/colors/primary", "source": { "document": "brand-dna", "pointer": "/visual/colors/palette/0/hex" }, "mode": "live", "required": true },
+        { "target": "/design/typography/heading", "source": { "document": "brand-dna", "pointer": "/visual/typography/roles/heading" }, "mode": "live", "required": true }
+      ],
+      "assetIds": ["logo-ink"],
+      "readiness": { "state": "planned", "checks": [{ "id": "cv-content", "status": "pending", "label": "Personal facts and chronology confirmed by the owner" }], "updatedAt": "2026-08-30T09:00:00Z" },
       "delivery": { "state": "not-requested", "exports": [], "updatedAt": "2026-08-30T09:00:00Z" }
     },
     {

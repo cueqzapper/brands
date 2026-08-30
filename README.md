@@ -163,7 +163,7 @@ the website, business card, label and social templates.
 
 ```json
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "brandDna": {
     "path": "./brand-dna.json",
     "mediaType": "application/vnd.cueqzapper.brand-dna+json",
@@ -180,8 +180,11 @@ the website, business card, label and social templates.
 }
 ```
 
-The standard artifact kinds are `website`, `business-card`, `label`, `social`,
-`icon-set`, `backgrounds`, `photography` and `decorative`. Each artifact names
+Brand Project 1.1 adds the needs-driven `logo-system` and `cv` kinds while the
+validator continues to accept 1.0 manifests with their original vocabulary.
+The standard artifact kinds are `website`, `logo-system`, `business-card`,
+`cv`, `label`, `social`, `icon-set`, `backgrounds`, `photography` and
+`decorative`. Each artifact names
 its portable document, editor surface, Brand DNA bindings, referenced asset
 IDs, readiness checks and delivery exports. Paths are package-relative. The
 strict schema deliberately has no credential, API-key, signed-URL or arbitrary

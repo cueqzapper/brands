@@ -31,6 +31,17 @@ test("portable Brand Project validates and covers every standard artifact kind",
   assert.deepEqual(new Set(project.artifacts.map(({ kind }) => kind)), new Set(BRAND_PROJECT_ARTIFACT_KINDS));
 });
 
+test("Brand Project 1.0 remains valid but cannot claim 1.1 artifact kinds", () => {
+  const validate = validator(projectSchema);
+  const legacy = structuredClone(project);
+  legacy.schemaVersion = "1.0.0";
+  legacy.artifacts = legacy.artifacts.filter(({ kind }) => !["logo-system", "cv"].includes(kind));
+  assert.equal(validate(legacy), true, JSON.stringify(validate.errors, null, 2));
+
+  legacy.artifacts.push(structuredClone(project.artifacts.find(({ kind }) => kind === "cv")));
+  assert.equal(validate(legacy), false, "a 1.0 manifest must not claim 1.1 artifact vocabulary");
+});
+
 test("existing Brand DNA stays valid while 1.2 requires a signet, wordmark and lockup", () => {
   const validate = validator(brandSchema);
   assert.equal(validate(brandDna), true, JSON.stringify(validate.errors, null, 2));

@@ -1,4 +1,4 @@
-export type ArtifactKind = "website" | "business-card" | "label" | "social" | "icon-set" | "backgrounds" | "photography" | "decorative";
+export type ArtifactKind = "website" | "logo-system" | "business-card" | "cv" | "label" | "social" | "icon-set" | "backgrounds" | "photography" | "decorative";
 export type ReadinessState = "planned" | "draft" | "review" | "ready" | "blocked" | "deprecated";
 export type DeliveryState = "not-requested" | "prepared" | "delivered" | "accepted" | "rejected";
 export type EditorProvider = "seezweb" | "picorn" | "portable";
@@ -79,7 +79,7 @@ export interface BrandProjectArtifact {
 
 export interface BrandProject {
   $schema?: string;
-  schemaVersion: "1.0.0";
+  schemaVersion: "1.0.0" | "1.1.0";
   project: {
     id: string;
     name: string;

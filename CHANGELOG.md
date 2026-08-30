@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.0 - 2026-08-30
+
+- Added Brand Project 1.1 with portable `logo-system` and `cv` artifacts for
+  needs-driven customer handoffs.
+- Kept Brand Project 1.0 manifests valid while preventing the new artifact
+  vocabulary from being mislabeled as the legacy contract.
+
 ## 1.2.0 - 2026-08-30
 
 - Added a backward-compatible Brand DNA logo-component contract for signet,

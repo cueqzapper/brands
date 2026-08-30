@@ -7,7 +7,7 @@
   "required": ["schemaVersion", "project", "brandDna", "tokens", "artifacts"],
   "properties": {
     "$schema": { "type": "string", "format": "uri-reference" },
-    "schemaVersion": { "const": "1.0.0" },
+    "schemaVersion": { "enum": ["1.0.0", "1.1.0"] },
     "project": { "$ref": "#/$defs/project" },
     "brandDna": { "$ref": "#/$defs/brandDnaReference" },
     "tokens": {
@@ -22,6 +22,27 @@
     }
   },
   "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "required": ["schemaVersion"],
+        "properties": { "schemaVersion": { "const": "1.0.0" } }
+      },
+      "then": {
+        "properties": {
+          "artifacts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "kind": { "enum": ["website", "business-card", "label", "social", "icon-set", "backgrounds", "photography", "decorative"] }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
   "$defs": {
     "identifier": {
       "type": "string",
@@ -165,7 +186,7 @@
       "required": ["id", "kind", "name", "document", "editor", "bindings", "assetIds", "readiness", "delivery"],
       "properties": {
         "id": { "$ref": "#/$defs/identifier" },
-        "kind": { "enum": ["website", "business-card", "label", "social", "icon-set", "backgrounds", "photography", "decorative"] },
+        "kind": { "enum": ["website", "logo-system", "business-card", "cv", "label", "social", "icon-set", "backgrounds", "photography", "decorative"] },
         "name": { "type": "string", "minLength": 1 },
         "document": { "$ref": "#/$defs/document" },
         "editor": { "$ref": "#/$defs/editor" },

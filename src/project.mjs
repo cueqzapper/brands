@@ -1,6 +1,8 @@
 export const BRAND_PROJECT_ARTIFACT_KINDS = Object.freeze([
   "website",
+  "logo-system",
   "business-card",
+  "cv",
   "label",
   "social",
   "icon-set",
