@@ -101,12 +101,26 @@ export interface BrandProject {
 
 export interface ResolvedArtifactBinding extends BrandProjectBinding { value: unknown }
 
+export interface BrandDnaValidationError {
+  instancePath: string;
+  keyword: string;
+  message: string;
+  params: Record<string, unknown>;
+}
+
+export interface BrandDnaValidationResult {
+  valid: boolean;
+  errors: BrandDnaValidationError[];
+}
+
 export const BRAND_PROJECT_ARTIFACT_KINDS: readonly ArtifactKind[];
 export const BRAND_PROJECT_READINESS_STATES: readonly ReadinessState[];
 export const BRAND_PROJECT_DELIVERY_STATES: readonly DeliveryState[];
 export function getByJsonPointer<T = unknown>(document: unknown, pointer: JsonPointer): T;
 export function resolveBrandProjectTokens(project: BrandProject, brandDna: unknown): Record<string, unknown>;
 export function resolveArtifactBindings(project: BrandProject, artifactId: string, brandDna: unknown): ResolvedArtifactBinding[];
+export function validateBrandDNA(value: unknown): BrandDnaValidationResult;
+export function assertValidBrandDNA<T>(value: T): T;
 
 export function compileBrandDNA(...args: unknown[]): unknown;
 export function compileBrandDNAWithProfile(...args: unknown[]): unknown;

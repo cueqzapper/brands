@@ -4,10 +4,12 @@ import assert from "node:assert/strict";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import {
+  assertValidBrandDNA,
   BRAND_PROJECT_ARTIFACT_KINDS,
   getByJsonPointer,
   resolveArtifactBindings,
   resolveBrandProjectTokens,
+  validateBrandDNA,
 } from "../src/index.mjs";
 
 const [brandSchema, projectSchema, brandDna, project] = await Promise.all([
@@ -45,6 +47,20 @@ test("existing Brand DNA stays valid while 1.2 requires a signet, wordmark and l
   delete version12.visual.logo.components.signet;
   assert.equal(validate(version12), false);
   assert.ok(validate.errors.some(({ instancePath, keyword }) => instancePath.includes("/visual/logo/components") && keyword === "required"));
+});
+
+test("public validator returns portable errors and assert helper fails closed", () => {
+  assert.deepEqual(validateBrandDNA(brandDna), { valid: true, errors: [] });
+  const invalid = structuredClone(brandDna);
+  delete invalid.visual.colors.palette[0].meaning;
+  const result = validateBrandDNA(invalid);
+  assert.equal(result.valid, false);
+  assert.ok(result.errors.some(({ instancePath, keyword }) => (
+    instancePath.includes("/visual/colors/palette/0") && keyword === "required"
+  )));
+  assert.throws(() => assertValidBrandDNA(invalid), (error) => (
+    error.code === "INVALID_BRAND_DNA" && Array.isArray(error.validationErrors)
+  ));
 });
 
 test("strict manifests reject secret-bearing or undeclared transport fields", () => {
